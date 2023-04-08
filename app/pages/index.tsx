@@ -54,12 +54,12 @@ export default function Home() {
                 {Array.from(skills.entries()).map(([programmingLanguage, description]) => {
                   return(
                   <details key={programmingLanguage}>
-                    <summary className={FAQStyles.detailsHeader}>
-                    <Image src ={`/${programmingLanguage}.png`} width={25} height={25} alt="">{description}</Image>
+                    <summary className="">
+                      <Image src ={`/${programmingLanguage}.png`} width={25} height={25} alt=""></Image>
+                      <h4>{description}</h4>
                     </summary>
                   </details>
-                )}
-              }
+                  )})}
             </span>
           </div>
 
