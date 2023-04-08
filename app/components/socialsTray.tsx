@@ -22,32 +22,37 @@ const SocialsTray = () => {
                 onMouseEnter = {onMouseEnterGitHub}
                 onMouseLeave = {onMouseLeaveGitHub}
             >
-                {isHoveringGitHub ? (
-                    <Image src="/GitHub-Mudbrick.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
-                ) : (
-                    <Image src="/GitHub-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
-                )}
+                <Link href="https://github.com/tachorzy" target="_blank">
+                    {isHoveringGitHub ? (
+                        <Image src="/GitHub-Mudbrick.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
+                    ) : (
+                        <Image src="/GitHub-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
+                    )}
+                </Link>
             </span>
             <span
                 onMouseEnter = {onMouseEnterLinkedIn}
                 onMouseLeave = {onMouseLeaveLinkedIn}
             >
-                {isHoveringLinkedIn ? (
-                    <Image src="/LinkedIn-Mudbrick.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
-                ) : (
-                    <Image src="/LinkedIn-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>                    
-                )}
+                <Link href="https://www.linkedin.com/in/tachorzy/" target="_blank">
+                    {isHoveringLinkedIn ? (
+                        <Image src="/LinkedIn-Mudbrick.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
+                    ) : (
+                        <Image src="/LinkedIn-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>                    
+                    )}
+                </Link>
             </span>
             <span
                 onMouseEnter = {onMouseEnterCV}
                 onMouseLeave=  {onMouseLeaveCV}
             >
-                {isHoveringCV ? (
-                    <Image src="/Resume-Mudbrick.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
-                ) : ( 
-                    <Image src="/Resume-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
- 
-                )}
+                <Link href="../public/resume/tachorzy_resume_apr_2023" target="_blank">
+                    {isHoveringCV ? (
+                        <Image src="/Resume-Mudbrick.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
+                    ) : ( 
+                        <Image src="/Resume-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
+                    )}
+                </Link>
             </span>
       </div>
     )
