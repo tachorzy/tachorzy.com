@@ -58,8 +58,8 @@ export default function Home() {
                     <Image src ={`/${programmingLanguage}.png`} width={25} height={25} alt="">{description}</Image>
                     </summary>
                   </details>
-                )
-            
+                )}
+              }
             </span>
           </div>
 
