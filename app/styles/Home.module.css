@@ -1,5 +1,5 @@
 .main {
-  @apply bg-shark flex flex-col;
+  @apply bg-shark flex flex-col overflow-hidden;
   min-height: 100vh;
 }
 
