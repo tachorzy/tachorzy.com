@@ -19,13 +19,13 @@ const SocialsTray = () => {
     return(
         <div className="lg:xl:ml-24 ml-12 lg:xl:mt-5 mt-4 flex flex-row gap-x-6">
             <span>
-                <Image src="/GitHub-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer"></Image>
+                <Image src="/GitHub-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
             </span>
             <span>
-                <Image src="/LinkedIn-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer"></Image>
+                <Image src="/LinkedIn-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
             </span>
             <span>
-                <Image src="/Resume-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer"></Image>
+                <Image src="/Resume-Sandstone.svg" width={36} height={36} alt="" className="cursor-pointer select-none"></Image>
             </span>
       </div>
     )

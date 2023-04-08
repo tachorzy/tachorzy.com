@@ -75,7 +75,7 @@ export default function Home() {
           </div> */}
 
           <div className="flex flex-col justify-end">
-            <Image src="/T.png" width={100} height={100} className="absolute right-0 bottom-0 mr-12 mb-12" alt=""></Image>
+            <Image src="/T.png" width={100} height={100} className="absolute right-0 bottom-0 mr-12 mb-12 select-none" alt=""></Image>
           </div>
         </section>
         <section>
