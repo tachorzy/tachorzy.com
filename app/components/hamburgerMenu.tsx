@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-// import { slide as Menu } from 'react-burger-menu'
+import LightModeToggle from '../components/lightModeToggle'
 
 const HamburgerMenu = () => {
     const [isActive, setIsActive] = useState(false)
@@ -11,13 +11,14 @@ const HamburgerMenu = () => {
                 <Image src="/hamburger-menu-Sandstone.svg" width={48} height={42} alt="" className="cursor-pointer"/>
             </button>
             { isActive ? (
-                <div className="w-40 h-58 self-end mr-12 bg-sandstone rounded-2xl fixed right-0 mt-2 shadow-xl">
-                    <div className="flex flex-col text-bark font-semibold py-2 gap-y-3 pl-8">
+                <div className="w-56 h-58 self-end mr-12 bg-sandstone rounded-2xl fixed right-0 mt-2 shadow-xl">
+                    <div className="flex flex-col text-bark font-bold py-4 gap-y-4 pl-20">
                         <Link href="/">About</Link>
                         <Link href="/">Skills</Link>
                         <Link href="/">Projects</Link>
                         <Link href="/">Travel</Link>
                         <Link href="/">Contact Me</Link>
+                        <LightModeToggle></LightModeToggle>
                     </div>
                 </div>
             ) : (

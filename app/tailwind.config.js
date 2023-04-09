@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'shark': '#1c2324',
+        'alabaster': '#ede5d8',
         'dune': '#e3daca',
         'dusty': '#c4b9a3',
         'sandstone': '#d9cfbd',
