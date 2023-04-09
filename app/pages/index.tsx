@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import localFont from '@next/font/local'
 import NavBar from '../components/navbar'
 import SocialsTray from '../components/socialsTray'
+import HamburgerMenu from '../components/hamburgerMenu'
 import { skills } from '../lib/skills'
 
 
@@ -38,14 +39,14 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.navBar}>
-            <NavBar></NavBar>
+        <div className="fixed top-0 right-0 mt-12 mr-12 mb-2">
+          <HamburgerMenu/>
         </div>
 
         <section>
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
-            <h1 className="text-dusty lg:xl:text-landingPageTitle text-5xl font-bold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-20 mt-12">Tariq<br/>Achor Zyad</h1>
+            <h1 className="text-dusty lg:xl:text-landingPageTitle text-5xl font-bold lg:xl:ml-24 ml-12 pt-10 lg:xl:mt-20 mt-12">Tariq<br/>Achor Zyad</h1>
             <h2 className="text-sandstone lg:xl:text-2xl text-lg font-bold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a 3rd year Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
 
             {/* SOCIALS TRAY */}
@@ -77,6 +78,7 @@ export default function Home() {
           <div className="flex flex-col justify-end">
             <Image src="/T.png" width={100} height={100} className="absolute right-0 bottom-0 mr-12 mb-12 select-none" alt=""></Image>
           </div>
+
         </section>
         <section>
           {/* ABOUT ME */}

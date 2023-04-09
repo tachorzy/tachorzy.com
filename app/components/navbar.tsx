@@ -6,13 +6,8 @@ const NavBar = () => {
 
     return(
         <div className={ManropeExtraBold.className}>
-            <div className={NavStyle.navContainer}>
-                <ul className={NavStyle.navItems}>
 
-                </ul>
-            </div>
         </div>
-
     );
 }
 
