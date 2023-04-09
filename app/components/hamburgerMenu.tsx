@@ -25,11 +25,11 @@ const HamburgerMenu = () => {
                             <Image src="/projects.svg" width={24} height={24} alt="" className=""></Image>              
                             <Link href="/">Projects</Link>
                         </div>
-                        <div className="flex flex-row gap-x-2.5 items-center hover:bg-dusty pl-6 py-2">
-                            <Image src="/dallah.svg" width={30} height={30} alt="" className=""></Image>              
+                        <div className="flex flex-row gap-x-3 items-center hover:bg-dusty pl-6 py-2">
+                            <Image src="/dallah.svg" width={27} height={27} alt="" className=""></Image>              
                             <Link href="/">Travel</Link>
                         </div>
-                        <div className="flex flex-row gap-x-3.5 items-center hover:bg-dusty pl-6 py-2">
+                        <div className="flex flex-row gap-x-3 items-center hover:bg-dusty pl-6 py-2">
                             <Image src="/contactme.svg" width={26} height={26} alt="" className=""></Image>              
                             <Link href="/">Contact Me</Link>
                         </div>
