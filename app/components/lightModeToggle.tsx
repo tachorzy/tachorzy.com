@@ -10,7 +10,7 @@ const LightModeToggle = () => {
             <Switch
                 checked={lightModeEnabled}
                 onChange={setLightModeEnabled}
-                className={`${lightModeEnabled ? 'bg-mudbrick' : 'bg-dusty'} relative inline-flex h-8 w-24 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+                className={`${lightModeEnabled ? 'bg-mudbrick' : 'bg-dusty'} relative inline-flex h-8 w-24 shrink-0 cursor-pointer rounded-full shadow-sm border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
             >
                 <span className="sr-only">Light mode enabled</span>
                 <span
