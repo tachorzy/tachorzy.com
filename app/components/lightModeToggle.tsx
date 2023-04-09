@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useState } from 'react'
 import { Switch } from '@headlessui/react'
 
@@ -13,10 +14,9 @@ const LightModeToggle = () => {
             >
                 <span className="sr-only">Light mode enabled</span>
                 <span
-                    className={`${lightModeEnabled ? 'translate-x-16 bg-dune' : 'translate-x-18 bg-alabaster'} pointer-events-none inline-block h-[1.8rem] w-[1.8rem] transform rounded-full bg-alabaster ring-0 transition duration-200 ease-in-out`}
+                    className={`${lightModeEnabled ? 'translate-x-16 bg-dune' : 'translate-x-18 bg-alabaster'} pointer-events-none inline-block h-[1.8rem] w-[1.8rem] transform rounded-full bg-alabaster ring-0 transition duration-200 ease-in-out content-center`}
                 >
-
-                </span>
+                    </span>
             </Switch>
         </div>
     )

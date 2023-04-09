@@ -12,13 +12,31 @@ const HamburgerMenu = () => {
             </button>
             { isActive ? (
                 <div className="w-56 h-58 self-end mr-12 bg-sandstone rounded-2xl fixed right-0 mt-2 shadow-xl">
-                    <div className="flex flex-col text-bark font-bold py-4 gap-y-4 pl-20">
-                        <Link href="/">About</Link>
-                        <Link href="/">Skills</Link>
-                        <Link href="/">Projects</Link>
-                        <Link href="/">Travel</Link>
-                        <Link href="/">Contact Me</Link>
-                        <LightModeToggle></LightModeToggle>
+                    <div className="flex flex-col text-bark font-bold py-4 gap-y-2 pl-8">
+                        <div className="flex flex-row gap-x-7 items-center">      
+                            <Image src="/aboutme.svg" width={34} height={34} alt="" className=""></Image>              
+                            <Link href="/">About</Link>
+                        </div>
+                        <div className="flex flex-row gap-x-7 items-center">
+                            <Image src="/skills.svg" width={36} height={34} alt="" className=""></Image>              
+                            <Link href="/">Skills</Link>
+                        </div>
+                        <div className="flex flex-row gap-x-7 items-center">
+                            <Image src="/projects.svg" width={34} height={34} alt="" className=""></Image>              
+                            <Link href="/">Projects</Link>
+                        </div>
+                        <div className="flex flex-row gap-x-[1.3rem] items-center">
+                            <Image src="/dallah.svg" width={40} height={40} alt="" className=""></Image>              
+                            <Link href="/">Travel</Link>
+                        </div>
+                        <div className="flex flex-row gap-x-6 items-center">
+                            <Image src="/contactme.svg" width={36} height={36} alt="" className=""></Image>              
+                            <Link href="/">Contact Me</Link>
+                        </div>
+                        <div className="flex flex-row gap-x-[1.15rem] items-center">
+                            <Image src="/fanous.svg" width={40} height={40} alt="" className="pb-3 pr-[0.18rem]"></Image>
+                            <LightModeToggle></LightModeToggle>
+                        </div>
                     </div>
                 </div>
             ) : (
