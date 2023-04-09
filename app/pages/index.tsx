@@ -39,9 +39,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className="fixed top-0 right-0 mt-12 mr-12 mb-2">
-          <HamburgerMenu/>
+        <div className={ManropeRegular.className}>
+          <div className="fixed top-0 right-0 mt-12 mr-12 mb-2">
+            <HamburgerMenu/>
+          </div>
         </div>
+
 
         <section>
           {/* HEADER SECTION */}
