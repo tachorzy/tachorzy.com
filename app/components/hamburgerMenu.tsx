@@ -31,9 +31,9 @@ const HamburgerMenu = () => {
                         </div>
                         <div className="flex flex-row gap-x-3 items-center hover:bg-dusty pl-6 py-2 select-none">
                             <Image src="/contactme.svg" width={26} height={26} alt="" className=""></Image>              
-                            <Link href="/">Contact Me</Link>
+                            <Link href="/">Contact</Link>
                         </div>
-                        <div className="flex flex-row gap-x-[1.15rem] items-center pl-6 py-3 select-none">
+                        <div className="flex flex-row gap-x-[1.15rem] items-center pl-6 pt-3 pb-2.5 select-none">
                             {/* <Image src="/fanous.svg" width={36} height={36} alt="" className="pb-3 pr-[0.18rem]"></Image> */}
                             <LightModeToggle></LightModeToggle>
                         </div>

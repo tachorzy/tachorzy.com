@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter, Manrope } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import localFont from '@next/font/local'
@@ -45,7 +46,6 @@ export default function Home() {
           </div>
         </div>
 
-
         <section>
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
@@ -81,19 +81,29 @@ export default function Home() {
           <div className="flex flex-col justify-end">
             <Image src="/T.png" width={100} height={100} className="absolute right-0 bottom-0 mr-12 mb-12 select-none" alt=""></Image>
           </div>
+          <div className="absolute bottom-0 w-full h-1/6 opacity-0 hover:opacity-100 animation-fade">
+            <div className="absolute bottom-0 inset-x-[47%] mb-12">
+              <button className="p-3 hover:bg-sandstone hover:bg-opacity-5 rounded-full cursor-pointer select-none align-middle">
+                <Link href="#about">
+                  <Image src="/chevron.svg" width={28} height={28} alt="" className="cursor-pointer"/>
+                </Link>
+              </button>
+            </div>
+          </div>
 
         </section>
         <section>
           {/* ABOUT ME */}
-          {/* <div className={ManropeMedium.className}>
+          <div className={ManropeMedium.className}>
             <span className={ManropeExtraBold.className}>
-              <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-32 mt-4">About Me</h3>
+              <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-96 mt-24">About Me</h3>
             </span>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">I'm an aspiring web-developer with a tireless passion for front-end development. With that passion, I continously drive myself to garner new knowledge and experience.</p>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">Over the years, I've discovered my strengths in component-based development. I've built scalable applications, created inviting user interfaces, and enabled polished user experiences. All of which you can find on this portfolio.</p>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5"></p>
-        </div>*/}
+        </div>
         </section>
+        <span id="about"></span>
       </main>
     </>
   )
