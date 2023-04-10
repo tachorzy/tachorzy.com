@@ -41,7 +41,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={ManropeRegular.className}>
-          <div className="fixed top-0 right-0 mt-12 mr-12 mb-2">
+          <div className="fixed top-0 right-0 mt-12 mr-12 mb-2 z-50">
             <HamburgerMenu/>
           </div>
         </div>
@@ -79,8 +79,9 @@ export default function Home() {
           </div> */}
 
           <div className="flex flex-col justify-end">
-            <Image src="/T.png" width={100} height={100} className="absolute right-0 bottom-0 mr-12 mb-12 select-none" alt=""></Image>
+            <Image src="/T.png" width={100} height={100} className="absolute right-0 bottom-0 mr-12 mb-12 select-none z-0" alt=""></Image>
           </div>
+
           <div className="absolute bottom-0 w-full h-1/6 opacity-0 hover:opacity-100 animation-fade">
             <div className="absolute bottom-0 inset-x-[47%] mb-12">
               <button className="p-3 hover:bg-sandstone hover:bg-opacity-5 rounded-full cursor-pointer select-none align-middle">
