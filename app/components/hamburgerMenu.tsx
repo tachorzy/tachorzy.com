@@ -24,19 +24,19 @@ const HamburgerMenu = () => {
                     <div className="flex flex-col text-bark font-bold py-3">
                         <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">      
                             <Image src="/aboutme.svg" width={24} height={24} alt="" className=""></Image>              
-                            <Link href="/">About</Link>
+                            <Link href="/" className="w-full">About</Link>
                         </div>
                         <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">
                             <Image src="/skills.svg" width={24} height={24} alt="" className=""></Image>              
-                            <Link href="/">Skills</Link>
+                            <Link href="/" className="w-full">Skills</Link>
                         </div>
                         <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">
                             <Image src="/projects.svg" width={24} height={24} alt="" className=""></Image>              
-                            <Link href="/">Projects</Link>
+                            <Link href="/" className="w-full">Projects</Link>
                         </div>
                         <div className="flex flex-row gap-x-3 items-center hover:bg-dusty pl-6 py-2 select-none">
                             <Image src="/dallah.svg" width={27} height={27} alt="" className=""></Image>              
-                            <Link href="/">Travel</Link>
+                            <Link href="/" className="w-full">Travel</Link>
                         </div>
                         <div className="flex flex-row gap-x-3 items-center hover:bg-dusty pl-6 py-2 select-none">
                             <Image src="/contactme.svg" width={26} height={26} alt="" className=""></Image>              
@@ -54,27 +54,5 @@ const HamburgerMenu = () => {
         </div>
     )
 }
-
-// const HamburgerMenu = () => {
-//     const [isExpanded, setIsExpanded] = useState(false)
-
-//     return (
-//         <Menu 
-//             customBurgerIcon={<HamburgerIcon/>} 
-//             width={184} 
-//             className="relative bg-dusty rounded-2xl shadow-2xl mr-12 select-none cursor-pointer"
-//             right
-//             styles={{ 
-//                 bmMenuWrap: { height: '25%' }, 
-//                 bmOverlay: { background: 'transparent' }
-//             }}
-//         >
-//             <Link className="text-bark text-lg pl-6 py-1.5 font-semibold" href="#about">test</Link>
-//             <Link className="text-bark text-lg pl-6 py-1.5 font-semibold" href="#portfolio">test</Link>
-//             <Link className="text-bark text-lg pl-6 py-1.5 font-semibold" href="#travel">test</Link>
-//             <Link className="text-bark text-lg pl-6 py-1.5 font-semibold   " href="#contact">test</Link>
-//         </Menu>
-//     )
-// }
 
 export default HamburgerMenu;
