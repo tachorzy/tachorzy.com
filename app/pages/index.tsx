@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Inter, Manrope } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import localFont from '@next/font/local'
 import NavBar from '../components/navbar'
@@ -21,6 +20,11 @@ export const ManropeExtraBold = localFont({
 
 export const ManropeMedium = localFont({
   src: '../public/fonts/Manrope/Manrope-Medium.otf',
+  weight: '500'
+})
+
+export const AmiriBoldSlanted = localFont({
+  src: '../public/fonts/Amiri/ArbFONTS-Amiri-Boldslanted.ttf',
   weight: '500'
 })
 
@@ -46,7 +50,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section>
+        <section className = "h-screen">
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
             <h1 className="text-dusty lg:xl:text-landingPageTitle text-5xl font-bold lg:xl:ml-24 ml-12 pt-10 lg:xl:mt-20 mt-12">Tariq<br/>Achor Zyad</h1>
@@ -93,16 +97,21 @@ export default function Home() {
           </div>
 
         </section>
-        <section>
+        <section className="h-screen">
           {/* ABOUT ME */}
           <div className={ManropeMedium.className}>
             <span className={ManropeExtraBold.className}>
-              <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-96 mt-24">About Me</h3>
+              <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-36 mt-18">About Me</h3>
             </span>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">I'm an aspiring web-developer with a tireless passion for front-end development. With that passion, I continously drive myself to garner new knowledge and experience.</p>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">Over the years, I've discovered my strengths in component-based development. I've built scalable applications, created inviting user interfaces, and enabled polished user experiences. All of which you can find on this portfolio.</p>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5"></p>
-        </div>
+          </div>
+          {/* <div className={AmiriBoldSlanted.className}>
+            <div className="flex flex-col justify-end h-full">
+              <h4 className="text-9xl text-dusty relative bottom-0 right-0 mr-12 mb-12 select-none z-0">١</h4>
+            </div>
+          </div> */}
         </section>
         <span id="about"></span>
       </main>
