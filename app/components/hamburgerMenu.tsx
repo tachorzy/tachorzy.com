@@ -23,6 +23,12 @@ const HamburgerMenu = () => {
                 <div className="w-56 h-58 self-end mr-12 bg-sandstone rounded-2xl fixed right-0 mt-2 shadow-xl" ref={menuRef}>
                     <div className="flex flex-col text-bark font-bold py-3">
                         <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">      
+                            <Link href="/" className="w-full flex flex-row gap-x-4 items-center">
+                                <Image src="/home.svg" width={24} height={24} alt="" className=""></Image>              
+                                Home
+                                </Link>
+                        </div>
+                        <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">      
                             <Link href="#about" className="w-full flex flex-row gap-x-4 items-center">
                                 <Image src="/aboutme.svg" width={24} height={24} alt="" className=""></Image>              
                                 About

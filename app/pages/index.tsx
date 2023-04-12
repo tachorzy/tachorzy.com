@@ -97,7 +97,7 @@ export default function Home() {
           </div>
 
         </section>
-        <section className="h-screen">
+        <section id="about" className="h-screen">
           {/* ABOUT ME */}
           <div className={ManropeMedium.className}>
             <span className={ManropeExtraBold.className}>
@@ -112,8 +112,17 @@ export default function Home() {
               <h4 className="text-9xl text-dusty relative bottom-0 right-0 mr-12 mb-12 select-none z-0">١</h4>
             </div>
           </div> */}
-        </section>
-        <span id="about"></span>
+        </section>        
+        <div className="relative bottom-0 w-full h-1/6 opacity-0 hover:opacity-100 animation-fade">
+            <div className="absolute bottom-0 inset-x-[47%] mb-12">
+              <button className="p-3 hover:bg-sandstone hover:bg-opacity-5 rounded-full cursor-pointer select-none align-middle">
+                <Link href="#about">
+                  <Image src="/chevron.svg" width={28} height={28} alt="" className="cursor-pointer"/>
+                </Link>
+              </button>
+            </div>
+          </div>
+      
       </main>
     </>
   )
