@@ -89,7 +89,7 @@ export default function Home() {
               <div className="flex flex-col">
                 {Array.from(skills.entries()).map(([programmingLanguage, description]) => {
                     return(
-                    <div className="flex flex-col">
+                    <div className="flex flex-col flex-wrap ">
                       <details key={programmingLanguage} className="">
                         <summary className="text-dusty lg:xl:text-2xl text-lg font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-1.5 mt-0.5 cursor-pointer list-none">
                           <div className="flex items-center">
@@ -105,8 +105,8 @@ export default function Home() {
           </div>
 
           <div className={AmiriBoldSlanted.className}>
-            <div className="flex flex-row justify-end h-full align-bottom">
-              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto align-bottom select-none z-0">٢</h4>
+            <div className="flex flex-row flex-wrap justify-end h-full align-bottom">
+              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٢</h4>
             </div>
           </div>
         </section>
