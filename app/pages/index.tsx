@@ -105,13 +105,13 @@ export default function Home() {
             </span>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">I'm an aspiring web-developer with a tireless passion for front-end development. With that passion, I continously drive myself to garner new knowledge and experience.</p>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">Over the years, I've discovered my strengths in component-based development. I've built scalable applications, created inviting user interfaces, and enabled polished user experiences. All of which you can find on this portfolio.</p>
-            <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5"></p>
+            <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5 mb-48"></p>
           </div>
-          {/* <div className={AmiriBoldSlanted.className}>
-            <div className="flex flex-col justify-end h-full">
-              <h4 className="text-9xl text-dusty relative bottom-0 right-0 mr-12 mb-12 select-none z-0">١</h4>
+          <div className={AmiriBoldSlanted.className}>
+            <div className="flex flex-row justify-end h-full align-bottom">
+              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto align-bottom select-none z-0">١</h4>
             </div>
-          </div> */}
+          </div>
         </section>        
         <div className="relative bottom-0 w-full h-1/6 opacity-0 hover:opacity-100 animation-fade">
             <div className="absolute bottom-0 inset-x-[47%] mb-12">
