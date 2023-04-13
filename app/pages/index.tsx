@@ -3,15 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import localFont from '@next/font/local'
-import NavBar from '../components/navbar'
 import SocialsTray from '../components/socialsTray'
 import HamburgerMenu from '../components/hamburgerMenu'
+import NextPageButton from '../components/nextPageButton'
 import { skills } from '../lib/skills'
-
-
-// const aswaq = localFont({
-//   src: '../fonts/Aswaq-Regular.ttf',
-// })
 
 export const ManropeExtraBold = localFont({
   src: '../public/fonts/Manrope/Manrope-ExtraBold.otf',
@@ -60,9 +55,37 @@ export default function Home() {
             <SocialsTray></SocialsTray>
           </div>
 
-          {/* <div className={ManropeMedium.className}>
+          <div className="flex flex-col justify-end">
+            <Image src="/T.png" width={100} height={100} className="absolute right-0 bottom-0 mr-12 mb-12 select-none z-0" alt=""></Image>
+          </div>
+          <div className="mt-[19rem]">
+            <NextPageButton nextPageReference={'#about'}></NextPageButton>
+          </div>
+        </section>
+
+        <section id="about" className="h-screen">
+          {/* ABOUT ME */}
+          <div className={ManropeMedium.className}>
             <span className={ManropeExtraBold.className}>
-              <h3 className="text-dusty lg:xl:text-6xl text-3xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-6 mt-4">Skills</h3>
+              <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-36 mt-18">About Me</h3>
+            </span>
+            <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">I'm an aspiring web-developer with a tireless passion for front-end development. With that passion, I continously drive myself to garner new knowledge and experience.</p>
+            <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">Over the years, I've discovered my strengths in component-based development. I've built scalable applications, created inviting user interfaces, and enabled polished user experiences. All of which you can find on this portfolio.</p>
+            <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5 mb-52"></p>
+          </div>
+          <div className={AmiriBoldSlanted.className}>
+            <div className="flex flex-row justify-end h-full align-bottom">
+              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto align-bottom select-none z-0">١</h4>
+            </div>
+          </div>
+        </section>        
+        
+        <NextPageButton nextPageReference={'#skills'}></NextPageButton>
+
+        <section id="skills" className="h-screen">
+          <div className={ManropeMedium.className}>
+            <span className={ManropeExtraBold.className}>
+              <h3 className="text-dusty lg:xl:text-6xl text-3xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-36 mt-18">Skills</h3>
               <div className="flex flex-col">
                 {Array.from(skills.entries()).map(([programmingLanguage, description]) => {
                     return(
@@ -78,52 +101,19 @@ export default function Home() {
                       </details>
                     </div>)})}
               </div>
-
             </span>
-          </div> */}
-
-          <div className="flex flex-col justify-end">
-            <Image src="/T.png" width={100} height={100} className="absolute right-0 bottom-0 mr-12 mb-12 select-none z-0" alt=""></Image>
           </div>
 
-          <div className="absolute bottom-0 w-full h-1/6 opacity-0 hover:opacity-100 animation-fade">
-            <div className="absolute bottom-0 inset-x-[47%] mb-12">
-              <button className="p-3 hover:bg-sandstone hover:bg-opacity-5 rounded-full cursor-pointer select-none align-middle">
-                <Link href="#about">
-                  <Image src="/chevron.svg" width={28} height={28} alt="" className="cursor-pointer"/>
-                </Link>
-              </button>
-            </div>
-          </div>
-
-        </section>
-        <section id="about" className="h-screen">
-          {/* ABOUT ME */}
-          <div className={ManropeMedium.className}>
-            <span className={ManropeExtraBold.className}>
-              <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-36 mt-18">About Me</h3>
-            </span>
-            <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">I'm an aspiring web-developer with a tireless passion for front-end development. With that passion, I continously drive myself to garner new knowledge and experience.</p>
-            <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">Over the years, I've discovered my strengths in component-based development. I've built scalable applications, created inviting user interfaces, and enabled polished user experiences. All of which you can find on this portfolio.</p>
-            <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5 mb-48"></p>
-          </div>
           <div className={AmiriBoldSlanted.className}>
             <div className="flex flex-row justify-end h-full align-bottom">
-              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto align-bottom select-none z-0">١</h4>
+              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto align-bottom select-none z-0">٢</h4>
             </div>
           </div>
-        </section>        
-        <div className="relative bottom-0 w-full h-1/6 opacity-0 hover:opacity-100 animation-fade">
-            <div className="absolute bottom-0 inset-x-[47%] mb-12">
-              <button className="p-3 hover:bg-sandstone hover:bg-opacity-5 rounded-full cursor-pointer select-none align-middle">
-                <Link href="#about">
-                  <Image src="/chevron.svg" width={28} height={28} alt="" className="cursor-pointer"/>
-                </Link>
-              </button>
-            </div>
-          </div>
+        </section>
+
+        <NextPageButton nextPageReference={'#projects'}></NextPageButton>
       
-      </main>
+        </main>
     </>
   )
 }
