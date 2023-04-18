@@ -17,7 +17,7 @@ const HamburgerMenu = () => {
     return (
         <div>
             <button className="p-1.5 hover:bg-sandstone hover:bg-opacity-5 rounded-2xl cursor-pointer select-none border-transparent    " onClick = {() => setIsActive(!isActive)}>
-                <Image src="/hamburger-menu-Sandstone.svg" width={48} height={42} alt="" className="cursor-pointer"/>
+                <Image src="/hamburger-menu-sandstone.svg" width={48} height={42} alt="" className="cursor-pointer"/>
             </button>
             { isActive ? (
                 <div className="w-56 h-58 self-end mr-12 bg-sandstone rounded-2xl fixed right-0 mt-2 shadow-xl" ref={menuRef}>
