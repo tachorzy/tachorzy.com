@@ -7,13 +7,13 @@ const SkillsTray = () => {
 
     return(
         <div className={ManropeRegular.className}>
-              <div className="flex flex-row flex-wrap gap-x-8">
+              <div className="flex flex-row flex-wrap gap-x-8 self-end">
                 {Array.from(skills.entries()).map(([programmingLanguage, description]) => {
                     return(
                         <div>
                             <div className="flex flex-col items-center">
-                                <Image src ={`/${programmingLanguage}.svg`} width={38} height={38} alt=""></Image>
-                                <h1 className="text-dusty leading-relaxed pt-2 font-semibold select-none">{programmingLanguage}</h1>
+                                <Image src ={`/${programmingLanguage}.svg`} width={38} height={38} alt="" className="select-none"></Image>
+                                <h1 className="text-dusty leading-relaxed pt-2 font-semibold">{programmingLanguage}</h1>
                             </div>
                         </div>
                 )})}
