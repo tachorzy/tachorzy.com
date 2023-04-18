@@ -4,6 +4,7 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import localFont from '@next/font/local'
 import SocialsTray from '../components/socialsTray'
+import SkillsTray from '../components/skillsTray'
 import HamburgerMenu from '../components/hamburgerMenu'
 import NextPageButton from '../components/nextPageButton'
 import { skills } from '../lib/skills'
@@ -71,7 +72,10 @@ export default function Home() {
             </span>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">I'm an aspiring web-developer with a tireless passion for front-end development. With that passion, I continously drive myself to garner new knowledge and experience.</p>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">Over the years, I've discovered my strengths in component-based development. I've built scalable applications, created inviting user interfaces, and enabled polished user experiences. All of which you can find on this portfolio.</p>
-            <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5 mb-52"></p>
+            <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5"></p>
+          </div>
+          <div className="pt-3 lg:xl:ml-24 ml-12 mb-32">
+            <SkillsTray></SkillsTray>
           </div>
           <div className={AmiriBoldSlanted.className}>
             <div className="flex flex-row justify-end h-full align-bottom">
@@ -83,27 +87,6 @@ export default function Home() {
         <NextPageButton nextPageReference={'#skills'}></NextPageButton>
 
         <section id="skills" className="h-screen">
-          <div className={ManropeMedium.className}>
-            <span className={ManropeExtraBold.className}>
-              <h3 className="text-dusty lg:xl:text-6xl text-3xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-36 mt-18">Skills</h3>
-              <div className="flex flex-col">
-                {Array.from(skills.entries()).map(([programmingLanguage, description]) => {
-                    return(
-                    <div className="flex flex-col flex-wrap ">
-                      <details key={programmingLanguage} className="">
-                        <summary className="text-dusty lg:xl:text-2xl text-lg font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-1.5 mt-0.5 cursor-pointer list-none">
-                          <div className="flex items-center">
-                            <Image src ={`/${programmingLanguage}.png`} width={30} height={30} alt=""></Image>
-                            <h4 className="pl-2.5 text-sandstone">{programmingLanguage}</h4>
-                          </div>
-                        </summary>
-                        <p className="text-sandstone lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-3.5 mt-3 cursor-pointer inline">{description}</p>
-                      </details>
-                    </div>)})}
-              </div>
-            </span>
-          </div>
-
           <div className={AmiriBoldSlanted.className}>
             <div className="flex flex-row flex-wrap justify-end h-full align-bottom">
               <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٢</h4>
