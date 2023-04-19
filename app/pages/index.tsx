@@ -74,7 +74,7 @@ export default function Home() {
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">Over the years, I've built scalable applications, created responsive user interfaces, and enabled user-focused experiences. All of which you can find here on this portfolio.</p>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">The technologies that I use:</p>
           </div>
-          <div className="pt-3 lg:xl:ml-24 ml-12 mb-24">
+          <div className="pt-3 lg:xl:ml-24 ml-12 mb-[7.5rem]">
             <SkillsTray></SkillsTray>
           </div>
           <div className={AmiriBoldSlanted.className}>
@@ -84,9 +84,14 @@ export default function Home() {
           </div>
         </section>        
         
-        <NextPageButton nextPageReference={'#skills'}></NextPageButton>
+        <NextPageButton nextPageReference={'#projects'}></NextPageButton>
 
-        <section id="skills" className="h-screen">
+        <section id="projects" className="h-screen">
+          <span className={ManropeExtraBold.className}>
+            <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 lg:xl:mt-32 mt-4">Projects</h3>
+          </span>
+          
+          {/*Page Number*/}
           <div className={AmiriBoldSlanted.className}>
             <div className="flex flex-row flex-wrap justify-end h-full align-bottom">
               <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٢</h4>
@@ -94,8 +99,15 @@ export default function Home() {
           </div>
         </section>
 
-        <NextPageButton nextPageReference={'#projects'}></NextPageButton>
-      
+        <NextPageButton nextPageReference={'#travel'}></NextPageButton>      
+        
+        <section id="travel">
+        <div className={AmiriBoldSlanted.className}>
+            <div className="flex flex-row flex-wrap justify-end h-full align-bottom">
+              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٣</h4>
+            </div>
+          </div>
+        </section>
         </main>
     </>
   )
