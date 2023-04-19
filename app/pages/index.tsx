@@ -7,6 +7,8 @@ import SocialsTray from '../components/socialsTray'
 import SkillsTray from '../components/skillsTray'
 import HamburgerMenu from '../components/hamburgerMenu'
 import NextPageButton from '../components/nextPageButton'
+import ProjectCard from '../components/projectCard'
+import { projects } from '../lib/projects'
 import { skills } from '../lib/skills'
 
 export const ManropeExtraBold = localFont({
@@ -90,6 +92,8 @@ export default function Home() {
           <span className={ManropeExtraBold.className}>
             <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 lg:xl:mt-32 mt-4">Projects</h3>
           </span>
+
+          {/* <ProjectCard name={}></ProjectCard> */}
           
           {/*Page Number*/}
           <div className={AmiriBoldSlanted.className}>
