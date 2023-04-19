@@ -35,12 +35,6 @@ const HamburgerMenu = () => {
                                 </Link>
                         </div>
                         <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">
-                            <Link href="#skills" className="w-full flex flex-row gap-x-4 items-center">
-                                <Image src="/skills.svg" width={24} height={24} alt="" className=""></Image>              
-                                Skills
-                            </Link>
-                        </div>
-                        <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">
                             <Link href="#project" className="w-full flex flex-row gap-x-4 items-center">
                                 <Image src="/projects.svg" width={24} height={24} alt="" className=""></Image>              
                                 Projects
