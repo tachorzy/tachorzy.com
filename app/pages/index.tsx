@@ -90,10 +90,18 @@ export default function Home() {
 
         <section id="projects" className="h-screen">
           <span className={ManropeExtraBold.className}>
-            <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 lg:xl:mt-32 mt-4">Projects</h3>
+            <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 lg:xl:mt-32 mt-4 pb-12">Projects</h3>
           </span>
 
-          {/* <ProjectCard name={}></ProjectCard> */}
+          <div className="flex flex-row flex-wrap">
+            {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
+                return(
+                  <div className="pb-12 lg:xl:ml-24 ml-12">
+                    <ProjectCard name={projectName} imageUrl={projectDetails.imageUrl} hostLink={projectDetails.hostLink} gitHubLink={projectDetails.gitHubLink}></ProjectCard>
+                  </div>
+              )
+              })}
+          </div>
           
           {/*Page Number*/}
           <div className={AmiriBoldSlanted.className}>

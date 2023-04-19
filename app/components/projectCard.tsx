@@ -13,7 +13,7 @@ const ProjectCard = (props: project) => {
     return(
         <div className={ManropeExtraBold.className}>
             <Link href={props.hostLink != null ? props.hostLink : props.gitHubLink}>
-                <Image src={props.imageUrl} height={30} width={40} alt=""></Image>
+                <Image src={props.imageUrl} height={300} width={300} alt=""></Image>
             </Link>
         </div>
     );
