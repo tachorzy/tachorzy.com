@@ -51,7 +51,7 @@ export default function Home() {
         <section className = "h-screen">
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
-            <h1 className="text-dusty lg:xl:text-landingPageTitle text-5xl font-bold lg:xl:ml-24 ml-12 pt-10 lg:xl:mt-20 mt-12">Tariq<br/>Achor Zyad</h1>
+            <h1 className=" text-dusty lg:xl:text-landingPageTitle text-5xl font-bold lg:xl:ml-24 ml-12 lg:xl:mt-28 mt-16">Tariq<br/>Achor Zyad</h1>
             <h2 className="text-sandstone lg:xl:text-2xl text-lg font-bold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a 3rd year Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
 
             {/* SOCIALS TRAY */}
@@ -70,7 +70,7 @@ export default function Home() {
           {/* ABOUT ME */}
           <div className={ManropeMedium.className}>
             <span className={ManropeExtraBold.className}>
-              <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-36 mt-18">About Me</h3>
+              <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-32 mt-18">About Me</h3>
             </span>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">I'm a developer with a tireless passion for full-stack web development. With that passion, I continously drive myself to learn, grow and create.</p>
             <p className="text-sandstone lg:xl:text-xl font-medium lg:xl:ml-24 ml-12 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose w-3/5">Over the years, I've built scalable applications, created responsive user interfaces, and enabled user-focused experiences. All of which you can find here on this portfolio.</p>
@@ -80,7 +80,7 @@ export default function Home() {
             <SkillsTray></SkillsTray>
           </div>
           <div className={AmiriBoldSlanted.className}>
-            <div className="flex flex-row justify-end h-full align-bottom">
+            <div className="grid grid-rows-1 justify-end h-full align-bottom">
               <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto align-bottom select-none z-0">١</h4>
             </div>
           </div>
@@ -90,23 +90,23 @@ export default function Home() {
 
         <section id="projects" className="h-screen">
           <span className={ManropeExtraBold.className}>
-            <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 lg:xl:mt-32 mt-4 pb-12">Projects</h3>
+            <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 lg:xl:mt-32 mt-4 mb-7">Projects</h3>
           </span>
-
-          <div className="flex flex-row flex-wrap">
+          {/* 
+          <div>
             {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
                 return(
-                  <div className="pb-12 lg:xl:ml-24 ml-12">
+                  <div className="lg:xl:ml-24 ml-12">
                     <ProjectCard name={projectName} imageUrl={projectDetails.imageUrl} hostLink={projectDetails.hostLink} gitHubLink={projectDetails.gitHubLink}></ProjectCard>
                   </div>
               )
               })}
-          </div>
+          </div> */}
           
           {/*Page Number*/}
           <div className={AmiriBoldSlanted.className}>
-            <div className="flex flex-row flex-wrap justify-end h-full align-bottom">
-              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٢</h4>
+            <div className="grid grid-rows-1 justify-end h-full align-bottom">
+              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-64 align-bottom select-none z-0">٢</h4>
             </div>
           </div>
         </section>
@@ -115,8 +115,8 @@ export default function Home() {
         
         <section id="travel">
         <div className={AmiriBoldSlanted.className}>
-            <div className="flex flex-row flex-wrap justify-end h-full align-bottom">
-              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٣</h4>
+            <div className="grid grid-rows-1 justify-end h-full align-bottom">
+              {/* <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٣</h4> */}
             </div>
           </div>
         </section>

@@ -12,8 +12,8 @@ interface project{
 const ProjectCard = (props: project) => {
     return(
         <div className={ManropeExtraBold.className}>
-            <Link href={props.hostLink != null ? props.hostLink : props.gitHubLink}>
-                <Image src={props.imageUrl} height={300} width={300} alt=""></Image>
+            <Link href={props.hostLink != null ? props.hostLink : props.gitHubLink} target="_blank" className="w-full h-full">
+                <Image src={props.imageUrl} height={370} width={370} alt="" className="rounded-3xl"></Image>
             </Link>
         </div>
     );
