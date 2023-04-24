@@ -43,12 +43,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={ManropeRegular.className}>
-          <div className="fixed top-0 right-0 mt-12 mr-12 mb-2 z-50">
+          <div className="fixed top-0 right-0 mt-12 mr-12 z-50">
             <HamburgerMenu/>
           </div>
         </div>
 
-        <section className = "h-screen">
+        <section className = "relative h-screen">
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
             <h1 className=" text-dusty lg:xl:text-landingPageTitle text-5xl font-bold lg:xl:ml-24 ml-12 lg:xl:mt-28 mt-16">Tariq<br/>Achor Zyad</h1>
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="h-screen">
+        <section id="about" className="relative h-screen mt-24">
           {/* ABOUT ME */}
           <div className={ManropeMedium.className}>
             <span className={ManropeExtraBold.className}>
@@ -87,38 +87,45 @@ export default function Home() {
         </section>        
         
         <NextPageButton nextPageReference={'#projects'}></NextPageButton>
+  
+          <section id="projects" className="relative h-screen mt-24">
+            <span className={ManropeExtraBold.className}>
+              <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 lg:xl:mt-32 mt-4 mb-7">Projects</h3>
+            </span>
+            
+            {/* <div>
+              {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
+                  return(
+                    <div className="lg:xl:ml-24 ml-12">
+                      <ProjectCard name={projectName} imageUrl={projectDetails.imageUrl} hostLink={projectDetails.hostLink} gitHubLink={projectDetails.gitHubLink}></ProjectCard>
+                    </div>
+                )
+                })}
+            </div> */}
 
-        <section id="projects" className="h-screen">
-          <span className={ManropeExtraBold.className}>
-            <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 lg:xl:mt-32 mt-4 mb-7">Projects</h3>
-          </span>
-          {/* 
-          <div>
-            {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
-                return(
-                  <div className="lg:xl:ml-24 ml-12">
-                    <ProjectCard name={projectName} imageUrl={projectDetails.imageUrl} hostLink={projectDetails.hostLink} gitHubLink={projectDetails.gitHubLink}></ProjectCard>
-                  </div>
-              )
-              })}
-          </div> */}
-          
-          {/*Page Number*/}
+            <div className="lg:xl:ml-24 ml-12">
+              <Link href="https://www.gibraltr.com/" target="_blank">
+                <Image src="/passport_akira.gif" height={370} width={370} alt="" className="rounded-3xl"></Image>
+              </Link>
+            </div>
+
+
+
+            
+            <div className={AmiriBoldSlanted.className}>
+              <div className="grid grid-rows-1 justify-end h-full align-bottom">
+                <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-64 align-bottom select-none z-0">٢</h4>
+              </div>
+            </div>
+          </section>
+
+          <NextPageButton nextPageReference={'#travel'}></NextPageButton>      
+        <section id="travel" className="relative h-screen">
           <div className={AmiriBoldSlanted.className}>
-            <div className="grid grid-rows-1 justify-end h-full align-bottom">
-              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-64 align-bottom select-none z-0">٢</h4>
+              <div className="grid grid-rows-1 justify-end h-full align-bottom">
+                <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٣</h4>
+              </div>
             </div>
-          </div>
-        </section>
-
-        <NextPageButton nextPageReference={'#travel'}></NextPageButton>      
-        
-        <section id="travel">
-        <div className={AmiriBoldSlanted.className}>
-            <div className="grid grid-rows-1 justify-end h-full align-bottom">
-              {/* <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٣</h4> */}
-            </div>
-          </div>
         </section>
         </main>
     </>
