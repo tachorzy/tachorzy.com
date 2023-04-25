@@ -8,6 +8,7 @@ import SkillsTray from '../components/skillsTray'
 import HamburgerMenu from '../components/hamburgerMenu'
 import NextPageButton from '../components/nextPageButton'
 import ProjectCard from '../components/projectCard'
+import ProjectTechTray from '../components/projectTechTray'
 import { projects } from '../lib/projects'
 import { skills } from '../lib/skills'
 
@@ -102,19 +103,37 @@ export default function Home() {
                 )
                 })}
             </div> */}
+            <div className="flex flex-col gap-y-4">
+              <div className="lg:xl:ml-24 ml-12 flex flex-row">
+                <Link href="https://www.gibraltr.com/" target="_blank">
+                  <Image src="/passport_akira.gif" height={370} width={370} alt="" className="rounded-3xl"></Image>
+                </Link>
 
-            <div className="lg:xl:ml-24 ml-12">
-              <Link href="https://www.gibraltr.com/" target="_blank">
-                <Image src="/passport_akira.gif" height={370} width={370} alt="" className="rounded-3xl"></Image>
-              </Link>
+                <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
+                  <div className={ManropeMedium.className}>
+                    <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">Gibraltr</h5>
+                    <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">With ever changing travel restrictions worldwide, it's always best to know before you go. And that's why Gibraltr provides a robust search engine for travelers to find visa requirements. Available for 197+ countries! With over 30,000 possible results!</p>
+                    <ProjectTechTray techStack={["Next.js", "Javascript", "TailwindCSS"]}></ProjectTechTray>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:xl:ml-24 ml-12">
+                <Link href="https://www.gibraltr.com/" target="_blank">
+                  <Image src="/plane-aesthetic.gif" height={370} width={370} alt="" className="rounded-3xl"></Image>
+                </Link>
+              </div>
+
+              <div className="lg:xl:ml-24 ml-12">
+                <Link href="https://www.gibraltr.com/" target="_blank">
+                  <Image src="/studyAesthetic.gif" height={370} width={370} alt="" className="rounded-3xl"></Image>
+                </Link>
+              </div>
             </div>
-
-
-
             
             <div className={AmiriBoldSlanted.className}>
               <div className="grid grid-rows-1 justify-end h-full align-bottom">
-                <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-64 align-bottom select-none z-0">٢</h4>
+                <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mb-48 align-bottom select-none z-0">٢</h4>
               </div>
             </div>
           </section>
