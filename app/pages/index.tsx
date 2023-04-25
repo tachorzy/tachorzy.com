@@ -106,7 +106,7 @@ export default function Home() {
           <div className="flex flex-col gap-y-10 mt-2">
             <div className="lg:xl:ml-24 ml-12 flex flex-row">
               <Link href="https://www.gibraltr.com/" target="_blank">
-                <Image src="/passport_akira.gif" height={370} width={370} alt="" className="rounded-3xl"></Image>
+                <Image src="/passport_akira.gif" height={370} width={370} alt="" className="rounded-3xl sepia-75 contrast-125 hover:sepia-0  hover:contrast-100 duration-1000 bg-blend-luminosity"></Image>
               </Link>
 
               <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
@@ -120,17 +120,22 @@ export default function Home() {
 
             <div className="lg:xl:ml-24 ml-12 flex flex-row">
               <Link href="https://github.com/tachorzy/COSC4353-Project-Group39" target="_blank">
-                <Image src="/aestheticGear.gif" height={370} width={370} alt="" className="rounded-3xl"></Image>
+                <Image src="/aestheticGear.gif" height={370} width={370} alt="" className="rounded-3xl sepia-75 contrast-125 hover:sepia-0 hover:contrast-100  duration-1000 bg-blend-luminosity"></Image>
               </Link>
 
               <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
                 <div className={ManropeMedium.className}>
                   <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">Pipeline</h5>
-                  <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">A web app made to enable companies to calculate fuel quotes, keep track of their orders, and manage their fuel purchases. Pipeline provides an approachable user-friendly design for any business to navigate, whether small or large.</p>
+                  <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">A web app made to enable companies in calculating fuel quotes, keeping track of orders, and managing fuel purchases. Pipeline provides an approachable user-friendly design for any business to navigate, whether small or large.</p>
                   <ProjectTechTray techStack={["Next.js", "Javascript", "TailwindCSS"]}></ProjectTechTray>
                 </div>
               </div>
+            </div>
+            <div className={AmiriBoldSlanted.className}>
+              <div className="grid grid-rows-1 justify-end h-full align-bottom">
+                <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٢</h4>
               </div>
+            </div>
           </div>
             {/* <div className="lg:xl:ml-24 ml-12">
             <Link href="" target="_blank">

@@ -22,6 +22,9 @@ module.exports = {
       fontSize:{
         'landingPageTitle': '5.5rem',
       },
+      sepia:{
+        '75':  '.75'
+      }
     },  
   },
   plugins: [
