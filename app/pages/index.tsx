@@ -89,9 +89,9 @@ export default function Home() {
         
         <NextPageButton nextPageReference={'#projects'}></NextPageButton>
   
-        <section id="projects" className="relative h-screen mt-24">
+        <section className="relative h-screen">
           <span className={ManropeExtraBold.className}>
-            <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 lg:xl:mt-32 mt-4 mb-7">Projects</h3>
+            <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-12 lg:xl:mt-32 mt-4 pt-20 mb-7"  id="projects">Projects</h3>
           </span>
           
           {/* <div>
@@ -104,9 +104,16 @@ export default function Home() {
               })}
           </div> */}
           <div className="flex flex-col gap-y-10 mt-2">
-            <div className="lg:xl:ml-24 ml-12 flex flex-row">
+            <div className="lg:xl:ml-24 ml-12 flex md:lg:xl:2xl:flex-row flex-col">
               <Link href="https://www.gibraltr.com/" target="_blank">
-                <Image src="/passport_akira.gif" height={370} width={370} alt="" className="rounded-3xl sepia-75 contrast-125 hover:sepia-0  hover:contrast-100 duration-1000 bg-blend-luminosity"></Image>
+                <Image 
+                  src="/passport_akira.gif" 
+                  height="0" 
+                  width="0" 
+                  alt="" 
+                  className="rounded-3xl sepia-75 contrast-125 hover:sepia-0  hover:contrast-100 duration-1000 bg-blend-luminosity w-80 h-44"
+                >
+                </Image>
               </Link>
 
               <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
@@ -118,9 +125,16 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:xl:ml-24 ml-12 flex flex-row">
+            <div className="lg:xl:ml-24 ml-12 flex md:lg:xl:2xl:flex-row flex-col">
+              
               <Link href="https://github.com/tachorzy/COSC4353-Project-Group39" target="_blank">
-                <Image src="/aestheticGear.gif" height={370} width={370} alt="" className="rounded-3xl sepia-75 contrast-125 hover:sepia-0 hover:contrast-100  duration-1000 bg-blend-luminosity"></Image>
+                <Image 
+                  src="/aestheticGear.gif" 
+                  width="0"
+                  height="0"
+                  alt=""
+                  className="rounded-3xl sepia-75 contrast-125 hover:sepia-0 hover:contrast-100 duration-1000 bg-blend-luminosity w-80 h-44"
+                ></Image>
               </Link>
 
               <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
@@ -131,12 +145,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            
             <div className={AmiriBoldSlanted.className}>
               <div className="grid grid-rows-1 justify-end h-full align-bottom">
-                <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٢</h4>
+                  <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto align-bottom select-none z-0">٢</h4>
               </div>
             </div>
           </div>
+
             {/* <div className="lg:xl:ml-24 ml-12">
             <Link href="" target="_blank">
                 <Image src="/plane-aesthetic.gif" height={370} width={370} alt="" className="rounded-3xl"></Image>
