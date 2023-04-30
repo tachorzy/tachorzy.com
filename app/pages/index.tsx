@@ -129,7 +129,7 @@ export default function Home() {
               
               <Link href="https://github.com/tachorzy/COSC4353-Project-Group39" target="_blank">
                 <Image 
-                  src="/aestheticGear.gif" 
+                  src="/art-artist.gif" 
                   width="0"
                   height="0"
                   alt=""
@@ -139,8 +139,8 @@ export default function Home() {
 
               <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
                 <div className={ManropeMedium.className}>
-                  <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">Pipeline</h5>
-                  <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">A web app made to enable companies in calculating fuel quotes, keeping track of orders, and managing fuel purchases. Pipeline provides an approachable user-friendly design for any business to navigate, whether small or large.</p>
+                  <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">This Portfolio</h5>
+                  <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">I've designed this page as a space to present my professional work in one accessible place. And in this one place, my passions for web-development and design meet. Here you'll find my projects, blogs, and where to best reach me.</p>
                   <ProjectTechTray techStack={["Next.js", "Javascript", "TailwindCSS"]}></ProjectTechTray>
                 </div>
               </div>
@@ -174,9 +174,9 @@ export default function Home() {
 
               <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
                 <div className={ManropeMedium.className}>
-                  <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">Dunya</h5>
-                  <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">Having no prior experience with React at all, me and my team jumped straight in at the CodeRED Hackathon 2022. The result was Dunya, a personalized flight search engine to meets your travel preferences. Factors such as budget, interests, and more narrow down your search results.</p>
-                  <ProjectTechTray techStack={["Next.js", "TypeScript", "TailwindCSS"]}></ProjectTechTray>
+                  <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">Pipeline</h5>
+                    <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">A web app made to enable companies in calculating fuel quotes, keeping track of orders, and managing fuel purchases. Pipeline provides an approachable user-friendly design for any business to navigate, whether small or large.</p>
+                    <ProjectTechTray techStack={["Next.js", "JavaScript", "TailwindCSS"]}></ProjectTechTray>
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@ export default function Home() {
               <div className="lg:xl:ml-24 ml-12 flex md:lg:xl:2xl:flex-row flex-col">
                 <Link href="https://github.com/tachorzy/CodeRED-Redacted" target="_blank">
                   <Image 
-                    src="/art-artist.gif" 
+                    src="/aestheticGear.gif" 
                     height="0" 
                     width="0"
                     alt="" 
@@ -195,9 +195,9 @@ export default function Home() {
                </Link>
                 <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
                   <div className={ManropeMedium.className}>
-                    <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">This Portfolio</h5>
-                    <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">I've designed this page as a space to present my professional work in one accessible place. And in this one place, my passions for web-development and design meet. Here you'll find my projects, blogs, and where to best reach me.</p>
-                    <ProjectTechTray techStack={["Next.js", "TypeScript", "TailwindCSS"]}></ProjectTechTray>
+                  <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">Dunya</h5>
+                  <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">Having no prior experience with React at all, me and my team jumped straight in at the CodeRED Hackathon 2022. The result was Dunya, a personalized flight search engine to meets your travel preferences. Factors such as budget, interests, and more narrow down your search results.</p>
+                  <ProjectTechTray techStack={["Next.js", "TypeScript", "TailwindCSS"]}></ProjectTechTray>
                   </div>
                 </div>
               </div>
