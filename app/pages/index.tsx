@@ -82,7 +82,7 @@ export default function Home() {
           </div>
           <div className={AmiriBoldSlanted.className}>
             <div className="grid grid-rows-1 justify-end h-full align-bottom">
-              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto align-bottom select-none z-0">١</h4>
+              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-5 align-bottom select-none z-0">١</h4>
             </div>
           </div>
         </section>        
@@ -148,7 +148,7 @@ export default function Home() {
             
             <div className={AmiriBoldSlanted.className}>
               <div className="grid grid-rows-1 justify-end h-full align-bottom">
-                  <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto mb-2 align-bottom select-none z-0">٢</  h4>
+                  <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 align-bottom select-none z-0">٢</  h4>
               </div>
             </div>
           </div>
@@ -205,7 +205,7 @@ export default function Home() {
           </div>
           <div className={AmiriBoldSlanted.className}>
             <div className="grid grid-rows-1 justify-end h-full align-bottom">
-                <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-16 align-bottom select-none z-0">٣</  h4>
+                <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-20 align-bottom select-none z-0">٣</  h4>
             </div>
           </div>
         </section>
