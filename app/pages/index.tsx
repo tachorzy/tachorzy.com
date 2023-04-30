@@ -148,29 +148,65 @@ export default function Home() {
             
             <div className={AmiriBoldSlanted.className}>
               <div className="grid grid-rows-1 justify-end h-full align-bottom">
-                  <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto align-bottom select-none z-0">٢</h4>
+                  <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-auto mb-2 align-bottom select-none z-0">٢</  h4>
               </div>
             </div>
           </div>
+        </section>
+        
+        <div className="mt-32">
+            <NextPageButton nextPageReference={'#more-projects'}></NextPageButton>
+        </div>
 
-            {/* <div className="lg:xl:ml-24 ml-12">
-            <Link href="" target="_blank">
-                <Image src="/plane-aesthetic.gif" height={370} width={370} alt="" className="rounded-3xl"></Image>
+        <section id="more-projects" className = "relative h-screen">
+          <div className="flex flex-col gap-y-10 lg:xl:mt-32 mt-4">
+            <div className="lg:xl:ml-24 ml-12 flex md:lg:xl:2xl:flex-row flex-col">
+              <Link href="https://github.com/tachorzy/CodeRED-Redacted" target="_blank">
+                <Image 
+                  src="/plane-aesthetic.gif" 
+                  height="0" 
+                  width="0"
+                  alt="" 
+                  className="rounded-3xl sepia-[.9] contrast-125 hover:sepia-0 hover:contrast-100 duration-1000 bg-blend-luminosity w-80 h-44"
+                >
+                </Image>
               </Link>
 
               <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
                 <div className={ManropeMedium.className}>
                   <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">Dunya</h5>
-                  <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed"></p>
+                  <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">Having no prior experience with React at all, me and my team jumped straight in at the CodeRED Hackathon 2022. The result was Dunya, a personalized flight search engine to meets your travel preferences. Factors such as budget, interests, and more narrow down your search results.</p>
                   <ProjectTechTray techStack={["Next.js", "TypeScript", "TailwindCSS"]}></ProjectTechTray>
                 </div>
               </div>
-            </div> */}
-        </section>
-        
-        <section className = "relative h-screen">
-          <div>
-
+            </div>
+            
+            <div className="flex flex-col gap-y-10 mt-2">
+              <div className="lg:xl:ml-24 ml-12 flex md:lg:xl:2xl:flex-row flex-col">
+                <Link href="https://github.com/tachorzy/CodeRED-Redacted" target="_blank">
+                  <Image 
+                    src="/art-artist.gif" 
+                    height="0" 
+                    width="0"
+                    alt="" 
+                    className="rounded-3xl sepia-[.75] contrast-125 hover:sepia-0 hover:contrast-100 duration-1000 bg-blend-luminosity w-80 h-44"
+                  >
+                  </Image>
+               </Link>
+                <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
+                  <div className={ManropeMedium.className}>
+                    <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">This Portfolio</h5>
+                    <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">I've designed this page as a space to present my professional work in one accessible place. And in this one place, my passions for web-development and design meet. Here you'll find my projects, blogs, and where to best reach me.</p>
+                    <ProjectTechTray techStack={["Next.js", "TypeScript", "TailwindCSS"]}></ProjectTechTray>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={AmiriBoldSlanted.className}>
+            <div className="grid grid-rows-1 justify-end h-full align-bottom">
+                <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-16 align-bottom select-none z-0">٣</  h4>
+            </div>
           </div>
         </section>
 
@@ -179,10 +215,10 @@ export default function Home() {
           <NextPageButton nextPageReference={'#travel'}></NextPageButton>      
         <section id="travel" className="relative h-screen">
           <div className={AmiriBoldSlanted.className}>
-              <div className="grid grid-rows-1 justify-end h-full align-bottom">
-                <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mr-12 mt-52 align-bottom select-none z-0">٣</h4>
-              </div>
-            </div>
+            {/* <div className="grid grid-rows-1 justify-end h-full align-bottom">
+              <h4 className="text-9xl text-dusty relative ml-auto bottom-0 mt-16 marker:mr-12 mt-auto align-bottom select-none z-0">٣</h4>
+            </div> */}
+          </div>
         </section>
         </main>
     </>
