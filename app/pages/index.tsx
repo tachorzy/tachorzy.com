@@ -195,9 +195,9 @@ export default function Home() {
                </Link>
                 <div className="flex flex-col w-1/2 lg:xl:ml-9 ml-4 ">
                   <div className={ManropeMedium.className}>
-                  <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">Dunya</h5>
-                  <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">Having no prior experience with React at all, me and my team jumped straight in at the CodeRED Hackathon 2022. The result was Dunya, a personalized flight search engine to meets your travel preferences. Factors such as budget, interests, and more narrow down your search results.</p>
-                  <ProjectTechTray techStack={["Next.js", "TypeScript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/CodeRED-Redacted"} hostingLink={""}></ProjectTechTray>
+                  <h5 className="text-mudbrick lg:xl:text-4xl text-3xl font-extrabold">Battuta.ai</h5>
+                  <p className="text-mudbrick lg:xl:text-base text-sm font-medium pt-2 pb-3 leading-relaxed">Often times, itinerary planning can leave you lost in a myriad of options. Battuta is a website powered by OpenAI to provide you streamlined itineraries. Pick a starting city, list anywhere else you'll like to visit and Battuta will create a painless itinerary for your dream trip.</p>
+                  <ProjectTechTray techStack={["Next.js", "TypeScript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/battuta.ai"} hostingLink={""}></ProjectTechTray>
                   </div>
                 </div>
               </div>
