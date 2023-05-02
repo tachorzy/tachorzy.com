@@ -89,7 +89,7 @@ export default function Home() {
         
         <NextPageButton nextPageReference={'#projects'}></NextPageButton>
   
-        <section className="relative h-screen mb-72">
+        <section className="relative h-screen md:lg:xl:2xl:mb-0 mb-80">
           <span className={ManropeExtraBold.className}>
             <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-10 lg:xl:mt-32 mt-4 pt-20 mb-7"  id="projects">Projects</h3>
           </span>
