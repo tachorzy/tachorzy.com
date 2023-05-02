@@ -44,7 +44,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={ManropeRegular.className}>
-          <div className="fixed top-0 right-0 mt-12 mr-12 z-50">
+          <div className="fixed top-0 right-0 md:lg:xl:2xl:mt-12 md:lg:xl:2xl:mr-12 mt-6 mr-6 z-50">
             <HamburgerMenu/>
           </div>
         </div>
@@ -52,8 +52,8 @@ export default function Home() {
         <section className = "relative h-screen">
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
-            <h1 className=" text-dusty lg:xl:text-landingPageTitle text-5xl font-bold lg:xl:ml-24 ml-12 lg:xl:mt-28 mt-16">Tariq<br/>Achor Zyad</h1>
-            <h2 className="text-sandstone lg:xl:text-2xl text-lg font-bold lg:xl:ml-24 ml-12 pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a 3rd year Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
+            <h1 className=" text-dusty lg:xl:2xl:text-landingPageTitle md:text-5xl text-5xl font-bold md:lg:xl:ml-24 ml-10 md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
+            <h2 className="text-sandstone lg:xl:text-2xl md:text-lg text-landingPageBioMobile font-bold md:lg:xl:ml-24 ml-10 pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a 3rd year Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
 
             {/* SOCIALS TRAY */}
             <SocialsTray></SocialsTray>

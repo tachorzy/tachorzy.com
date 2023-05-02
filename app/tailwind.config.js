@@ -21,6 +21,7 @@ module.exports = {
       },
       fontSize:{
         'landingPageTitle': '5.5rem',
+        'landingPageBioMobile': '0.85rem'
       },
       sepia:{
         '75':  '.75'
