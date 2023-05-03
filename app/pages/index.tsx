@@ -64,7 +64,7 @@ export default function Home() {
             <Image src="/T.png" width={60} height={60} className="absolute right-0 bottom-0 mr-12 mb-12 select-none z-0 md:hidden block" alt=""></Image>
 
           </div>
-          <div className="mt-[19rem]">
+          <div className="mt-[19rem] hidden md:block">
             <NextPageButton nextPageReference={'#about'}></NextPageButton>
           </div>
         </section>
@@ -89,7 +89,9 @@ export default function Home() {
           </div>
         </section>        
         
-        <NextPageButton nextPageReference={'#projects'}></NextPageButton>
+        <div className="hidden md:block">
+          <NextPageButton nextPageReference={'#projects'}></NextPageButton>
+        </div>
   
         <section className="relative h-screen md:lg:xl:2xl:mb-0 mb-80">
           <span className={ManropeExtraBold.className}>
@@ -156,7 +158,7 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="mt-32">
+        <div className="mt-32 hidden md:block">
             <NextPageButton nextPageReference={'#more-projects'}></NextPageButton>
         </div>
 
@@ -212,9 +214,10 @@ export default function Home() {
           </div>
         </section>
 
-
-
+        <div className="hidden md:block">
           <NextPageButton nextPageReference={'#travel'}></NextPageButton>      
+        </div>
+
         <section id="travel" className="relative h-screen">
           <div className={AmiriBoldSlanted.className}>
             {/* <div className="grid grid-rows-1 justify-end h-full align-bottom">
