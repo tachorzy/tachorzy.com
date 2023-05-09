@@ -52,8 +52,8 @@ export default function Home() {
         <section className = "relative h-screen">
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
-            <h1 className=" text-dusty lg:xl:2xl:text-landingPageTitle md:text-5xl text-5xl font-bold md:lg:xl:ml-24 ml-10 md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
-            <h2 className="text-sandstone lg:xl:text-2xl md:text-lg text-landingPageBioMobile font-bold md:lg:xl:ml-24 ml-10 pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a 3rd year Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
+            <h1 className=" text-dusty lg:xl:2xl:text-landingPageTitle md:text-7xl text-5xl font-bold md:lg:xl:ml-24 ml-10 md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
+            <h2 className="text-sandstone lg:xl:text-2xl md:text-2xl text-landingPageBioMobile font-bold md:lg:xl:ml-24 ml-10 pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a 3rd year Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
 
             {/* SOCIALS TRAY */}
             <SocialsTray></SocialsTray>
@@ -75,9 +75,9 @@ export default function Home() {
             <span className={ManropeExtraBold.className}>
               <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-10 pt-2 lg:xl:mt-32 mt-24">About Me</h3>
             </span>
-            <p className="text-sandstone lg:xl:2xl:text-xl text-xs font-medium lg:xl:ml-24 ml-10 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose md:lg:xl:2xl:w-3/5 w-4/5 ">I'm a developer with a tireless passion for full-stack web development. With that passion, I continously drive myself to learn, grow and create.</p>
-            <p className="text-sandstone lg:xl:2xl:text-xl text-xs font-medium lg:xl:ml-24 ml-10 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose md:lg:xl:2xl:w-3/5 w-4/5">Over the years, I've built scalable applications, created responsive user interfaces, and enabled user-focused experiences. All of which you can find here on this portfolio.</p>
-            <p className="text-sandstone lg:xl:2xl:text-xl text-xs font-medium lg:xl:ml-24 ml-10 pt-1.5 lg:xl:mt-2 mt-1.5 leading-loose md:lg:xl:2xl:w-3/5 w-4/5">The technologies that I use:</p>
+            <p className="text-sandstone lg:max-2xl:text-xl md:text-lg text-xs font-medium lg:xl:ml-24 ml-10 pt-1.5 lg:max-xl:mt-2 mt-1.5 leading-loose md:max-2xl:w-3/5 w-4/5 ">I'm a developer with a tireless passion for full-stack web development. With that passion, I continously drive myself to learn, grow and create.</p>
+            <p className="text-sandstone lg:max-2xl:text-xl md:text-lg text-xs font-medium lg:xl:ml-24 ml-10 pt-1.5 lg:max-xl:mt-2 mt-1.5 leading-loose md:max-2xl:w-3/5 w-4/5">Over the years, I've built scalable applications, created responsive user interfaces, and enabled user-focused experiences. All of which you can find here on this portfolio.</p>
+            <p className="text-sandstone lg:max-2xl:text-xl md:text-lg text-xs font-medium lg:xl:ml-24 ml-10 pt-1.5 lg:max-xl:mt-2 mt-1.5 leading-loose md:max-2xl:w-3/5 w-4/5">The technologies that I use:</p>
           </div>
           <div className="pt-3 lg:xl:ml-24 ml-10 mb-[7.5rem]">
             <SkillsTray></SkillsTray>
