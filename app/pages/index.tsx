@@ -120,7 +120,7 @@ export default function Home() {
                 </Image>
               </Link>
 
-              <div className="flex flex-col md:lg:xl:2xl:w-1/2 w-5/6 lg:xl:ml-9">
+              <div className="flex flex-col md:lg:xl:2xl:w-1/2 w-5/6">
                 <div className={ManropeMedium.className}>
                   <h5 className="text-mudbrick lg:xl:text-4xl text-2xl font-extrabold md:lg:xl:2xl:pt-0 pt-3">Gibraltr</h5>
                   <p className="text-mudbrick lg:xl:text-base text-xs  font-medium pt-2 pb-3 leading-relaxed">With ever changing travel restrictions worldwide, it's always best to know before you go. And that's why Gibraltr provides a robust search engine for travelers to find visa requirements. Available for 197+ countries! With over 30,000 possible results!</p>
@@ -141,7 +141,7 @@ export default function Home() {
                 ></Image>
               </Link>
 
-              <div className="flex flex-col md:lg:xl:2xl:w-1/2 w-5/6 lg:xl:ml-9">
+              <div className="flex flex-col md:lg:xl:2xl:w-1/2 w-5/6">
                 <div className={ManropeMedium.className}>
                   <h5 className="text-mudbrick lg:xl:text-4xl text-2xl font-extrabold md:lg:xl:2xl:pt-0 pt-3">This Portfolio</h5>
                   <p className="text-mudbrick lg:xl:text-base text-xs  font-medium pt-2 pb-3 leading-relaxed">I've designed this page as a space to present my professional work in one accessible place. And in this one place, my passions for web-development and design meet. Here you'll find my projects, blogs, and where to best reach me.</p>
@@ -176,7 +176,7 @@ export default function Home() {
                 </Image>
               </Link>
 
-              <div className="flex flex-col md:lg:xl:2xl:w-1/2 w-5/6 lg:xl:ml-9 ">
+              <div className="flex flex-col md:lg:xl:2xl:w-1/2 w-5/6">
                 <div className={ManropeMedium.className}>
                   <h5 className="text-mudbrick lg:xl:text-4xl text-2xl font-extrabold md:lg:xl:2xl:pt-0 pt-3">Pipeline</h5>
                     <p className="text-mudbrick lg:xl:text-base text-xs font-medium pt-2 pb-3 leading-relaxed">A web app made to enable companies in calculating fuel quotes, keeping track of orders, and managing fuel purchases. Pipeline provides an approachable user-friendly design for any business to navigate, whether small or large.</p>
@@ -186,7 +186,7 @@ export default function Home() {
             </div>
             
             <div className="flex flex-col gap-y-10 mt-2">
-              <div className="lg:xl:ml-24 ml-10 flex md:lg:xl:2xl:flex-row flex-col">
+              <div className="md:max-2xl:ml-24 ml-10 flex md:lg:xl:2xl:flex-row flex-col">
                 <Link href="https://github.com/tachorzy/battuta.ai" target="_blank">
                   <Image 
                     src="/plane-aesthetic.gif" 
@@ -197,7 +197,7 @@ export default function Home() {
                   >
                   </Image>
                </Link>
-                <div className="flex flex-col md:lg:xl:2xl:w-1/2 w-5/6 lg:xl:ml-9">
+                <div className="flex flex-col md:lg:xl:2xl:w-1/2 w-5/6">
                   <div className={ManropeMedium.className}>
                   <h5 className="text-mudbrick lg:xl:text-4xl text-2xl font-extrabold md:lg:xl:2xl:pt-0 pt-3">Battuta.ai</h5>
                   <p className="text-mudbrick lg:xl:text-base text-xs font-medium pt-2 pb-3 leading-relaxed">Often times, itinerary planning can leave you lost in a myriad of options. Battuta is a website powered by OpenAI to provide you streamlined itineraries. Pick a starting city, list anywhere else you'll like to visit and Battuta will create a painless itinerary for your dream trip.</p>
