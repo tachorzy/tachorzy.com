@@ -156,11 +156,12 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="mt-14 hidden md:max-2xl:block">
+            <NextPageButton nextPageReference={'#more-projects'}></NextPageButton>
+          </div>
         </section>
         
-        <div className="hidden md:max-2xl:block">
-          <NextPageButton nextPageReference={'#more-projects'}></NextPageButton>
-        </div>
 
         <section id="more-projects" className = "relative h-screen">
           <div className="flex flex-col gap-y-10 lg:xl:mt-32">
