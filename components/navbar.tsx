@@ -1,6 +1,6 @@
 import NavStyle from '../styles/NavBarStyle.module.css'
 import Image from 'next/image'
-import { ManropeExtraBold } from '../pages'
+import { ManropeExtraBold } from '../app/page'
 
 const NavBar = () => {
 

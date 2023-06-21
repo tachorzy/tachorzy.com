@@ -1,3 +1,5 @@
+"use client"; //client component
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useRef } from 'react'

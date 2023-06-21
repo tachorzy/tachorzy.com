@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ManropeExtraBold } from '../pages'
+import { ManropeExtraBold } from '../app/page'
 
 interface project{
     name: string;

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ManropeExtraBold, ManropeMedium, ManropeRegular } from '../pages'
+import { ManropeExtraBold, ManropeMedium, ManropeRegular } from '../lib/localNextFonts'
 
 interface projectTechStack {
     techStack: string[]

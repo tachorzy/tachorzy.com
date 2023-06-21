@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import localFont from '@next/font/local'
 import SocialsTray from '../components/socialsTray'
 import SkillsTray from '../components/skillsTray'
 import HamburgerMenu from '../components/hamburgerMenu'
@@ -11,26 +10,7 @@ import ProjectCard from '../components/projectCard'
 import ProjectTechTray from '../components/projectTechTray'
 import { projects } from '../lib/projects'
 import { skills } from '../lib/skills'
-
-export const ManropeExtraBold = localFont({
-  src: '../public/fonts/Manrope/Manrope-ExtraBold.otf',
-  weight: '500'
-})
-
-export const ManropeMedium = localFont({
-  src: '../public/fonts/Manrope/Manrope-Medium.otf',
-  weight: '500'
-})
-
-export const AmiriBoldSlanted = localFont({
-  src: '../public/fonts/Amiri/ArbFONTS-Amiri-Boldslanted.ttf',
-  weight: '500'
-})
-
-export const ManropeRegular = localFont({
-  src: '../public/fonts/Manrope/Manrope-Regular.otf',
-  weight: '500'
-})
+import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../lib/localNextFonts'
 
 export default function Home() {
   return (
