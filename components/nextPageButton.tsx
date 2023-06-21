@@ -1,7 +1,7 @@
 import NavStyle from '../styles/NavBarStyle.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ManropeExtraBold } from '../app/page'
+import { ManropeExtraBold } from '../lib/localNextFonts'
 
 interface section{
     nextPageReference: string;

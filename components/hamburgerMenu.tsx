@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useRef } from 'react'
 import { useOnClickOutside } from 'usehooks-ts'
-import LightModeToggle from '../components/lightModeToggle'
+import LightModeToggle from './lightModeToggle'
 
 const HamburgerMenu = () => {
     const [isActive, setIsActive] = useState(false)
