@@ -2,13 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import Logo from '../components/logo'
-import SocialsTray from '../components/socialsTray'
-import SkillsTray from '../components/skillsTray'
+import Logo from '../components/Logo'
+import SectionTitle from '../components/SectionTitle'
+import SocialsTray from '../components/SocialsTray'
+import SkillsTray from '../components/SkillsTray'
 import HamburgerMenu from '../components/HamburgerMenu'
-import NextPageButton from '../components/nextPageButton'
-import ProjectCard from '../components/projectCard'
-import ProjectTechTray from '../components/projectTechTray'
+import NextPageButton from '../components/NextPageButton'
+import ProjectCard from '../components/ProjectCard'
+import ProjectTechTray from '../components/ProjectTechTray'
 import { projects } from '../lib/projects'
 import { skills } from '../lib/skills'
 import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../lib/localNextFonts'
@@ -36,10 +37,7 @@ export default function Home() {
         <section id="about" className="relative h-screen mt-24">
           {/* ABOUT ME */}
           <div className={ManropeMedium.className}>
-            <span className={ManropeExtraBold.className}>
-              <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-10 pt-2 lg:xl:mt-32 mt-24">About Me</h3>
-            </span>
-
+            <SectionTitle title="About Me" className=""/>
             {/* refactor this to remove redundancies: */}
             <div className="text-sandstone lg:max-2xl:text-xl md:text-lg text-xs font-medium lg:xl:ml-24 ml-10 pt-1.5 flex flex-col gap-y-4 lg:max-xl:mt-2 mt-1.5 leading-loose md:max-2xl:w-3/5 w-4/5">
               <p>I'm a developer with a tireless passion for full-stack web development. With that passion, I continously drive myself to learn, grow and create.</p>
@@ -62,11 +60,12 @@ export default function Home() {
           <NextPageButton nextPageReference={'#projects'}/>
         </div>
   
-        <section className="relative h-screen md:lg:xl:2xl:mb-0 mb-80">
-          <span className={ManropeExtraBold.className}>
+        <section id="projects" className="relative h-screen md:lg:xl:2xl:mb-0 mb-80">
+          {/* <span className={ManropeExtraBold.className}>
             <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-10 lg:xl:mt-32 mt-4 pt-20 mb-7"  id="projects">Projects</h3>
-          </span>
-          
+          </span> */}
+
+          <SectionTitle title="Projects" className="mb-7"/>
           {/* <div>
             {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
                 return(
@@ -98,7 +97,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
+            {/* <div className="lg:xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
               
               <Link href="https://github.com/tachorzy/COSC4353-Project-Group39" target="_blank">
                 <Image 
@@ -117,28 +116,7 @@ export default function Home() {
                   <ProjectTechTray techStack={["Next.js", "Javascript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/tachorzy.com"} hostingLink={"https://tachorzy.com/"}/>
                 </div>
               </div>
-            </div>
-            
-            <div className="lg:xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
-              <Link href="https://github.com/tachorzy/CodeRED-Redacted" target="_blank">
-                <Image 
-                  src="/aestheticGear.gif" 
-                  height="0" 
-                  width="0"
-                  alt="" 
-                  className="rounded-3xl sepia-[.9] contrast-125 hover:sepia-0 hover:contrast-100 duration-1000 bg-blend-luminosity md:max-2xl:w-80 md:max-2xl:h-44 w-56 h-36"
-                >
-                </Image>
-              </Link> 
-
-              <div className="flex flex-col md:max-2xl:w-1/2 w-5/6 md:max-2xl:ml-10">
-                <div className={ManropeMedium.className}>
-                  <h5 className="text-mudbrick lg:xl:text-4xl text-2xl font-extrabold md:max-2xl:pt-0 pt-3">Pipeline</h5>
-                    <p className="text-mudbrick lg:xl:text-base text-xs font-medium pt-2 pb-3 leading-relaxed">A web app made to enable companies in calculating fuel quotes, keeping track of orders, and managing fuel purchases. Pipeline provides an approachable user-friendly design for any business to navigate, whether small or large.</p>
-                    <ProjectTechTray techStack={["Next.js", "JavaScript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/COSC4353-Project-Group39"} hostingLink={""}/>
-                </div>
-              </div>
-            </div>
+            </div> */}
 
             <div className="md:max-2xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
                 <Link href="https://github.com/tachorzy/battuta.ai" target="_blank">
@@ -154,7 +132,7 @@ export default function Home() {
               <div className="flex flex-col md:max-2xl:w-1/2 w-5/6 md:max-2xl:ml-10">
                 <div className={ManropeMedium.className}>
                 <h5 className="text-mudbrick lg:xl:text-4xl text-2xl font-extrabold md:max-2xl:pt-0 pt-3">Battuta.ai</h5>
-                <p className="text-mudbrick lg:xl:text-base text-xs font-medium pt-2 pb-3 leading-relaxed">Often times, itinerary planning can leave you lost in a myriad of options. Battuta is a website powered by OpenAI to provide you streamlined itineraries. Pick a starting city, list anywhere else you'll like to visit and Battuta will create a painless itinerary for your dream trip.</p>
+                <p className="text-mudbrick lg:xl:text-base text-xs font-medium pt-2 pb-3 leading-relaxed">Often times, itinerary planning can leave you lost in a myriad of options. Battuta is a website powered by OpenAI to provide you streamlined itineraries. Pick a starting city, list anywhere else you'll like to visit and Battuta will create you a painless itinerary.</p>
                 <ProjectTechTray techStack={["Next.js", "TypeScript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/battuta.ai"} hostingLink={""}/>
                 </div>
               </div>

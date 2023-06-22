@@ -5,6 +5,9 @@ import HamburgerMenu from '../components/HamburgerMenu'
 export const metadata = {
   title: 'Tariq Achor Zyad',
   description: 'Web Developer',
+  icons: {
+    icon: '/T.png',
+  },
 }
 
 export default function RootLayout({
