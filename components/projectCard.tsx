@@ -14,7 +14,7 @@ interface project{
 const ProjectCard = (props: project) => {
     return(
         <div className={ManropeExtraBold.className}>
-            <div className="mt-0.5 w-80  h-[19.25rem] bg-metal rounded-md shadow-2xl">
+            <div className="mt-0.5 w-80  h-[19.25rem] bg-metal rounded-md shadow-2xl hover:scale-105 duration-500">
                 <Link href={props.hostLink != null ? props.hostLink : props.gitHubLink} target="_blank" className="w-full h-2/3">
                     <Image src={props.imageUrl} height="0" width={350} alt="" className="rounded-t-md h-[56%]"></Image>
                 </Link>
@@ -27,12 +27,7 @@ const ProjectCard = (props: project) => {
                         <ProjectTechTray techStack={["Next.js", "Javascript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/Gibraltr"} hostingLink={"https://www.gibraltr.com/"}/>
                     </div>
                 </div>
-
             </div>
-
-            {/* <Link href={props.hostLink != null ? props.hostLink : props.gitHubLink} target="_blank" className="w-full h-full">
-                <Image src={props.imageUrl} height={350} width={350} alt="" className="rounded-3xl"></Image>
-            </Link> */}
         </div>
     );
 }
