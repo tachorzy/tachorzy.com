@@ -66,20 +66,18 @@ export default function Home() {
           <div  className="">
             <SectionTitle title="Projects" className="mb-7"/>
           </div>
-          {/* <div>
-            {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
-                return(
-                  <div className="lg:xl:ml-24 ml-12">
-                    <ProjectCard name={projectName} imageUrl={projectDetails.imageUrl} hostLink={projectDetails.hostLink} gitHubLink={projectDetails.gitHubLink}></ProjectCard>
-                  </div>
-              )
-              })}
-          </div> */}
+
           
-          <div className="flex flex-col gap-y-10 mt-2 md:max-2xl:ml-24 ml-10">
+          <div className="flex flex-col gap-y-12 mt-2 md:max-2xl:ml-24 ml-10">
             <div className="flex flex-col md:max-2xl:flex-row gap-y-12 md:max-2xl:gap-x-12 flex-wrap"> 
-              <ProjectCard name="Gibraltr" description="Visa Search Engine" imageUrl='/aesthetic_station.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
-              <ProjectCard name="Battuta.ai" description="AI Itinerary Generator" imageUrl='/aesthetic_travel.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
+
+              {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
+                return(
+                  <ProjectCard name={projectName} description={projectDetails.description}imageUrl={projectDetails.imageUrl} hostLink={projectDetails.hostLink} gitHubLink={projectDetails.gitHubLink}></ProjectCard>
+                )
+              })}
+              {/* <ProjectCard name="Gibraltr" description="Visa Search Engine" imageUrl='/aesthetic_station.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
+              <ProjectCard name="Battuta.ai" description="AI Itinerary Generator" imageUrl='/aesthetic_travel.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard> */}
               {/* <ProjectCard name="test" description="" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard> */}
               {/* <ProjectCard name="test" imageUrl='dasd' ></ProjectCard> */}
             </div>

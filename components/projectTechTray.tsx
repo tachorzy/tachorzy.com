@@ -12,7 +12,7 @@ const ProjectTechTray = (props: projectTechStack) => {
     return(
         <div className="flex flex-row gap-x-3.5 my-3">
             {props.techStack.map((tool, index) => (
-                <Image src={`/icons/${tool}.svg`} width="0" height="0" alt="" className="md:max-2xl:w-6 md:max-2xl:h-6 w-6 h-6"/>
+                <Image src={`/icons/${tool}.svg`} width="0" height="0" alt="language/library/framework icon" className="md:max-2xl:w-6 md:max-2xl:h-6 w-6 h-6"/>
             ))}
             <div className="relative gap-x-3.5">
                 <Link href={props.gitHubLink} className="group absolute align-middle justify-self-end text-dusty hover:text-mudbrick font-semibold md:max-2xl:text-sm text-xxs pt-2 flex-none px-1.5" target="_blank">
