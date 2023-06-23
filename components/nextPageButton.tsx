@@ -13,7 +13,7 @@ const NextPageButton = (props: section) => {
           <div className="absolute bottom-0 inset-x-[47%] mb-12">
             <button className="p-3 hover:bg-opacity-5  cursor-pointer select-none align-middle">
               <Link href={props.nextPageReference}>
-                <Image src="/chevron.svg" width={28} height={28} alt="" className="cursor-pointer"/>
+                <Image src="/icons/chevron.svg" width={28} height={28} alt="" className="cursor-pointer"/>
               </Link>
             </button>
           </div>
