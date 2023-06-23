@@ -26,9 +26,9 @@ const SocialsTray = () => {
             >
                 <Link href="https://github.com/tachorzy" target="_blank">
                     {isHoveringGitHub ? (
-                        <Image src="/GitHub-Mudbrick.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>
+                        <Image src="/icons/GitHub-Mudbrick.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>
                     ) : (
-                        <Image src="/GitHub-Sandstone.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>
+                        <Image src="/icons/GitHub-Sandstone.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>
                     )}
                 </Link>
             </span>
@@ -38,9 +38,9 @@ const SocialsTray = () => {
             >
                 <Link href="https://www.linkedin.com/in/tachorzy/" target="_blank">
                     {isHoveringLinkedIn ? (
-                        <Image src="/LinkedIn-Mudbrick.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>
+                        <Image src="/icons/LinkedIn-Mudbrick.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>
                     ) : (
-                        <Image src="/LinkedIn-Sandstone.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>                    
+                        <Image src="/icons/LinkedIn-Sandstone.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>                    
                     )}
                 </Link>
             </span>
@@ -50,9 +50,9 @@ const SocialsTray = () => {
             >
                 <Link href="/resume/tachorzy_resume_apr_2023.pdf" target="_blank">
                     {isHoveringCV ? (
-                        <Image src="/Resume-Mudbrick.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>
+                        <Image src="/icons/Resume-Mudbrick.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>
                     ) : ( 
-                        <Image src="/Resume-Sandstone.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>
+                        <Image src="/icons/Resume-Sandstone.svg" width="0" height="0" alt="" className="cursor-pointer select-none lg:max-2xl:w-9 lg:max-2xl:h-9 md:w-12 md:h-12 w-6 h-6"></Image>
                     )}
                 </Link>
             </span>

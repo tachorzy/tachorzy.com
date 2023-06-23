@@ -14,11 +14,11 @@ interface project{
 const ProjectCard = (props: project) => {
     return(
         <div className={ManropeExtraBold.className}>
-            <div className="mt-0.5 w-80  h-[19.25rem] bg-metal rounded-xl shadow-2xl">
+            <div className="mt-0.5 w-80  h-[19.25rem] bg-metal rounded-md shadow-2xl">
                 <Link href={props.hostLink != null ? props.hostLink : props.gitHubLink} target="_blank" className="w-full h-2/3">
-                    <Image src={props.imageUrl} height={350} width={350} alt="" className="rounded-t-xl"></Image>
+                    <Image src={props.imageUrl} height="0" width={350} alt="" className="rounded-t-md h-[56%]"></Image>
                 </Link>
-                <div className="justify-center content-center pt-6 px-6">
+                <div className="justify-center content-center pt-4 px-6 pb-1">
                     <p className="text-dusty text-2xl">{props.name}</p>
                     <div className={ManropeExtraBold.className}>
                         <p className="text-mudbrick text-lg">{props.description}</p>
