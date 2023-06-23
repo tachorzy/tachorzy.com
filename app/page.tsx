@@ -79,9 +79,9 @@ export default function Home() {
           
           <div className="flex flex-col gap-y-10 mt-2 md:max-2xl:ml-24 ml-10">
             <div className="flex flex-col md:max-2xl:flex-row gap-y-12 md:max-2xl:gap-x-12 flex-wrap"> 
-              <ProjectCard name="Gibraltr" description="" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
-              <ProjectCard name="Battuta.ai" description="" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
-              <ProjectCard name="test" description="" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
+              <ProjectCard name="Gibraltr" description="Visa Search Engine" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
+              <ProjectCard name="Battuta.ai" description="AI Itinerary Generator" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
+              {/* <ProjectCard name="test" description="" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard> */}
               {/* <ProjectCard name="test" imageUrl='dasd' ></ProjectCard> */}
             </div>
 
