@@ -17,6 +17,7 @@ module.exports = {
         'dusty': '#c4b9a3',
         'sandstone': '#d9cfbd',
         'mudbrick': '#b5aa94',
+        'walnut': '#6C6353',
         'bark': '#5f5646',
       },
       fontSize:{

@@ -22,7 +22,7 @@ export default function Home() {
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
             <h1 className=" text-dusty md:max-2xl:text-landingPageTitle text-5xl font-bold md:lg:xl:ml-24 ml-10 md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
-            <h2 className="text-sandstone lg:xl:text-2xl md:text-2xl text-landingPageBioMobile font-bold md:lg:xl:ml-24 ml-10 pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a 3rd year Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
+            <h2 className="text-sandstone lg:xl:text-2xl md:text-2xl text-landingPageBioMobile font-bold md:lg:xl:ml-24 ml-10 pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a senior Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
             {/* SOCIALS TRAY */}
             <SocialsTray/>
           </div>
@@ -60,12 +60,13 @@ export default function Home() {
           <NextPageButton nextPageReference={'#projects'}/>
         </div>
   
-        <section id="projects" className="relative h-screen md:lg:xl:2xl:mb-0 mb-80">
+        <section id="projects" className="relative h-screen md:lg:xl:2xl:mb-0 mt-0.5 mb-80">
           {/* <span className={ManropeExtraBold.className}>
             <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-10 lg:xl:mt-32 mt-4 pt-20 mb-7"  id="projects">Projects</h3>
           </span> */}
-
-          <SectionTitle title="Projects" className="mb-7"/>
+          <div  className="">
+            <SectionTitle title="Projects" className="mb-7"/>
+          </div>
           {/* <div>
             {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
                 return(
@@ -75,8 +76,18 @@ export default function Home() {
               )
               })}
           </div> */}
-          <div className="flex flex-col gap-y-10 mt-2">
-            <div className="lg:xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
+          
+          <div className="flex flex-col gap-y-10 mt-2 md:max-2xl:ml-24 ml-10">
+            <div className="flex flex-col md:max-2xl:flex-row gap-y-12 md:max-2xl:gap-x-12 flex-wrap"> 
+              <ProjectCard name="Gibraltr" description="" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
+              <ProjectCard name="Battuta.ai" description="" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
+              <ProjectCard name="test" description="" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
+              {/* <ProjectCard name="test" imageUrl='dasd' ></ProjectCard> */}
+            </div>
+
+
+
+            {/* <div className="lg:xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
               <Link href="https://www.gibraltr.com/" target="_blank">
                 <Image 
                   src="/passport_akira.gif" 
@@ -95,7 +106,7 @@ export default function Home() {
                   <ProjectTechTray techStack={["Next.js", "Javascript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/Gibraltr"} hostingLink={"https://www.gibraltr.com/"}/>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* <div className="lg:xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
               
@@ -118,7 +129,7 @@ export default function Home() {
               </div>
             </div> */}
 
-            <div className="md:max-2xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
+            {/* <div className="md:max-2xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
                 <Link href="https://github.com/tachorzy/battuta.ai" target="_blank">
                   <Image 
                     src="/plane-aesthetic.gif" 
@@ -136,7 +147,7 @@ export default function Home() {
                 <ProjectTechTray techStack={["Next.js", "TypeScript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/battuta.ai"} hostingLink={""}/>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* PAGE NUMBER */}
             <div className={AmiriBoldSlanted.className}>
               <div className="grid grid-rows-1 justify-end h-full align-bottom">
