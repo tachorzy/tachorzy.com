@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { skills } from '../lib/skills'
+import { SKILLS } from '../lib/skills'
 import { ManropeRegular } from '../lib/localNextFonts'
 
 const SkillsTray = () => {
@@ -8,7 +8,7 @@ const SkillsTray = () => {
     return(
         <div className={ManropeRegular.className}>
               <div className="flex flex-row flex-wrap md:mt-1 gap-x-7 self-end pt-3 lg:xl:ml-24 ml-10 mb-[7.5rem]">
-                {Array.from(skills.entries()).map(([programmingLanguage, documentation]) => {
+                {Array.from(SKILLS.entries()).map(([programmingLanguage, documentation]) => {
                     return(
                         <div>
                             <div className="flex flex-col group items-center">

@@ -9,8 +9,9 @@ import SkillsTray from '../components/SkillsTray'
 import HamburgerMenu from '../components/HamburgerMenu'
 import NextPageButton from '../components/NextPageButton'
 import ProjectCard from '../components/ProjectCard'
-import { projects } from '../lib/projects'
-import { skills } from '../lib/skills'
+import TravelCountryCard from '../components/TravelCountryCard'
+import { PROJECTS } from '../lib/projects'
+import { PLACES_TRAVELLED } from 'lib/travel'
 import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../lib/localNextFonts'
 
 export default function Home() {
@@ -57,7 +58,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-y-12 mt-2 md:max-2xl:ml-24 ml-10">
             <div className="flex flex-col md:max-2xl:flex-row gap-y-12 md:max-2xl:gap-x-12 flex-wrap"> 
-              {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
+              {Array.from(PROJECTS.entries()).map(([projectName, projectDetails]) => {
                 return(
                   <ProjectCard name={projectName} description={projectDetails.description} imageUrl={projectDetails.imageUrl} techStack={projectDetails.techStack} hostLink={projectDetails.hostLink} gitHubLink={projectDetails.gitHubLink}></ProjectCard>
                 )
@@ -75,7 +76,15 @@ export default function Home() {
         </section>
               
         <section id="travel" className="relative h-screen">
-
+          <SectionTitle title="Travel" className=""/>
+          <div className="flex flex-row flex-wrap aspect-square lg:xl:ml-24 ml-10">
+            {Array.from(PLACES_TRAVELLED.entries()).map(([countryName, countryDetails]) => {
+                return(
+                  <TravelCountryCard name={countryName} imageUrl={countryDetails.imageUrl}/>
+                )
+              }
+            )}
+          </div>
         </section>
         </main>
     </>
