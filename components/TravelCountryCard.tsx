@@ -10,13 +10,9 @@ interface country{
 
 const TravelCountryCard = (props: country) => {
     return(
-        <div className={ManropeExtraBold.className}>
-            <div>
-                <Link href={`/${props.isoCode}/page.tsx`} target="_blank" className="">
-                    <Image src={props.coverImageURL} height={70} width={70} alt={`travel pic from ${props.name}`} className=""></Image>
-                </Link>
-            </div>
-        </div>
+        <Image src={props.coverImageURL} height={150} width={150} alt={`travel pic from ${props.name}`} className=""></Image>
+        // <Link href={`/${props.isoCode}/page.tsx`} target="_blank" className="">
+        // </Link>
     );
 }
 

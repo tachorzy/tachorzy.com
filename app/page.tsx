@@ -9,9 +9,8 @@ import SkillsTray from '../components/SkillsTray'
 import HamburgerMenu from '../components/HamburgerMenu'
 import NextPageButton from '../components/NextPageButton'
 import ProjectCard from '../components/ProjectCard'
-import TravelCountryCard from '../components/TravelCountryCard'
+import TravelCountryCardGrid from 'components/TravelCountryCardGrid'
 import { PROJECTS } from '../lib/projects'
-import { PLACES_TRAVELLED } from 'lib/travel'
 import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../lib/localNextFonts'
 
 export default function Home() {
@@ -78,16 +77,17 @@ export default function Home() {
         <section id="travel" className="relative h-screen">
           <SectionTitle title="Travel" className="mb-7"/>
           <div className="lg:xl:ml-24 ml-10">
-            <div className="grid md:max-2xl:grid-cols-3 md:max-2xl:grid-rows-3 gap-0">
-              {Array.from(PLACES_TRAVELLED.entries()).map(([countryName, countryDetails]) => {
-                  return(
-                    <TravelCountryCard name={countryName} isoCode={countryDetails.isoCode} coverImageURL={countryDetails.coverImageURL}/>
-                  )
-                }
-              )}
+              <TravelCountryCardGrid/>
+          </div>
+
+          {/* PAGE NUMBER */}
+          <div className={AmiriBoldSlanted.className}>
+            <div className="grid grid-rows-1 justify-end h-full align-bottom">
+                <h4 className="lg:max-2xl:text-9xl text-8xl text-dusty relative ml-auto bottom-0 mr-12 align-bottom select-none z-0">٣</h4>
             </div>
           </div>
         </section>
+
         </main>
     </>
   )
