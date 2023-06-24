@@ -77,13 +77,15 @@ export default function Home() {
               
         <section id="travel" className="relative h-screen">
           <SectionTitle title="Travel" className="mb-7"/>
-          <div className="flex flex-row flex-wrap aspect-square lg:xl:ml-24 ml-10">
-            {Array.from(PLACES_TRAVELLED.entries()).map(([countryName, countryDetails]) => {
-                return(
-                  <TravelCountryCard name={countryName} isoCode={countryDetails.isoCode} coverImageURL={countryDetails.coverImageURL}/>
-                )
-              }
-            )}
+          <div className="lg:xl:ml-24 ml-10">
+            <div className="grid md:max-2xl:grid-cols-3 md:max-2xl:grid-rows-3 gap-0">
+              {Array.from(PLACES_TRAVELLED.entries()).map(([countryName, countryDetails]) => {
+                  return(
+                    <TravelCountryCard name={countryName} isoCode={countryDetails.isoCode} coverImageURL={countryDetails.coverImageURL}/>
+                  )
+                }
+              )}
+            </div>
           </div>
         </section>
         </main>
