@@ -28,9 +28,7 @@ export default function Home() {
 
           <Logo/>
 
-          <div className="mt-[19rem] lg:mt-[21.5rem] hidden md:max-2xl:block">
-            <NextPageButton nextPageReference={'#about'}/>
-          </div>
+          <NextPageButton nextPageReference={'#about'} margin={"mt-[19rem] lg:mt-[21.5rem]"}/>
         </section>
 
         <section id="about" className="relative h-screen mt-24">
@@ -53,16 +51,10 @@ export default function Home() {
           </div>
         </section>        
         
-        <div className="hidden md:max-2xl:block">
-          <NextPageButton nextPageReference={'#projects'}/>
-        </div>
-  
+        <NextPageButton nextPageReference={'#projects'} margin={""}/>  
         <section id="projects" className="relative h-screen md:lg:xl:2xl:mb-0 mt-0.5 mb-80">
-          <div  className="">
-            <SectionTitle title="Projects" className="mb-7"/>
-          </div>
+          <SectionTitle title="Projects" className="mb-7"/>
 
-          
           <div className="flex flex-col gap-y-12 mt-2 md:max-2xl:ml-24 ml-10">
             <div className="flex flex-col md:max-2xl:flex-row gap-y-12 md:max-2xl:gap-x-12 flex-wrap"> 
               {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
@@ -79,9 +71,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="hidden md:max-2xl:block">
-            <NextPageButton nextPageReference={'#travel'}/>
-          </div>
+          <NextPageButton nextPageReference={'#travel'} margin={"mt-[5.4rem]"}/>
         </section>
               
         <section id="travel" className="relative h-screen">
