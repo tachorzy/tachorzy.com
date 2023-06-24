@@ -80,7 +80,7 @@ export default function Home() {
           <div className="flex flex-row flex-wrap aspect-square lg:xl:ml-24 ml-10">
             {Array.from(PLACES_TRAVELLED.entries()).map(([countryName, countryDetails]) => {
                 return(
-                  <TravelCountryCard name={countryName} imageUrl={countryDetails.imageUrl}/>
+                  <TravelCountryCard name={countryName} isoCode={countryDetails.isoCode} coverImageURL={countryDetails.coverImageURL}/>
                 )
               }
             )}

@@ -1,11 +1,13 @@
-export const PLACES_TRAVELLED = new Map();
 
-PLACES_TRAVELLED.set("The Netherlands", ["Amsterdam"])
-PLACES_TRAVELLED.set("Greece", ["Athens"])
-PLACES_TRAVELLED.set("Palestine", ["Jerusalem", "Bethlehem", "Battir", "Dheisha", "Ramallah", "Nablus"])
-PLACES_TRAVELLED.set("Jordan", ["Amman", "Wadi Musa"])
-PLACES_TRAVELLED.set("Lebanon", ["Beirut", "Chouf", "Aannaya", "Batroun", "Byblos", "Tripoli", "Bcharre"])
-PLACES_TRAVELLED.set("Mexico", ["CDMX", "Taxco"])
-PLACES_TRAVELLED.set("Türkiye", ["İstanbul", "Urfa", "Diyarbakır", "Mardin"])
-PLACES_TRAVELLED.set("Iraq", ["Baghdad", "Erbil"])
-PLACES_TRAVELLED.set("Egypt", ["Cairo"])
+export const PLACES_TRAVELLED: Map<string, { coverImageURL: string, isoCode: string, destinations: string[] }> = new Map([
+        ["The Netherlands", { coverImageURL: "", isoCode: "NL", destinations: ["Amsterdam"] }],
+        ["Greece", { coverImageURL: "", isoCode: "GR", destinations: ["Athens"] }],
+        ["Palestine",{ coverImageURL: "", isoCode: "PS", destinations: ["Jerusalem", "Bethlehem", "Battir", "Dheisha", "Ramallah", "Nablus"] }],
+        ["Jordan", { coverImageURL: "", isoCode: "JO", destinations: ["Amman", "Wadi Musa"] }],
+        ["Lebanon", { coverImageURL: "", isoCode: "LB", destinations: ["Beirut", "Chouf", "Aannaya", "Batroun", "Byblos", "Tripoli", "Bcharre"] }],
+        ["Mexico", { coverImageURL: "", isoCode: "MX", destinations: ["CDMX", "Taxco"] }],
+        ["Türkiye", { coverImageURL: "", isoCode: "TR", destinations: ["İstanbul", "Urfa", "Diyarbakır", "Mardin"] }],
+        ["Iraq", { coverImageURL: "", isoCode: "IQ", destinations: ["Baghdad", "Erbil"] }],
+        ["Egypt", { coverImageURL: "", isoCode: "EG", destinations: ["Cairo"] }
+    ]
+]);
