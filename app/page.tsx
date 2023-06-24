@@ -43,9 +43,7 @@ export default function Home() {
               <p>Over the years, I've built scalable applications, created responsive user interfaces, and enabled user-focused experiences. All of which you can find here on this portfolio.</p>
               <p>The technologies that I use:</p>
             </div>
-            <div className="pt-3 lg:xl:ml-24 ml-10 mb-[7.5rem]">
-              <SkillsTray/>
-            </div>
+            <SkillsTray/>
           </div>
 
           <div className={AmiriBoldSlanted.className}>
@@ -60,9 +58,6 @@ export default function Home() {
         </div>
   
         <section id="projects" className="relative h-screen md:lg:xl:2xl:mb-0 mt-0.5 mb-80">
-          {/* <span className={ManropeExtraBold.className}>
-            <h3 className="text-dusty lg:xl:text-6xl text-2xl font-extrabold lg:xl:ml-24 ml-10 lg:xl:mt-32 mt-4 pt-20 mb-7"  id="projects">Projects</h3>
-          </span> */}
           <div  className="">
             <SectionTitle title="Projects" className="mb-7"/>
           </div>
@@ -70,81 +65,13 @@ export default function Home() {
           
           <div className="flex flex-col gap-y-12 mt-2 md:max-2xl:ml-24 ml-10">
             <div className="flex flex-col md:max-2xl:flex-row gap-y-12 md:max-2xl:gap-x-12 flex-wrap"> 
-
               {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
                 return(
                   <ProjectCard name={projectName} description={projectDetails.description} imageUrl={projectDetails.imageUrl} techStack={projectDetails.techStack} hostLink={projectDetails.hostLink} gitHubLink={projectDetails.gitHubLink}></ProjectCard>
                 )
               })}
-              {/* <ProjectCard name="Gibraltr" description="Visa Search Engine" imageUrl='/aesthetic_station.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
-              <ProjectCard name="Battuta.ai" description="AI Itinerary Generator" imageUrl='/aesthetic_travel.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard> */}
-              {/* <ProjectCard name="test" description="" imageUrl='/passport_akira.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard> */}
-              {/* <ProjectCard name="test" imageUrl='dasd' ></ProjectCard> */}
             </div>
 
-
-
-            {/* <div className="lg:xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
-              <Link href="https://www.gibraltr.com/" target="_blank">
-                <Image 
-                  src="/passport_akira.gif" 
-                  height="0" 
-                  width="0" 
-                  alt="" 
-                  className="rounded-3xl sepia-75 contrast-125 hover:sepia-0 hover:contrast-100 duration-1000 bg-blend-luminosity md:max-2xl:w-80 md:max-2xl:h-44 w-56 h-36"
-                >
-                </Image>
-              </Link>
-
-              <div className="flex flex-col md:max-2xl:w-1/2 w-5/6 md:max-2xl:ml-10">
-                <div className={ManropeMedium.className}>
-                  <h5 className="text-mudbrick lg:xl:text-4xl text-2xl font-extrabold md:max-2xl:pt-0 pt-3">Gibraltr</h5>
-                  <p className="text-mudbrick lg:xl:text-base text-xs  font-medium pt-2 pb-3 leading-relaxed">With ever changing travel restrictions worldwide, it's always best to know before you go. And that's why Gibraltr provides a robust search engine for travelers to find visa requirements. Available for 197+ countries! With over 30,000 possible results!</p>
-                  <ProjectTechTray techStack={["Next.js", "Javascript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/Gibraltr"} hostingLink={"https://www.gibraltr.com/"}/>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="lg:xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
-              
-              <Link href="https://github.com/tachorzy/COSC4353-Project-Group39" target="_blank">
-                <Image 
-                  src="/art-artist.gif" 
-                  width="0"
-                  height="0"
-                  alt=""
-                  className="rounded-3xl sepia-75 contrast-125 hover:sepia-0 hover:contrast-100 duration-1000 bg-blend-luminosity md:max-2xl:w-80 md:max-2xl:h-44 w-56 h-36"
-                ></Image>
-              </Link>
-
-              <div className="flex flex-col md:max-2xl:w-1/2 w-5/6 md:max-2xl:ml-10">
-                <div className={ManropeMedium.className}>
-                  <h5 className="text-mudbrick lg:xl:text-4xl text-2xl font-extrabold md:max-2xl:pt-0 pt-3">This Portfolio</h5>
-                  <p className="text-mudbrick lg:xl:text-base text-xs  font-medium pt-2 pb-3 leading-relaxed">I've designed this page as a space to present my professional work in one accessible place. And in this one place, my passions for web-development and design meet. Here you'll find my projects, blogs, and where to best reach me.</p>
-                  <ProjectTechTray techStack={["Next.js", "Javascript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/tachorzy.com"} hostingLink={"https://tachorzy.com/"}/>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="md:max-2xl:ml-24 ml-10 flex md:max-2xl:flex-row flex-col">
-                <Link href="https://github.com/tachorzy/battuta.ai" target="_blank">
-                  <Image 
-                    src="/plane-aesthetic.gif" 
-                    height="0" 
-                    width="0"
-                    alt="" 
-                    className="rounded-3xl sepia-[.75] contrast-125 hover:sepia-0 hover:contrast-100 duration-1000 bg-blend-luminosity md:max-2xl:w-80 md:max-2xl:h-44 w-56 h-36"
-                  >
-                  </Image>
-               </Link>
-              <div className="flex flex-col md:max-2xl:w-1/2 w-5/6 md:max-2xl:ml-10">
-                <div className={ManropeMedium.className}>
-                <h5 className="text-mudbrick lg:xl:text-4xl text-2xl font-extrabold md:max-2xl:pt-0 pt-3">Battuta.ai</h5>
-                <p className="text-mudbrick lg:xl:text-base text-xs font-medium pt-2 pb-3 leading-relaxed">Often times, itinerary planning can leave you lost in a myriad of options. Battuta is a website powered by OpenAI to provide you streamlined itineraries. Pick a starting city, list anywhere else you'll like to visit and Battuta will create you a painless itinerary.</p>
-                <ProjectTechTray techStack={["Next.js", "TypeScript", "TailwindCSS"]} gitHubLink={"https://github.com/tachorzy/battuta.ai"} hostingLink={""}/>
-                </div>
-              </div>
-            </div> */}
             {/* PAGE NUMBER */}
             <div className={AmiriBoldSlanted.className}>
               <div className="grid grid-rows-1 justify-end h-full align-bottom">
@@ -152,8 +79,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="hidden md:max-2xl:block">
+            <NextPageButton nextPageReference={'#travel'}/>
+          </div>
         </section>
-      
+              
         <section id="travel" className="relative h-screen">
 
         </section>
