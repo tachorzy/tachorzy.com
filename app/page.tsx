@@ -76,7 +76,7 @@ export default function Home() {
         </section>
               
         <section id="travel" className="relative h-screen">
-          <SectionTitle title="Travel" className=""/>
+          <SectionTitle title="Travel" className="mb-7"/>
           <div className="flex flex-row flex-wrap aspect-square lg:xl:ml-24 ml-10">
             {Array.from(PLACES_TRAVELLED.entries()).map(([countryName, countryDetails]) => {
                 return(
