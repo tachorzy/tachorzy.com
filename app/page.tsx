@@ -73,7 +73,7 @@ export default function Home() {
 
               {Array.from(projects.entries()).map(([projectName, projectDetails]) => {
                 return(
-                  <ProjectCard name={projectName} description={projectDetails.description}imageUrl={projectDetails.imageUrl} hostLink={projectDetails.hostLink} gitHubLink={projectDetails.gitHubLink}></ProjectCard>
+                  <ProjectCard name={projectName} description={projectDetails.description} imageUrl={projectDetails.imageUrl} techStack={projectDetails.techStack} hostLink={projectDetails.hostLink} gitHubLink={projectDetails.gitHubLink}></ProjectCard>
                 )
               })}
               {/* <ProjectCard name="Gibraltr" description="Visa Search Engine" imageUrl='/aesthetic_station.gif' hostLink='https://www.gibraltr.com/' gitHubLink='https://github.com/tachorzy/Gibraltr/tree/main/app'></ProjectCard>
