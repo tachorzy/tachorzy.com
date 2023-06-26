@@ -77,7 +77,7 @@ export default function Home() {
         <section id="travel" className="relative h-screen">
           <SectionTitle title="Travel" className="mb-7"/>
           <div className="lg:xl:ml-24 ml-10">
-              <TravelCountryCardGrid/>
+              {/* <TravelCountryCardGrid/> */}
           </div>
 
           {/* PAGE NUMBER */}
