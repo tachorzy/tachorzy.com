@@ -9,7 +9,6 @@ import SkillsTray from '../components/SkillsTray'
 import HamburgerMenu from '../components/HamburgerMenu'
 import NextPageButton from '../components/NextPageButton'
 import ProjectCard from '../components/ProjectCard'
-import TravelCountryCardGrid from 'components/TravelCountryCardGrid'
 import { PROJECTS } from '../lib/projects'
 import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../lib/localNextFonts'
 
