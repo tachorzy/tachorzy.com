@@ -6,6 +6,7 @@ import Logo from '../components/Logo'
 import SectionTitle from '../components/SectionTitle'
 import SocialsTray from '../components/SocialsTray'
 import SkillsTray from '../components/SkillsTray'
+import CountryCardTray from '../components/CountryCardTray'
 import HamburgerMenu from '../components/HamburgerMenu'
 import NextPageButton from '../components/NextPageButton'
 import ProjectCard from '../components/ProjectCard'
@@ -76,7 +77,7 @@ export default function Home() {
         <section id="travel" className="relative h-screen">
           <SectionTitle title="Travel" className="mb-7"/>
           <div className="lg:xl:ml-24 ml-10">
-              {/* <TravelCountryCardGrid/> */}
+              <CountryCardTray/>
           </div>
 
           {/* PAGE NUMBER */}
