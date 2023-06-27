@@ -21,12 +21,8 @@ const ProjectCard = (props: project) => {
             </Link>
             <div className="justify-center content-center pt-4 px-6 pb-1">
                 <p className="text-dusty text-2xl">{props.name}</p>
-                <div className={ManropeExtraBold.className}>
-                    <p className="text-mudbrick text-lg">{props.description}</p>
-                </div>
-                <div className="my-2 mb-3">
-                    <ProjectTechTray techStack={props.techStack} gitHubLink={props.gitHubLink} hostLink={props.hostLink}/>
-                </div>
+                <p className="text-mudbrick text-lg">{props.description}</p>
+                <ProjectTechTray techStack={props.techStack} gitHubLink={props.gitHubLink} hostLink={props.hostLink}/>
             </div>
         </div>
     );

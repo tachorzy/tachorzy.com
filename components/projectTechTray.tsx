@@ -10,7 +10,7 @@ interface projectTechStack {
 
 const ProjectTechTray = (props: projectTechStack) => {
     return(
-        <div className="flex flex-row md:max-2xl:gap-x-3.5 gap-x-1 my-3">
+        <div className="flex flex-row md:max-2xl:gap-x-3.5 gap-x-1 my-5 mb-3">
             {props.techStack.map((tool, index) => (
                 <Image src={`/icons/${tool}.svg`} width="0" height="0" alt="language/library/framework icon" className="md:max-2xl:w-6 md:max-2xl:h-6 w-6 h-6"/>
             ))}
