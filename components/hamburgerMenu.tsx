@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useState, useRef } from 'react'
 import { useOnClickOutside } from 'usehooks-ts'
 import LightModeToggle from './LightModeToggle'
+import { stringify } from 'querystring';
 
 const HamburgerMenu = () => {
     const [isActive, setIsActive] = useState(false)
@@ -16,6 +17,14 @@ const HamburgerMenu = () => {
 
     useOnClickOutside(menuRef, handleClickOutside)
 
+    const menuOptions: Map<string, {text: string, width: string, height: string}> = new Map([
+        ["home", {text: "Home", width: "24", height: "24"}],
+        ["about", {text: "About", width: "24", height: "24"}],
+        ["projects", {text: "Projects", width: "24", height: "24"}],
+        ["travel", {text: "Travel", width: "27", height: "27"}],
+        ["contact", {text: "Contact", width: "26", height: "26"}],
+    ])
+
     return (
         <div>
             <button className="p-1.5 hover:bg-sandstone hover:bg-opacity-5 rounded-2xl cursor-pointer select-none border-transparent    " onClick = {() => setIsActive(!isActive)}>
@@ -23,38 +32,15 @@ const HamburgerMenu = () => {
             </button>
             { isActive ? (
                 <div className="w-56 h-58 self-end mr-12 bg-sandstone rounded-2xl fixed right-0 mt-2 shadow-xl" ref={menuRef}>
-                    {/* REFACTOR THIS: make use of an interface and iterate thro this with a loop */}
                     <div className="flex flex-col text-bark font-bold py-3">
-                        <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">      
-                            <Link href="/" className="w-full flex flex-row gap-x-4 items-center">
-                                <Image src="/icons/home.svg" width={24} height={24} alt="home icon" className=""></Image>              
-                                Home
+                        {Array.from(menuOptions.entries()).map(([option, optionDetails]) => (
+                            <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">      
+                                <Link href={option != 'home' ? `#${option}` : '/'} className="w-full flex flex-row gap-x-4 items-center">
+                                    <Image src={`/icons/${option}.svg`} width={Number(optionDetails.width)} height={Number(optionDetails.height)} alt="home icon" className=""></Image>
+                                    {optionDetails.text}
                                 </Link>
-                        </div>
-                        <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">      
-                            <Link href="#about" className="w-full flex flex-row gap-x-4 items-center">
-                                <Image src="/icons/aboutme.svg" width={24} height={24} alt="about me icon" className=""></Image>              
-                                About
-                                </Link>
-                        </div>
-                        <div className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">
-                            <Link href="#projects" className="w-full flex flex-row gap-x-4 items-center">
-                                <Image src="/icons/projects.svg" width={24} height={24} alt="projects icon" className=""></Image>              
-                                Projects
-                            </Link>
-                        </div>
-                        <div className="flex flex-row gap-x-3 items-center hover:bg-dusty pl-6 py-2 select-none">
-                            <Link href="#travel" className="w-full flex flex-row gap-x-4 items-center">
-                                <Image src="/icons/dallah.svg" width={27} height={27} alt="travel icon" className=""></Image>              
-                                Travel    
-                            </Link>
-                        </div>
-                        <div className="flex flex-row gap-x-3 items-center hover:bg-dusty pl-6 py-2 select-none">
-                            <Link href="#contact" className="w-full flex flex-row gap-x-4 items-center">
-                                <Image src="/icons/contactme.svg" width={26} height={26} alt="contact icon" className=""></Image>              
-                                Contact
-                            </Link>
-                        </div>
+                            </div>
+                        ))}
                         <div className="flex flex-row gap-x-[1.15rem] items-center pl-6 pt-3 pb-2.5 select-none">
                             {/* <Image src="/fanous.svg" width={36} height={36} alt="" className="pb-3 pr-[0.18rem]"></Image> */}
                             <LightModeToggle></LightModeToggle>

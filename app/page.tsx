@@ -71,22 +71,21 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <NextPageButton nextPageReference={'#travel'} margin={"mt-[5.4rem]"}/>
+          <NextPageButton nextPageReference={'#contact'} margin={"mt-[5.4rem]"}/>
         </section>
               
-        <section id="travel" className="relative h-screen">
+        {/* <section id="travel" className="relative h-screen">
           <SectionTitle title="Travel" className="mb-7"/>
           <div className="lg:xl:ml-24 ml-10">
               <CountryCardTray/>
           </div>
 
-          {/* PAGE NUMBER */}
           <div className={AmiriBoldSlanted.className}>
             <div className="grid grid-rows-1 justify-end h-full align-bottom">
                 <h4 className="lg:max-2xl:text-9xl text-8xl text-dusty relative ml-auto bottom-0 mr-12 align-bottom select-none z-0">٣</h4>
             </div>
           </div>
-        </section>
+        </section> */}
         </main>
     </>
   )
