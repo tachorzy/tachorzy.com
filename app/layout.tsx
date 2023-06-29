@@ -1,6 +1,6 @@
 import './globals.css'
 import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../lib/localNextFonts'
-import HamburgerMenu from '../components/HamburgerMenu'
+import HamburgerMenu from '../components/hamburgerMenu/HamburgerMenu'
 
 export const metadata = {
   title: 'Tariq Achor Zyad',
