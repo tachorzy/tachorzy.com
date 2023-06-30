@@ -49,9 +49,9 @@ export default function Home() {
               <h4 className="lg:max-2xl:text-9xl text-8xl text-dusty relative ml-auto bottom-0 lg:max-2xl:mr-12 mr-10 mt-5 align-bottom select-none z-0">١</h4>
             </div>
           </div>
+          <NextPageButton nextPageReference={'#projects'} margin={"mt-[6rem]"}/>  
         </section>        
         
-        <NextPageButton nextPageReference={'#projects'} margin={""}/>  
 
         <section id="projects" className="relative md:lg:xl:2xl:mb-0 mt-0.5 mb-72">
           <SectionTitle title="Projects" className="mb-7"/>
@@ -72,9 +72,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <NextPageButton nextPageReference={'#contact'} margin={"mt-[5.4rem]"}/>
         </section>
         
-        <NextPageButton nextPageReference={'#contact'} margin={"mt-[5.4rem]"}/>
 
         {/* <section id="travel" className="relative h-screen">
           <SectionTitle title="Travel" className="mb-7"/>
@@ -91,11 +91,10 @@ export default function Home() {
         <section id="contact" className="relative mb-72">
           <SectionTitle title="Get in touch!" className="mb-7"/>
           <div className={ManropeExtraBold.className + " flex flex-col gap-y-2 text-sandstone md:max-2xl:ml-24 ml-10 w-1/3 mb-10"}>
-            <h1 className="text-3xl">I'm <span className="">available</span> for freelance opportunities.</h1>
+            {/* <h1 className="text-3xl">I'm <span className="">available</span> for freelance opportunities.</h1> */}
             {/* <h2 className="text-2xl text-dusty">Need help getting your project off the ground?</h2> */}
             {/* <h3 className="text-2xl text-dusty">Contact me at <div className=" bg-slate bg-opacity-70 h-2 hover:h-full duration-700 ">tachorzyad@gmail.com</div></h3> */}
           </div>
-          <h1 className={ManropeExtraBold.className + " text-3xl text-sandstone md:max-2xl:ml-24 ml-10"}>Contact form:</h1>
           <ContactForm/>
           <div className={AmiriBoldSlanted.className + " grid grid-rows-1 justify-end h-full align-bottom"}>
               <h4 className="lg:max-2xl:text-9xl text-8xl text-dusty relative ml-auto bottom-0 mr-12 align-bottom select-none z-0">٣</h4>
