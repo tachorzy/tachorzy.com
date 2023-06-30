@@ -20,7 +20,7 @@ export default function RootLayout({
     return (
       <html lang="en">
         <body>        
-            <div className={ManropeRegular.className}>
+            <div className={ManropeRegular.className + " "}>
                 <div className="fixed top-0 right-0 md:max-2xl:mt-12 md:max-2xl:mr-12 mt-6 mr-6 z-50">
                     <HamburgerMenu/>
                 </div>

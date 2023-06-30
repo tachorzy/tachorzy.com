@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         'shark': '#1c2324',
         'metal': '#1D2729',
+        'slate': '#3a4a4c',
         'alabaster': '#ede5d8',
         'dune': '#e3daca',
         'dusty': '#c4b9a3',
