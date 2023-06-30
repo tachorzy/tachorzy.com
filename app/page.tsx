@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <> 
       <main className={styles.main}>
-        <section className = "relative h-screen">
+        <section className = "relative">
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
             <h1 className=" text-dusty md:max-2xl:text-landingPageTitle text-5xl font-bold md:lg:xl:ml-24 ml-10 md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
@@ -31,7 +31,7 @@ export default function Home() {
           <NextPageButton nextPageReference={'#about'} margin={"mt-[19rem] lg:mt-[21.5rem]"}/>
         </section>
 
-        <section id="about" className="relative h-screen mt-24">
+        <section id="about" className="relative mt-24">
           {/* ABOUT ME */}
           <div className={ManropeMedium.className}>
             <SectionTitle title="About Me" className=""/>
@@ -52,7 +52,8 @@ export default function Home() {
         </section>        
         
         <NextPageButton nextPageReference={'#projects'} margin={""}/>  
-        <section id="projects" className="relative h-screen md:lg:xl:2xl:mb-0 mt-0.5 mb-80">
+
+        <section id="projects" className="relative md:lg:xl:2xl:mb-0 mt-0.5 mb-72">
           <SectionTitle title="Projects" className="mb-7"/>
 
           <div className="flex flex-col gap-y-12 mt-2 md:max-2xl:ml-24 ml-10">
@@ -71,9 +72,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <NextPageButton nextPageReference={'#contact'} margin={"mt-[5.4rem]"}/>
         </section>
-              
+        
+        <NextPageButton nextPageReference={'#contact'} margin={"mt-[5.4rem]"}/>
+
         {/* <section id="travel" className="relative h-screen">
           <SectionTitle title="Travel" className="mb-7"/>
           <div className="lg:xl:ml-24 ml-10">
@@ -86,9 +88,12 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <section id="contact" className="mb-24 ">
+        <section id="contact" className="relative mb-72">
           <SectionTitle title="Get in touch!" className="mb-7"/>
           <ContactForm/>
+          <div className={AmiriBoldSlanted.className + " grid grid-rows-1 justify-end h-full align-bottom"}>
+              <h4 className="lg:max-2xl:text-9xl text-8xl text-dusty relative ml-auto bottom-0 mr-12 align-bottom select-none z-0">٣</h4>
+          </div>
         </section>
         </main>
     </>
