@@ -7,9 +7,9 @@ import SectionTitle from '../components/SectionTitle'
 import SocialsTray from '../components/SocialsTray'
 import SkillsTray from '../components/SkillsTray'
 import CountryCardTray from '../components/CountryCardTray'
-import HamburgerMenu from '../components/hamburgerMenu/HamburgerMenu'
 import NextPageButton from '../components/NextPageButton'
 import ProjectCard from '../components/ProjectCard'
+import ContactForm from '../components/ContactForm'
 import { PROJECTS } from '../lib/projects'
 import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../lib/localNextFonts'
 
@@ -86,6 +86,10 @@ export default function Home() {
             </div>
           </div>
         </section> */}
+        <section id="contact" className="mb-24 ">
+          <SectionTitle title="Get in touch!" className="mb-7"/>
+          <ContactForm/>
+        </section>
         </main>
     </>
   )
