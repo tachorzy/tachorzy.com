@@ -7,7 +7,7 @@ import { ManropeExtraBold, ManropeMedium, ManropeRegular } from '../lib/localNex
 
 const ContactForm = () => {
     return( 
-        <div className={ManropeMedium.className + " right-0 w-1/2 lg:xl:ml-24 bg-metal py-12 px-16 rounded-md mr-32 h-max"}>
+        <div className={ManropeMedium.className + " absolute right-0 w-[40%] lg:xl:ml-24 bg-metal py-12 px-16 rounded-md mr-64 h-full"}>
             <form className="flex flex-col gap-y-1">
                 {/* <h1 className={ManropeExtraBold.className + " text-dusty lg:xl:text-6xl text-3xl"}>Get in touch!</h1> */}
                 {/* <input name="_input" type="hidden" className="hidden"></input> */}
