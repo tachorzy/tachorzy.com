@@ -91,13 +91,13 @@ export default function Home() {
         <section id="contact" className="relative mb-72">
           <SectionTitle title="Get in touch!" className="mb-7"/>
 
-          <div className="flex flex-row md:max-2xl:ml-24 ml-10 mb-4">
-            <div className="flex flex-col gap-y-8 w-[40%]">
-              <h1 className={ManropeMedium.className + " text-sandstone text-3xl"}>I'm <span className="">available</span> for freelance opportunities.</h1>
-              <div className={ManropeMedium.className + " flex flex-col gap-y-2 text-sandstone text-2xl w-[65%] mb-10"}>
+          <div className="flex md:max-2xl:flex-row flex-col md:max-2xl:ml-24 ml-10 mb-4 mr-10 md:max-2xl:mr-0">
+            <div className="flex flex-col md:max-2xl:gap-y-8 gap-y-5 md:max-2xl:w-[40%]">
+              <h1 className={ManropeMedium.className + " text-sandstone md:max-2xl:text-3xl text-2xl"}>I'm <span className="">available</span> for freelance opportunities.</h1>
+              <div className={ManropeMedium.className + " flex flex-col gap-y-2 text-sandstone md:max-2xl:text-2xl text-xl  md:max-2xl:w-[65%] mb-10"}>
                 <p>Got a question or want to get connected?</p>
                 <p>By all means shoot me a message!</p>
-                <div className="scale-[90%] self-start">
+                <div className="md:max-2xl:scale-[90%] self-start">
                   <SocialsTray/>
                 </div>
               </div>
