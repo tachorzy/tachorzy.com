@@ -21,8 +21,8 @@ const ContactForm = () => {
                         <label className="flex flex-col my-2 duration-500 focus-within:p-1 focus-within:pl-3 focus-within:border-l-4 border-sandstone border-inherit rounded">
                             <span className="text-dune text-xl">{label}</span>
                                 {label == "Your message:" 
-                                    ? <textarea name="message" placeholder="" className=" group bg-shark h-auto w-full focus-within:h-28 border-b-[3px] text-xl placeholder-mudbrick ring-0 outline-0 text-sandstone focus-within:border-slate border-sandstone border-inherit"></textarea> 
-                                    : <input type="text" name="name" placeholder="" className=" group bg-shark border-b-[3px] text-xl placeholder-mudbrick ring-0 outline-0 text-sandstone visited:autofill:text-sandstone focus-within:border-slate border-sandstone border-inherit w-full"></input>
+                                    ? <textarea name="message" placeholder={placeholderText} className=" group bg-shark h-auto w-full focus-within:h-28 border-b-[3px] text-xl placeholder-mudbrick ring-0 outline-0 text-sandstone focus-within:border-slate border-sandstone border-inherit"></textarea> 
+                                    : <input type="text" name="name" placeholder={placeholderText} className=" group bg-shark border-b-[3px] text-xl placeholder-mudbrick ring-0 outline-0 text-sandstone visited:autofill:text-sandstone focus-within:border-slate border-sandstone border-inherit w-full"></input>
                                 }
                         </label>
                     )
