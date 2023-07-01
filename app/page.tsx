@@ -17,11 +17,11 @@ export default function Home() {
   return (
     <> 
       <main className={styles.main}>
-        <section className = "relative">
+        <section className = "relative lg:xl:ml-24 ml-10 ">
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
-            <h1 className=" text-dusty md:max-2xl:text-landingPageTitle text-5xl font-bold md:lg:xl:ml-24 ml-10 md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
-            <h2 className="text-sandstone lg:xl:text-2xl md:text-2xl text-landingPageBioMobile font-bold md:lg:xl:ml-24 ml-10 pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a senior Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
+            <h1 className=" text-dusty md:max-2xl:text-landingPageTitle text-5xl font-bold md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
+            <h2 className="text-sandstone lg:xl:text-2xl md:text-2xl text-landingPageBioMobile font-bold pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a senior Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
             {/* SOCIALS TRAY */}
             <SocialsTray/>
           </div>
@@ -94,7 +94,13 @@ export default function Home() {
           <div className="flex flex-row md:max-2xl:ml-24 ml-10 mb-4">
             <div className="flex flex-col gap-y-8 w-[40%]">
               <h1 className={ManropeMedium.className + " text-sandstone text-3xl"}>I'm <span className="">available</span> for freelance opportunities.</h1>
-              <p className={ManropeMedium.className + " text-sandstone text-xl w-[40%] mb-10"}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div className={ManropeMedium.className + " flex flex-col gap-y-2 text-sandstone text-2xl w-[65%] mb-10"}>
+                <p>Got a question or want to get connected?</p>
+                <p>By all means shoot me a message!</p>
+                <div className="scale-[90%] self-start">
+                  <SocialsTray/>
+                </div>
+              </div>
             </div>
             <ContactForm/>
           </div>
