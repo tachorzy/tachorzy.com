@@ -91,10 +91,10 @@ export default function Home() {
         <section id="contact" className="relative mb-72">
           <SectionTitle title="Get in touch!" className="mb-7"/>
 
-          <div className="flex flex-row md:max-2xl:ml-24 ml-10">
-            <div className="flex flex-col gap-y-2 w-[40%]">
+          <div className="flex flex-row md:max-2xl:ml-24 ml-10 mb-4">
+            <div className="flex flex-col gap-y-8 w-[40%]">
               <h1 className={ManropeMedium.className + " text-sandstone text-3xl"}>I'm <span className="">available</span> for freelance opportunities.</h1>
-              <p className={ManropeMedium.className + " text-sandstone w-1/3 mb-10"}></p>
+              <p className={ManropeMedium.className + " text-sandstone text-xl w-[40%] mb-10"}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <ContactForm/>
           </div>
