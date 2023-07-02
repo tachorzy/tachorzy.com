@@ -5,17 +5,19 @@ import NextPageButton from '../../components/NextPageButton'
 import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../../lib/localNextFonts'
 
 interface sectionProps{
+    id: string;
+    margin?: string | null;
     coreComponent: ReactElement;
-    trayComponent: ReactElement | null;
-    pageNumber: string | null; //refactor later with a map for all Arabic numbers
+    trayComponent?: ReactElement | null;
+    pageNumber?: string | null; //refactor later with a map for all Arabic numbers
     nextPageReference: string;
-    nextButtonMargins: string | null;
+    nextButtonMargins?: string | null;
 }
 
 const SectionLayout = (props: sectionProps) => {
 
     return(
-        <section className="relative lg:xl:ml-24 ml-10">
+        <section id={props.id} className="relative lg:xl:ml-24 ml-10">
             <>
                 {props.coreComponent}
                 {props.trayComponent}
