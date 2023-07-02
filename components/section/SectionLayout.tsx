@@ -28,15 +28,15 @@ const SectionLayout = (props: sectionProps) => {
                 {props.coreComponent}
                 {props.trayComponent}
             </>
-            {props.pageNumber == null 
-                ? <Logo/> 
-                : <div className={AmiriBoldSlanted.className}>
+            {props.pageNumber != null 
+                ? <div className={AmiriBoldSlanted.className}>
                     <div className="grid grid-rows-1 justify-end h-full align-bottom">
                         <h4 className="lg:max-2xl:text-9xl text-8xl text-dusty relative ml-auto bottom-0 lg:max-2xl:mr-12 mr-10 mt-5 align-bottom select-none z-0">
                             {props.pageNumber}
                         </h4>
                     </div>
                 </div>
+                : <Logo/> 
             } 
             {props.nextPageReference != undefined &&
                 <NextPageButton nextPageReference={props.nextPageReference} margin={props.nextButtonMargins}/>
