@@ -7,7 +7,7 @@ import AboutMe from '../components/about/AboutMe'
 import SectionLayout from '../components/section/SectionLayout'
 import SectionTitle from '../components/SectionTitle'
 import SocialsTray from '../components/SocialsTray'
-import SkillsTray from '../components/SkillsTray'
+import SkillsTray from '../components/about/SkillsTray'
 import ProjectsTray from '../components/projects/ProjectsTray'
 import CountryCardTray from '../components/CountryCardTray'
 import NextPageButton from '../components/NextPageButton'
@@ -24,7 +24,7 @@ export default function Home() {
 
         <SectionLayout id="home" coreComponent={<LandingPageHeaders/>} trayComponent={<SocialsTray/>} nextPageReference={"#about"} nextButtonMargins='mt-[19rem] lg:mt-[21.5rem]'/>
         <SectionLayout id="about" sectionTitle={"About Me"} coreComponent={<AboutMe/>} trayComponent={<SkillsTray/>} pageNumber={"١"} nextPageReference={"#projects"} nextButtonMargins='mt-[5rem]'/>
-        <SectionLayout id="projects" sectionTitle={"Projects"} coreComponent={<ProjectsTray/>} pageNumber={"٢"} nextPageReference={"#contact"} nextButtonMargins='mt-[5.4rem]'/>
+        <SectionLayout id="projects" sectionTitle={"Projects"} sectionTitleMargin={"mb-7"} coreComponent={<ProjectsTray/>} pageNumber={"٢"} nextPageReference={"#contact"} nextButtonMargins='mt-[5.4rem]'/>
         
         <section id="contact" className="relative mb-72 md:max-2xl:ml-24 ml-10">
           <SectionTitle title="Get in touch!" sectionTitleMargin="mb-7"/>
@@ -42,6 +42,7 @@ export default function Home() {
             </div>
             <ContactForm/>
           </div>
+          
           <div className={AmiriBoldSlanted.className + " grid grid-rows-1 justify-end h-full align-bottom"}>
               <h4 className="lg:max-2xl:text-9xl text-8xl text-dusty relative ml-auto bottom-0 mr-12 align-bottom select-none z-0">٣</h4>
           </div>

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { SKILLS } from '../lib/skills'
-import { ManropeRegular } from '../lib/localNextFonts'
+import { SKILLS } from '../../lib/skills'
+import { ManropeRegular } from '../../lib/localNextFonts'
 
 const SkillsTray = () => {
 
