@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ManropeExtraBold, ManropeMedium } from '../lib/localNextFonts'
+import { ManropeExtraBold, ManropeMedium } from '../../lib/localNextFonts'
 import { PLACES_TRAVELLED } from 'lib/travel';
 import CountryCard from './CountryCard';
 
