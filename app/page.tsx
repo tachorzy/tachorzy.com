@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Logo from '../components/Logo'
+import SectionLayout from '../components/section/SectionLayout'
 import SectionTitle from '../components/SectionTitle'
 import SocialsTray from '../components/SocialsTray'
 import SkillsTray from '../components/SkillsTray'
@@ -14,21 +15,29 @@ import { PROJECTS } from '../lib/projects'
 import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../lib/localNextFonts'
 
 export default function Home() {
+
+  let landingPageCore =  <div className={ManropeExtraBold.className}>
+                            <h1 className=" text-dusty md:max-2xl:text-landingPageTitle text-5xl font-bold md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
+                            <h2 className="text-sandstone lg:xl:text-2xl md:text-2xl text-landingPageBioMobile font-bold pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a senior Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
+                          </div>
+
   return (
     <> 
       <main className={styles.main}>
+
+        <SectionLayout coreComponent={landingPageCore} trayComponent={<SocialsTray/>} pageNumber={null} nextPageReference={"#about"} nextButtonMargins='mt-[19rem] lg:mt-[21.5rem]'/>
+
+      {/* 
         <section className = "relative lg:xl:ml-24 ml-10">
-          {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
             <h1 className=" text-dusty md:max-2xl:text-landingPageTitle text-5xl font-bold md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
             <h2 className="text-sandstone lg:xl:text-2xl md:text-2xl text-landingPageBioMobile font-bold pt-2 lg:xl:mt-5 mt-4 leading-relaxed w-4/5 ">Hey, I'm Tariq, a senior Computer Science student at the University of Houston, <div className="text-dusty">Exploring the vast world of tech.</div></h2>
-            {/* SOCIALS TRAY */}
             <SocialsTray/>
           </div>
 
           <Logo/>
           <NextPageButton nextPageReference={'#about'} margin={"mt-[19rem] lg:mt-[21.5rem]"}/>
-        </section>
+        </section> */}
 
         <section id="about" className="relative mt-24 lg:xl:ml-24 ml-10 ">
           {/* ABOUT ME */}

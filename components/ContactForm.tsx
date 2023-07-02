@@ -10,9 +10,7 @@ const contactFields: Map<string, string> = new Map([
     ["Your message:", ""],
 ])
 
-
 const ContactForm = () => {
-
     return( 
         <div className={ManropeMedium.className + " md:max-2xl:absolute right-0 md:max-2xl:w-[40%] lg:xl:ml-24 bg-metal md:max-2xl:py-12 md:max-2xl:px-16 py-10 px-8 rounded-md md:max-2xl:mr-[17rem] h-full"}>
             <form className="flex flex-col gap-y-1">
