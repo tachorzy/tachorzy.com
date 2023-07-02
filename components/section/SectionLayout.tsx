@@ -13,14 +13,14 @@ interface sectionProps{
     coreComponent: ReactElement;
     trayComponent?: ReactElement;
     pageNumber?: string; //refactor later with a map for all Arabic numbers
-    nextPageReference: string;
+    nextPageReference?: string;
     nextButtonMargins?: string;
 }
 
 const SectionLayout = (props: sectionProps) => {
 
     return(
-        <section id={props.id} className="relative lg:xl:ml-24 ml-10">
+        <section id={props.id} className={` relative lg:xl:ml-24 ml-10 ${props.margin}`}>
             {props.sectionTitle != undefined && 
                 <SectionTitle title={props.sectionTitle} sectionTitleMargin={props.sectionTitleMargin}/>
             }
@@ -37,8 +37,10 @@ const SectionLayout = (props: sectionProps) => {
                         </h4>
                     </div>
                 </div>
-            }       
-            <NextPageButton nextPageReference={props.nextPageReference} margin={props.nextButtonMargins}/>
+            } 
+            {props.nextPageReference != undefined &&
+                <NextPageButton nextPageReference={props.nextPageReference} margin={props.nextButtonMargins}/>
+            }
         </section>
     );
 }

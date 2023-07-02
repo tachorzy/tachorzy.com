@@ -2,7 +2,7 @@ import React, { useState} from 'react'
 import router from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ManropeExtraBold, ManropeMedium, ManropeRegular } from '../lib/localNextFonts'
+import { ManropeExtraBold, ManropeMedium, ManropeRegular } from '../../lib/localNextFonts'
 
 const contactFields: Map<string, string> = new Map([
     ["What's your name?", ""],
