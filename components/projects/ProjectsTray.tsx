@@ -1,5 +1,5 @@
 import { PROJECTS } from '../../lib/projects'
-import ProjectCard from '../../components/ProjectCard'
+import ProjectCard from './ProjectCard'
 
 const ProjectsTray = () => {
     return(
