@@ -6,12 +6,12 @@ import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } fro
 
 interface sectionProps{
     id: string;
-    margin?: string | null;
+    margin?: string;
     coreComponent: ReactElement;
-    trayComponent?: ReactElement | null;
-    pageNumber?: string | null; //refactor later with a map for all Arabic numbers
+    trayComponent?: ReactElement;
+    pageNumber?: string; //refactor later with a map for all Arabic numbers
     nextPageReference: string;
-    nextButtonMargins?: string | null;
+    nextButtonMargins?: string;
 }
 
 const SectionLayout = (props: sectionProps) => {

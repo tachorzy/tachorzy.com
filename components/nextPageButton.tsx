@@ -3,12 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ManropeExtraBold } from '../lib/localNextFonts'
 
-interface section{
+interface buttonProps{
     nextPageReference: string;
-    margin: string | null;
+    margin?: string;
 }
 
-const NextPageButton = (props: section) => {
+const NextPageButton = (props: buttonProps) => {
     return(
       <div className={`${props.margin} lg:xl:-ml-24 -ml-10 `}>
         <div className={`hidden md:max-2xl:block relative bottom-0 w-full h-1/6 opacity-0 hover:opacity-100 animation-fade duration-700`}>
