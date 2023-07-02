@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React, { FunctionComponent, ReactElement } from 'react'
+import SectionTitle from '../../components/SectionTitle'
 import Logo from '../../components/Logo'
 import NextPageButton from '../../components/NextPageButton'
 import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../../lib/localNextFonts'
@@ -7,6 +8,8 @@ import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } fro
 interface sectionProps{
     id: string;
     margin?: string;
+    sectionTitle?: string;
+    sectionTitleMargin?: string;
     coreComponent: ReactElement;
     trayComponent?: ReactElement;
     pageNumber?: string; //refactor later with a map for all Arabic numbers
@@ -18,6 +21,9 @@ const SectionLayout = (props: sectionProps) => {
 
     return(
         <section id={props.id} className="relative lg:xl:ml-24 ml-10">
+            {props.sectionTitle != undefined && 
+                <SectionTitle title={props.sectionTitle} sectionTitleMargin={props.sectionTitleMargin}/>
+            }
             <>
                 {props.coreComponent}
                 {props.trayComponent}

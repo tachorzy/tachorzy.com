@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import LandingPageHeaders from '../components/landingPage/LandingPageHeaders'
-import Logo from '../components/Logo'
+import AboutMe from '../components/about/AboutMe'
 import SectionLayout from '../components/section/SectionLayout'
 import SectionTitle from '../components/SectionTitle'
 import SocialsTray from '../components/SocialsTray'
@@ -22,31 +22,11 @@ export default function Home() {
       <main className={styles.main}>
 
         <SectionLayout id="home" coreComponent={<LandingPageHeaders/>} trayComponent={<SocialsTray/>} nextPageReference={"#about"} nextButtonMargins='mt-[19rem] lg:mt-[21.5rem]'/>
-        {/* <SectionLayout id="about" coreComponent={<AboutMe/>} trayComponent={<SkillsTray/>} nextPageReference={"#projects"} nextButtonMargins='mt-[19rem] lg:mt-[21.5rem]'/> */}
-        <section id="about" className="relative mt-24 lg:xl:ml-24 ml-10 ">
-          {/* ABOUT ME */}
-          <div className={ManropeMedium.className}>
-            <SectionTitle title="About Me" className=""/>
-            {/* refactor this to remove redundancies: */}
-            <div className="text-sandstone lg:max-2xl:text-xl md:text-lg text-xs font-medium pt-1.5 flex flex-col gap-y-4 lg:max-xl:mt-2 mt-1.5 leading-loose md:max-2xl:w-3/5 w-4/5">
-              <p>I'm a developer with a tireless passion for full-stack web development. With that passion, I continously drive myself to learn, grow and create.</p>
-              <p>Over the years, I've built scalable applications, created responsive user interfaces, and enabled user-focused experiences. All of which you can find here on this portfolio.</p>
-              <p>The technologies that I use:</p>
-            </div>
-            <SkillsTray/>
-          </div>
-
-          <div className={AmiriBoldSlanted.className}>
-            <div className="grid grid-rows-1 justify-end h-full align-bottom">
-              <h4 className="lg:max-2xl:text-9xl text-8xl text-dusty relative ml-auto bottom-0 lg:max-2xl:mr-12 mr-10 mt-5 align-bottom select-none z-0">١</h4>
-            </div>
-          </div>
-          <NextPageButton nextPageReference={'#projects'} margin={"mt-[6rem]"}/>  
-        </section>        
+        <SectionLayout id="about" sectionTitle={"About Me"} coreComponent={<AboutMe/>} trayComponent={<SkillsTray/>} pageNumber={"١"} nextPageReference={"#projects"} nextButtonMargins='mt-[6rem]'/>
         
-
+      
         <section id="projects" className="relative md:lg:xl:2xl:mb-0 mt-0.5 mb-72 md:max-2xl:ml-24 ml-10">
-          <SectionTitle title="Projects" className="mb-7"/>
+          <SectionTitle title="Projects" sectionTitleMargin="mb-7"/>
 
           <div className="flex flex-col gap-y-12 mt-2">
             <div className="flex flex-col md:max-2xl:flex-row gap-y-12 md:max-2xl:gap-x-12 flex-wrap"> 
@@ -81,7 +61,7 @@ export default function Home() {
           </div>
         </section> */}
         <section id="contact" className="relative mb-72 md:max-2xl:ml-24 ml-10">
-          <SectionTitle title="Get in touch!" className="mb-7"/>
+          <SectionTitle title="Get in touch!" sectionTitleMargin="mb-7"/>
 
           <div className="flex md:max-2xl:flex-row flex-col mb-4 mr-10 md:max-2xl:mr-0">
             <div className="flex flex-col md:max-2xl:gap-y-8 gap-y-5 md:max-2xl:w-[40%]">

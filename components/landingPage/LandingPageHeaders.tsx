@@ -1,6 +1,6 @@
 import { ManropeExtraBold } from '../../lib/localNextFonts'
 
-const LandingPageContent = () => {
+const LandingPageHeaders = () => {
     return(
         <div className={ManropeExtraBold.className}>
             <h1 className=" text-dusty md:max-2xl:text-landingPageTitle text-5xl font-bold md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
@@ -9,4 +9,4 @@ const LandingPageContent = () => {
     );
 }
 
-export default LandingPageContent;
+export default LandingPageHeaders;
