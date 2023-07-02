@@ -8,6 +8,7 @@ import SectionLayout from '../components/section/SectionLayout'
 import SectionTitle from '../components/SectionTitle'
 import SocialsTray from '../components/SocialsTray'
 import SkillsTray from '../components/SkillsTray'
+import ProjectsTray from '../components/projects/ProjectsTray'
 import CountryCardTray from '../components/CountryCardTray'
 import NextPageButton from '../components/NextPageButton'
 import ProjectCard from '../components/ProjectCard'
@@ -23,8 +24,7 @@ export default function Home() {
 
         <SectionLayout id="home" coreComponent={<LandingPageHeaders/>} trayComponent={<SocialsTray/>} nextPageReference={"#about"} nextButtonMargins='mt-[19rem] lg:mt-[21.5rem]'/>
         <SectionLayout id="about" sectionTitle={"About Me"} coreComponent={<AboutMe/>} trayComponent={<SkillsTray/>} pageNumber={"١"} nextPageReference={"#projects"} nextButtonMargins='mt-[6rem]'/>
-        
-      
+        {/* <SectionLayout id="projects" sectionTitle={"Projects"} coreComponent={<ProjectsTray/>} pageNumber={"٢"} nextPageReference={"#contact"} nextButtonMargins='mt-[5.4rem]'/> */}
         <section id="projects" className="relative md:lg:xl:2xl:mb-0 mt-0.5 mb-72 md:max-2xl:ml-24 ml-10">
           <SectionTitle title="Projects" sectionTitleMargin="mb-7"/>
 
