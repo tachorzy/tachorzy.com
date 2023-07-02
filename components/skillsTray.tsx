@@ -7,7 +7,7 @@ const SkillsTray = () => {
 
     return(
         <div className={ManropeRegular.className}>
-              <div className="flex flex-row flex-wrap md:mt-1 gap-x-7 self-end pt-3 lg:xl:ml-24 ml-10 mb-[7.5rem]">
+              <div className="flex flex-row flex-wrap md:mt-1 gap-x-7 self-end pt-3 mb-[7.5rem]">
                 {Array.from(SKILLS.entries()).map(([programmingLanguage, documentation]) => {
                     return(
                         <div>

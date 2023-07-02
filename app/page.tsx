@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <> 
       <main className={styles.main}>
-        <section className = "relative lg:xl:ml-24 ml-10 ">
+        <section className = "relative lg:xl:ml-24 ml-10">
           {/* HEADER SECTION */}
           <div className={ManropeExtraBold.className}>
             <h1 className=" text-dusty md:max-2xl:text-landingPageTitle text-5xl font-bold md:lg:xl:2xl:mt-28 mt-32">Tariq<br/>Achor Zyad</h1>
@@ -27,16 +27,15 @@ export default function Home() {
           </div>
 
           <Logo/>
-
           <NextPageButton nextPageReference={'#about'} margin={"mt-[19rem] lg:mt-[21.5rem]"}/>
         </section>
 
-        <section id="about" className="relative mt-24">
+        <section id="about" className="relative mt-24 lg:xl:ml-24 ml-10 ">
           {/* ABOUT ME */}
           <div className={ManropeMedium.className}>
             <SectionTitle title="About Me" className=""/>
             {/* refactor this to remove redundancies: */}
-            <div className="text-sandstone lg:max-2xl:text-xl md:text-lg text-xs font-medium lg:xl:ml-24 ml-10 pt-1.5 flex flex-col gap-y-4 lg:max-xl:mt-2 mt-1.5 leading-loose md:max-2xl:w-3/5 w-4/5">
+            <div className="text-sandstone lg:max-2xl:text-xl md:text-lg text-xs font-medium pt-1.5 flex flex-col gap-y-4 lg:max-xl:mt-2 mt-1.5 leading-loose md:max-2xl:w-3/5 w-4/5">
               <p>I'm a developer with a tireless passion for full-stack web development. With that passion, I continously drive myself to learn, grow and create.</p>
               <p>Over the years, I've built scalable applications, created responsive user interfaces, and enabled user-focused experiences. All of which you can find here on this portfolio.</p>
               <p>The technologies that I use:</p>
@@ -53,10 +52,10 @@ export default function Home() {
         </section>        
         
 
-        <section id="projects" className="relative md:lg:xl:2xl:mb-0 mt-0.5 mb-72">
+        <section id="projects" className="relative md:lg:xl:2xl:mb-0 mt-0.5 mb-72 md:max-2xl:ml-24 ml-10">
           <SectionTitle title="Projects" className="mb-7"/>
 
-          <div className="flex flex-col gap-y-12 mt-2 md:max-2xl:ml-24 ml-10">
+          <div className="flex flex-col gap-y-12 mt-2">
             <div className="flex flex-col md:max-2xl:flex-row gap-y-12 md:max-2xl:gap-x-12 flex-wrap"> 
               {Array.from(PROJECTS.entries()).map(([projectName, projectDetails]) => {
                 return(
@@ -88,10 +87,10 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <section id="contact" className="relative mb-72">
+        <section id="contact" className="relative mb-72 md:max-2xl:ml-24 ml-10">
           <SectionTitle title="Get in touch!" className="mb-7"/>
 
-          <div className="flex md:max-2xl:flex-row flex-col md:max-2xl:ml-24 ml-10 mb-4 mr-10 md:max-2xl:mr-0">
+          <div className="flex md:max-2xl:flex-row flex-col mb-4 mr-10 md:max-2xl:mr-0">
             <div className="flex flex-col md:max-2xl:gap-y-8 gap-y-5 md:max-2xl:w-[40%]">
               <h1 className={ManropeMedium.className + " text-sandstone md:max-2xl:text-3xl text-2xl"}>I'm <span className="">available</span> for freelance opportunities.</h1>
               <div className={ManropeMedium.className + " flex flex-col gap-y-2 text-sandstone md:max-2xl:text-2xl text-xl  md:max-2xl:w-[65%] mb-10"}>
