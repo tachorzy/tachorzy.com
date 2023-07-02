@@ -21,8 +21,8 @@ const ContactForm = () => {
                         <label className="flex flex-col my-2 duration-500 focus-within:p-1 focus-within:pl-3 focus-within:border-l-4 border-sandstone border-inherit rounded">
                             <span className="text-dune md:max-2xl:text-xl text-lg">{label}</span>
                                 {label == "Your message:" 
-                                    ? <textarea name="message" placeholder={placeholderText} className=" pl-1 py-0.5 group bg-shark h-auto duration-700 transition-[height] w-full focus-within:h-28 border-b-[3px] md:max-2xl:text-xl text-lg placeholder-mudbrick ring-0 outline-0 text-sandstone focus-within:border-slate border-sandstone border-inherit"></textarea> 
-                                    : <input type="text" name="name" placeholder={placeholderText} className=" group bg-shark border-b-[3px] md:max-2xl:text-xl text-lg placeholder-mudbrick ring-0 outline-0 text-sandstone visited:autofill:text-sandstone focus-within:border-slate border-sandstone border-inherit w-full"></input>
+                                    ? <textarea name="message" placeholder={placeholderText} className=" pl-1.5 py-0.5 group bg-shark h-auto duration-700 transition-[height] w-full focus-within:h-28 border-b-[3px] md:max-2xl:text-xl text-lg placeholder-mudbrick ring-0 outline-0 text-sandstone focus-within:border-slate border-sandstone border-inherit"></textarea> 
+                                    : <input type="text" name="name" placeholder={placeholderText} className=" group pl-1 pt-0.5 bg-shark border-b-[3px] md:max-2xl:text-xl text-lg placeholder-mudbrick ring-0 outline-0 text-sandstone visited:autofill:text-sandstone focus-within:border-slate border-sandstone border-inherit w-full"></input>
                                 }
                         </label>
                     )
