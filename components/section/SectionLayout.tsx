@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { FunctionComponent, ReactElement } from 'react'
+import React, { ReactElement } from 'react'
 import SectionTitle from '../../components/SectionTitle'
 import Logo from '../../components/Logo'
 import NextPageButton from '../../components/NextPageButton'

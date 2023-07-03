@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import React, { ReactElement } from 'react'
 import styles from '../styles/Home.module.css'
 import LandingPageHeaders from '../components/landingPage/LandingPageHeaders'
 import AboutMe from '../components/about/AboutMe'
@@ -19,13 +20,23 @@ import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } fro
 
 export default function Home() {
 
+  const sections: Map<string, { id: string, margin?: string, sectionTitle?: string, sectionTitleMargin?: string, coreComponent: ReactElement, trayComponent?: ReactElement,  pageNumber?: string, nextPageReference?: string, nextButtonMargins?: string }> = new Map([
+    ["home", {id: "home", coreComponent: <LandingPageHeaders/>, trayComponent: <SocialsTray/>, nextPageReference: "#about", nextButtonMargins: "mt-[19rem] lg:mt-[21.5rem]"}],
+    ["about", {id: "about", sectionTitle: "About Me", coreComponent: <AboutMe/>, trayComponent: <SkillsTray/>, pageNumber: "١", nextPageReference: "#projects", nextButtonMargins: "mt-[5rem]"}],
+    ["projects", {id: "projects", sectionTitle: "Projects", sectionTitleMargin: "mb-7", coreComponent: <ProjectsTray/>, pageNumber: "٢", nextPageReference: "#contact", nextButtonMargins: "mt-[5.4rem]"}],
+    ["contact", {id: "contact", margin: "mb-72", sectionTitle: "Get in touch!", sectionTitleMargin: "mb-7", coreComponent: <ContactSection/>, pageNumber: "٣"}
+  ]
+  ]);
+
   return (
     <> 
       <main className={styles.main}>
-        <SectionLayout id="home" coreComponent={<LandingPageHeaders/>} trayComponent={<SocialsTray/>} nextPageReference={"#about"} nextButtonMargins='mt-[19rem] lg:mt-[21.5rem]'/>
-        <SectionLayout id="about" sectionTitle={"About Me"} coreComponent={<AboutMe/>} trayComponent={<SkillsTray/>} pageNumber={"١"} nextPageReference={"#projects"} nextButtonMargins='mt-[5rem]'/>
-        <SectionLayout id="projects" sectionTitle={"Projects"} sectionTitleMargin={"mb-7"} coreComponent={<ProjectsTray/>} pageNumber={"٢"} nextPageReference={"#contact"} nextButtonMargins='mt-[5.4rem]'/>
-        <SectionLayout id="contact" margin={"mb-72"} sectionTitle={"Get in touch!"} sectionTitleMargin={"mb-7"} coreComponent={<ContactSection/>} pageNumber={"٣"}/>
+        {Array.from(sections.entries()).map(([sectionId, sectionDetails]) => {
+            return (
+              <SectionLayout id={sectionDetails.id} margin={sectionDetails.margin} sectionTitle={sectionDetails.sectionTitle} sectionTitleMargin={sectionDetails.sectionTitleMargin} coreComponent={sectionDetails.coreComponent} trayComponent={sectionDetails.trayComponent} pageNumber={sectionDetails.pageNumber} nextPageReference={sectionDetails.nextPageReference} nextButtonMargins={sectionDetails.nextButtonMargins}/>
+            )
+          })
+        }
       </main>
     </>
   )
