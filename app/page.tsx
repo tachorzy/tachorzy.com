@@ -1,22 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import React, { ReactElement } from 'react'
 import styles from '../styles/Home.module.css'
 import LandingPageHeaders from '../components/landingPage/LandingPageHeaders'
 import AboutMe from '../components/about/AboutMe'
 import SectionLayout from '../components/section/SectionLayout'
-import SectionTitle from '../components/SectionTitle'
 import SocialsTray from '../components/SocialsTray'
 import SkillsTray from '../components/about/SkillsTray'
 import ProjectsTray from '../components/projects/ProjectsTray'
-import CountryCardTray from '../components/travel/CountryCardTray'
-import NextPageButton from '../components/NextPageButton'
-import ProjectCard from '../components/projects/ProjectCard'
-import ContactForm from '../components/contact/ContactForm'
 import ContactSection from 'components/contact/ContactSection'
-import { PROJECTS } from '../lib/projects'
-import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../lib/localNextFonts'
 
 export default function Home() {
 
