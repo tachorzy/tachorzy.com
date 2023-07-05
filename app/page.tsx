@@ -13,7 +13,7 @@ export default function Home() {
   const sections: Map<string, { id: string, margin?: string, sectionTitle?: string, sectionTitleMargin?: string, coreComponent: ReactElement, trayComponent?: ReactElement,  pageNumber?: string, nextPageReference?: string, nextButtonMargins?: string }> = new Map([
     ["home", {id: "home", coreComponent: <LandingPageHeaders/>, trayComponent: <SocialsTray/>, nextPageReference: "#about", nextButtonMargins: "mt-[19rem] lg:mt-[21.5rem]"}],
     ["about", {id: "about", sectionTitle: "About Me", coreComponent: <AboutMe/>, trayComponent: <SkillsTray/>, pageNumber: "١", nextPageReference: "#projects", nextButtonMargins: "mt-[5rem]"}],
-    ["projects", {id: "projects", sectionTitle: "Projects", sectionTitleMargin: "mb-7", coreComponent: <ProjectsTray/>, pageNumber: "٢", nextPageReference: "#contact", nextButtonMargins: "mt-[5.4rem]"}],
+    ["projects", {id: "projects", sectionTitle: "Projects", sectionTitleMargin: "mb-7", coreComponent: <ProjectsTray/>, pageNumber: "٢", nextPageReference: "#contact", nextButtonMargins: "mt-[7.5rem]"}],
     ["contact", {id: "contact", margin: "mb-72", sectionTitle: "Get in touch!", sectionTitleMargin: "mb-7", coreComponent: <ContactSection/>, pageNumber: "٣"}
   ]
   ]);
