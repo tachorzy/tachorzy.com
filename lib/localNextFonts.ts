@@ -20,11 +20,6 @@ export const AmiriBoldSlanted = localFont({
     weight: '500'
 })
 
-export const RubikMedium = localFont({
-    src: '../public/fonts/Rubik/Rubik-Medium.ttf',
-    weight: '500'
-})
-
 export const Quest = localFont({
     src: '../public/fonts/Questv1/Questv1-Regular.otf',
     weight: '500'

@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
 import styles from '../../styles/Home.module.css'
-import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted, RubikMedium, Quest } from '../../lib/localNextFonts'
+import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted, Quest } from '../../lib/localNextFonts'
 
 export default function Home() {
 
