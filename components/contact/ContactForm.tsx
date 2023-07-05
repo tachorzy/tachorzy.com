@@ -21,7 +21,7 @@ const ContactForm = () => {
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault(); //prevent page refresh
-        const formData = new FormData(event.currentTarget);
+        const formData = new FormData(event.target as HTMLFormElement);
         const req = await fetch(`https://getform.io/f/${process.env.GETFORM_KEY}`, { method: 'POST', body: formData });
         if(req.status == 200)
             router.push("/success")
@@ -50,7 +50,7 @@ const ContactForm = () => {
                         </label>
                     )
                 })}
-                <button className=" rounded bg-sandstone hover:bg-dusty text-slate font-semibold py-2 md:max-2xl:w-1/4 w-1/3 mt-6">
+                <button type="submit" className=" rounded bg-sandstone hover:bg-dusty text-slate font-semibold py-2 md:max-2xl:w-1/4 w-1/3 mt-6">
                     {"Submit!"}
                 </button>
             </form>
