@@ -37,15 +37,15 @@ const ContactForm = () => {
     };
 
     return( 
-        <div className={ManropeMedium.className + " md:max-2xl:absolute right-0 md:max-2xl:w-[40%] lg:xl:ml-24 bg-metal md:max-2xl:py-12 md:max-2xl:px-16 py-10 px-8 rounded-md md:max-2xl:mr-[17rem] h-full"}>
+        <div className={ManropeMedium.className + " md:absolute right-0 md:w-[40%] lg:ml-24 bg-metal md:py-12 md:px-16 py-10 px-8 rounded-md md:mr-[17rem] h-full"}>
             <form onSubmit={handleSubmit} className="flex flex-col gap-y-1">
                 {Array.from(contactFields.entries()).map(([labelText, inputDetails], key) => {
                     return (
                         <label key={key} className="flex flex-col my-2 duration-500 focus-within:p-1 focus-within:pl-3 focus-within:border-l-4 border-sandstone border-inherit rounded">
-                            <span className="text-dune md:max-2xl:text-xl text-lg pb-1.5">{labelText}</span>
+                            <span className="text-dune md:text-xl text-lg pb-1.5">{labelText}</span>
                                 {labelText == "Your message:" 
                                     ? <textarea name="message" value={contactInfo.message} onChange={handleChange} className=" pl-1.5 py-0.5 group bg-shark h-auto duration-700 transition-[height] w-full focus-within:h-28 border-b-[3px] md:max-2xl:text-xl text-lg placeholder-mudbrick ring-0 outline-0 text-sandstone focus-within:border-slate border-sandstone border-inherit"/> 
-                                    : <input type="text" name={inputDetails.inputName} value={inputDetails.inputHook} onChange={handleChange} className=" group pl-1 pt-0.5 bg-shark border-b-[3px] md:max-2xl:text-xl text-lg placeholder-mudbrick ring-0 outline-0 text-sandstone visited:autofill:text-sandstone focus-within:border-slate border-sandstone border-inherit w-full"/>
+                                    : <input type="text" name={inputDetails.inputName} value={inputDetails.inputHook} onChange={handleChange} className=" group pl-1 pt-0.5 bg-shark border-b-[3px] md:text-xl text-lg placeholder-mudbrick ring-0 outline-0 text-sandstone visited:autofill:text-sandstone focus-within:border-slate border-sandstone border-inherit w-full"/>
                                 }
                         </label>
                     )
