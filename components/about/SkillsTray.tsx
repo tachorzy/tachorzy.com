@@ -3,6 +3,9 @@ import Link from 'next/link'
 import { SKILLS } from '../../lib/skills'
 import { ManropeRegular } from '../../lib/localNextFonts'
 
+// could add modularity by passing in a prop for the skills instead of importing them.
+// this would allow for the tray to be used in other places, and not just in the about section.
+
 const SkillsTray = () => {
 
     return(

@@ -4,8 +4,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
-const SocialsTray = () => {
+//Look for a way to make this component more modular. Should be able to send in a prop for the socials instead of hardcoding them.
+// However, since we're dealing with both state and Image components here, it might be a bit more difficult.
 
+const SocialsTray = () => {
+    
+    // Try to make this DRY. There's a lot of repetition here.
     const [isHoveringGitHub, setIsHoveringGitHub] = useState(false)
     const onMouseEnterGitHub = () => setIsHoveringGitHub(true)
     const onMouseLeaveGitHub = () => setIsHoveringGitHub(false)

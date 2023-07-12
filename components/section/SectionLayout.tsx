@@ -24,20 +24,23 @@ const SectionLayout = (props: sectionProps) => {
             {props.sectionTitle != undefined && 
                 <SectionTitle title={props.sectionTitle} sectionTitleMargin={props.sectionTitleMargin}/>
             }
+            
             <>
                 {props.coreComponent}
                 {props.trayComponent}
             </>
-            {props.pageNumber != null 
+            
+            {props.pageNumber != undefined 
                 ? <div className={AmiriBoldSlanted.className}>
                     <div className="grid grid-rows-1 justify-end h-full align-bottom">
-                        <h4 className="lg:max-2xl:text-9xl text-8xl text-dusty relative ml-auto bottom-0 lg:max-2xl:mr-12 mr-10 mt-5 align-bottom select-none z-0">
+                        <h4 className="lg:text-9xl text-8xl text-dusty relative ml-auto bottom-0 lg:mr-12 mr-10 mt-5 align-bottom select-none z-0">
                             {props.pageNumber}
                         </h4>
                     </div>
                 </div>
                 : <Logo/> 
             } 
+            
             {props.nextPageReference != undefined &&
                 <NextPageButton nextPageReference={props.nextPageReference} margin={props.nextButtonMargins}/>
             }

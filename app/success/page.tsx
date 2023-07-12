@@ -35,8 +35,9 @@ export default async function Home() {
                         </div>
                     </div>
                     <h2 className="text-sandstone lg:xl:text-4xl md:text-3xl text-2xl leading-relaxed mx-auto">Your message has been submitted!<br/>I'll make sure to get back to you super soon.</h2> 
-                    <button className="bg-sandstone px-8 py-2 rounded-md w-1/6 self-center my-2">
-                        <Link href="/" className="text-shark text-xl font-medium">Home</Link>
+                    <button className="relative bg-sandstone px-8 py-2 rounded-md w-1/6 self-center my-4 border-sandstone border-1 border-inherit hover:group-scale-105">
+                        <Link href="/" className="text-shark text-xl font-medium hover:scale-105 z-50 ">Home</Link>
+                        <div className="group rounded-full absolute left-0 bottom-0 bg-slate w-2 h-2 overflow-hidden z-10"></div>
                     </button>
                 </div>
             </main>
