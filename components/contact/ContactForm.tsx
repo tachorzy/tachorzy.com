@@ -50,7 +50,7 @@ const ContactForm = () => {
                         </label>
                     )
                 })}
-                <button type="submit" className=" rounded bg-sandstone hover:bg-dusty text-slate font-semibold py-2 md:max-2xl:w-1/4 w-1/3 mt-6">
+                <button type="submit" className=" rounded bg-sandstone hover:bg-dusty text-slate font-semibold py-2 md:w-1/4 w-1/3 mt-6">
                     {"Submit!"}
                 </button>
             </form>
