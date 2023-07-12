@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ManropeExtraBold, ManropeMedium, ManropeRegular } from '../../lib/localNextFonts'
 
 interface projectTechStack {
     techStack: string[]
@@ -9,8 +8,6 @@ interface projectTechStack {
 }
 
 const ProjectTechTray = (props: projectTechStack) => {
-    console.log(props.hostLink)
-
     return(
         <div className="flex flex-row md:gap-x-3.5 gap-x-1 my-5 mb-3">
             {props.techStack.map((tool, index) => (
