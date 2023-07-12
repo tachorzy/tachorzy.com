@@ -21,7 +21,7 @@ const HamburgerMenu = () => {
         ["home", {text: "Home", width: "24", height: "24"}],
         ["about", {text: "About", width: "24", height: "24"}],
         ["projects", {text: "Projects", width: "24", height: "24"}],
-        ["travel", {text: "Travel", width: "27", height: "27"}],
+        // ["travel", {text: "Travel", width: "27", height: "27"}],
         ["contact", {text: "Contact", width: "26", height: "26"}],
     ])
 
@@ -41,10 +41,10 @@ const HamburgerMenu = () => {
                                 </Link>
                             </div>
                         ))}
-                        <div className="flex flex-row gap-x-[1.15rem] items-center pl-6 pt-3 pb-2.5 select-none">
-                            {/* <Image src="/fanous.svg" width={36} height={36} alt="" className="pb-3 pr-[0.18rem]"></Image> */}
+                        {/* <div className="flex flex-row gap-x-[1.15rem] items-center pl-6 pt-3 pb-2.5 select-none">
+                            <Image src="/fanous.svg" width={36} height={36} alt="" className="pb-3 pr-[0.18rem]"></Image>
                             <LightModeToggle></LightModeToggle>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             ) : (
