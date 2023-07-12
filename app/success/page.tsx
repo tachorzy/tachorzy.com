@@ -1,9 +1,8 @@
 "use client"; //client component
 
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styles from '../../styles/Home.module.css'
-import { motion, useInView, useAnimation } from "framer-motion"
 import { ManropeMedium, AmiriBoldSlanted, Quest } from '../../lib/localNextFonts'
 import { TypeAnimation } from 'react-type-animation';
 
