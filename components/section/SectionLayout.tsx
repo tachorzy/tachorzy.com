@@ -1,9 +1,8 @@
-import Image from 'next/image'
 import React, { ReactElement } from 'react'
 import SectionTitle from '../../components/SectionTitle'
 import Logo from '../../components/Logo'
 import NextPageButton from '../../components/NextPageButton'
-import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../../lib/localNextFonts'
+import { AmiriBoldSlanted } from '../../lib/localNextFonts'
 
 interface sectionProps{
     id: string;
