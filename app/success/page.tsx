@@ -24,7 +24,7 @@ export default async function Home() {
                             </TypeAnimation>
                         </div>
                     </div>
-                    <h2 className="text-sandstone lg:xl:text-4xl md:text-3xl text-2xl leading-relaxed mx-auto">Your message has been submitted!<br/>I'll make sure to get back to you super soon.</h2> 
+                    <h2 className="text-sandstone lg:xl:text-4xl md:text-3xl text-2xl leading-relaxed mx-auto">{"Your message has been submitted!"}<br/>{"I'll make sure to get back to you super soon."}</h2> 
                     <button className="relative bg-sandstone px-8 py-2 rounded-md w-1/6 self-center my-4 border-sandstone border-1 border-inherit hover:scale-105 duration-500">
                         <Link href="/" className="text-shark text-xl font-medium z-50 ">Home</Link>
                     </button>
