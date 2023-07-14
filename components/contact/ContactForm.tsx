@@ -1,4 +1,4 @@
-"use client"; //client component
+"use client";
 
 import React, { useState } from 'react'
 import router from 'next/router'
@@ -18,7 +18,6 @@ const ContactForm = () => {
         ["Your message:", { inputName: "message", inputHook: contactInfo.message }],
     ])
     
-
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault(); //prevent page refresh
         const formData = new FormData(event.target as HTMLFormElement);
