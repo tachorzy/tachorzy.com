@@ -21,9 +21,9 @@ export default function Home() {
   return (
     <> 
       <main className={styles.main}>
-        {Array.from(sections.entries()).map(([sectionId, sectionDetails]) => {
+        {Array.from(sections.entries()).map(([sectionId, sectionDetails], index) => {
             return (
-              <SectionLayout key={sectionId} id={sectionId} margin={sectionDetails.margin} sectionTitle={sectionDetails.sectionTitle} sectionTitleMargin={sectionDetails.sectionTitleMargin} coreComponent={sectionDetails.coreComponent} trayComponent={sectionDetails.trayComponent} pageNumber={sectionDetails.pageNumber} nextPageReference={sectionDetails.nextPageReference} nextButtonMargins={sectionDetails.nextButtonMargins}/>
+              <SectionLayout key={index} id={sectionId} margin={sectionDetails.margin} sectionTitle={sectionDetails.sectionTitle} sectionTitleMargin={sectionDetails.sectionTitleMargin} coreComponent={sectionDetails.coreComponent} trayComponent={sectionDetails.trayComponent} pageNumber={sectionDetails.pageNumber} nextPageReference={sectionDetails.nextPageReference} nextButtonMargins={sectionDetails.nextButtonMargins}/>
             )
           })
         }
