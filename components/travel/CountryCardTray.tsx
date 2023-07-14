@@ -8,9 +8,9 @@ const CountryCardTray = () => {
     return(
         <div className={ManropeExtraBold.className + " w-10/12 h-10/12"}>
             <div className="grid grid-cols-12 grid-rows-4">
-              {Array.from(PLACES_TRAVELLED.entries()).map(([countryName, countryDetails]) => {
+              {Array.from(PLACES_TRAVELLED.entries()).map(([countryName, countryDetails], index) => {
                   return(
-                    <CountryCard name={countryName} isoCode={countryDetails.isoCode} coverImageURL={countryDetails.coverImageURL}/>
+                    <CountryCard key={index} name={countryName} isoCode={countryDetails.isoCode} coverImageURL={countryDetails.coverImageURL}/>
                   )
                 }
               )}
