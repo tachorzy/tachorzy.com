@@ -27,7 +27,7 @@ const HamburgerMenu = () => {
     return (
         <div>
             <button className="p-1.5 hover:bg-sandstone hover:bg-opacity-5 rounded-2xl cursor-pointer select-none border-transparent    " onClick = {() => setIsActive(!isActive)}>
-                <Image src="/icons/hamburger-menu-sandstone.svg" width="0" height="0" alt="hamburger menu icon" className="cursor-pointer lg:w-12 lg:h-12 md:w-10 md:h-10 w-9 h-9"/>
+                <Image src="/icons/hamburgerMenu/hamburger-menu-sandstone.svg" width="0" height="0" alt="hamburger menu icon" className="cursor-pointer lg:w-12 lg:h-12 md:w-10 md:h-10 w-9 h-9"/>
             </button>
             { isActive ? (
                 <div className="w-56 h-58 self-end mr-12 bg-sandstone rounded-2xl fixed right-0 mt-2 shadow-xl" ref={menuRef}>
@@ -35,7 +35,7 @@ const HamburgerMenu = () => {
                         {Array.from(menuOptions.entries()).map(([option, optionDetails], index) => (
                             <div key={index} className="flex flex-row gap-x-4 items-center hover:bg-dusty pl-6 py-2 select-none">      
                                 <Link href={option != 'home' ? `#${option}` : '/'} className="w-full flex flex-row gap-x-4 items-center">
-                                    <Image src={`/icons/${option}.svg`} width={Number(optionDetails.width)} height={Number(optionDetails.height)} alt="home icon" className=""></Image>
+                                    <Image src={`/icons/hamburgerMenu/${option}.svg`} width={Number(optionDetails.width)} height={Number(optionDetails.height)} alt="home icon" className=""></Image>
                                     {optionDetails.text}
                                 </Link>
                             </div>
