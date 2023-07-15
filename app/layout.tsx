@@ -4,7 +4,7 @@ import HamburgerMenu from '../components/hamburgerMenu/HamburgerMenu'
 
 export const metadata = {
   title: 'Tariq Achor Zyad',
-  description: 'Web Developer',
+  description: 'Exploring the world of tech.',
   icons: {
     icon: '/T.png',
   },
