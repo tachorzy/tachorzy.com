@@ -15,8 +15,8 @@ const ContactForm = () => {
 
     const contactFields: Map<string, { inputName: string, inputHook: string }> = new Map([
         ["What's your name?", { inputName: "name", inputHook: contactInfo.name }],
-        ["Your e-mail:", { inputName: "email", inputHook: contactInfo.email }],
-        ["Your message:", { inputName: "message", inputHook: contactInfo.message }],
+        ["What's your email?", { inputName: "email", inputHook: contactInfo.email }],
+        ["Let's hear your message!", { inputName: "message", inputHook: contactInfo.message }],
     ])
     
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
