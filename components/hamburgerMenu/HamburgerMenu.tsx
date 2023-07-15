@@ -20,7 +20,7 @@ const HamburgerMenu = () => {
         ["home", {text: "Home", width: "24", height: "24"}],
         ["about", {text: "About", width: "24", height: "24"}],
         ["projects", {text: "Projects", width: "24", height: "24"}],
-        // ["travel", {text: "Travel", width: "27", height: "27"}],
+        ["travel", {text: "Travel", width: "27", height: "27"}],
         ["contact", {text: "Contact", width: "26", height: "26"}],
     ])
 
