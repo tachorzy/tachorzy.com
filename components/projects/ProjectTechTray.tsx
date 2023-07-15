@@ -11,7 +11,7 @@ const ProjectTechTray = (props: projectTechStack) => {
     return(
         <div className="flex flex-row md:gap-x-3.5 gap-x-1 my-5 mb-3">
             {props.techStack.map((tool, index) => (
-                <Image key={index} src={`/icons/${tool}.svg`} width="0" height="0" alt="language/library/framework icon" className="md:w-6 md:h-6 w-6 h-6"/>
+                <Image key={index} src={`/icons/skills/${tool}.svg`} width="0" height="0" alt="language/library/framework icon" className="md:w-6 md:h-6 w-6 h-6"/>
             ))}
             
             <div className="relative md:gap-x-3.5">
