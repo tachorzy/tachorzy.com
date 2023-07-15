@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
 import LandingPageHeaders from '../components/landingPage/LandingPageHeaders'
 import AboutMe from '../components/about/AboutMe'
 import SectionLayout from '../components/section/SectionLayout'
@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <> 
-      <main className={styles.main}>
+      <main className="bg-shark flex flex-col overflow-hidden">
         {Array.from(sections.entries()).map(([sectionId, sectionDetails], index) => {
             return (
               <SectionLayout key={index} id={sectionId} margin={sectionDetails.margin} sectionTitle={sectionDetails.sectionTitle} sectionTitleMargin={sectionDetails.sectionTitleMargin} coreComponent={sectionDetails.coreComponent} trayComponent={sectionDetails.trayComponent} pageNumber={sectionDetails.pageNumber} nextPageReference={sectionDetails.nextPageReference} nextButtonMargins={sectionDetails.nextButtonMargins}/>
