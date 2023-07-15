@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import ProjectTechTray from './projectTechTray'
+import ProjectTechTray from './ProjectTechTray'
 import { ManropeExtraBold, ManropeMedium } from '../../lib/localNextFonts'
 
 interface project{
