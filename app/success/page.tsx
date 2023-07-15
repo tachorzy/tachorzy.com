@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import React from 'react'
-import styles from '../../styles/Home.module.css'
 import { ManropeMedium, AmiriBoldSlanted, Quest } from '../../lib/localNextFonts'
 import { TypeAnimation } from 'react-type-animation';
 
@@ -10,7 +9,7 @@ import { TypeAnimation } from 'react-type-animation';
 export default async function Home() {
     return (        
         <> 
-            <main className={styles.main}>
+            <main className="bg-shark flex flex-col overflow-hidden">
                 <div className={ManropeMedium.className + ` h-screen text-center flex flex-col gap-y-3 justify-center content-center self-center w-1/2`}>
                     <div className="relative mx-5 self-center">
                         <div className="flex flex-row gap-x-4 items-center">
