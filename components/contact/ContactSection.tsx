@@ -1,4 +1,4 @@
-import { ManropeMedium, ManropeExtraBold } from '../../lib/localNextFonts'
+import { ManropeMedium } from '../../lib/localNextFonts'
 import SocialsTray from 'components/about/SocialsTray';
 import ContactForm from './ContactForm';
 

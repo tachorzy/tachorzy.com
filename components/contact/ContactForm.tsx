@@ -1,10 +1,11 @@
-"use client";
+"use client"
 
 import React, { useState } from 'react'
-import router from 'next/router'
+import { useRouter } from 'next/navigation'
 import { ManropeMedium } from '../../lib/localNextFonts'
 
 const ContactForm = () => {
+    const router = useRouter()
 
     const [contactInfo, setContactInfo] = useState({
         name: "",
