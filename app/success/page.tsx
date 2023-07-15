@@ -1,5 +1,3 @@
-"use client"; //client component
-
 import Link from 'next/link'
 import React from 'react'
 import { ManropeMedium, AmiriBoldSlanted, Quest } from '../../lib/localNextFonts'
