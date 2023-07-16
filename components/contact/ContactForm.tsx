@@ -39,6 +39,9 @@ const ContactForm = () => {
     return( 
         <div className={ManropeMedium.className + " md:absolute right-0 md:w-[40%] lg:ml-24 bg-metal md:py-12 md:px-16 py-10 px-8 rounded-md md:mr-[17rem] h-full"}>
             <form onSubmit={handleSubmit} className="flex flex-col gap-y-1">
+                {/*Honeypot field */}
+                <input name="_gotcha" type="hidden" className="hidden"/>
+                {/* Contact form: */}
                 {Array.from(contactFields.entries()).map(([labelText, inputDetails], key) => {
                     return (
                         <label key={key} className="flex flex-col my-2 duration-500 focus-within:p-1 focus-within:pl-3 focus-within:border-l-4 border-sandstone border-inherit rounded">
