@@ -22,7 +22,7 @@ export default function RootLayout({
         {/* There's a hydration error if we make this first body tag a head tag or fragment */}
         <body> 
             <div className={ManropeRegular.className + " "}>
-                <div className="fixed top-0 right-0 md:max-2xl:mt-12 md:max-2xl:mr-12 mt-6 mr-6 z-50">
+                <div className="fixed top-0 right-0 mr-6 md:mt-12 md:mr-12 mt-6 z-50">
                     <HamburgerMenu/>
                 </div>
             </div>
