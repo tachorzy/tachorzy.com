@@ -40,7 +40,7 @@ const ContactForm = () => {
         <div className={ManropeMedium.className + " md:absolute right-0 md:w-[40%] lg:ml-24 bg-metal md:py-12 md:px-16 py-10 px-8 rounded-md md:mr-[17rem] h-full"}>
             <form onSubmit={handleSubmit} className="flex flex-col gap-y-1">
                 {/*Honeypot field */}
-                <input name="_input" type="hidden" className="hidden"/>
+                <input name="_gotcha" type="hidden" className="hidden"/>
                 {/* Contact form: */}
                 {Array.from(contactFields.entries()).map(([labelText, inputDetails], key) => {
                     return (
