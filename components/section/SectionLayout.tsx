@@ -19,7 +19,7 @@ interface sectionProps{
 const SectionLayout = (props: sectionProps) => {
 
     return(
-        <section id={props.id} className={` relative lg:xl:ml-24 ml-10 ${props.margin}`}>
+        <section id={props.id} className={` relative lg:ml-24 ml-10 ${props.margin}`}>
             {props.sectionTitle != undefined && 
                 <SectionTitle title={props.sectionTitle} sectionTitleMargin={props.sectionTitleMargin}/>
             }
@@ -32,7 +32,7 @@ const SectionLayout = (props: sectionProps) => {
             {props.pageNumber != undefined 
                 ? <div className={AmiriBoldSlanted.className}>
                     <div className="grid grid-rows-1 justify-end h-full align-bottom">
-                        <h4 className="lg:text-9xl text-8xl text-dusty relative ml-auto bottom-0 lg:mr-12 mr-10 mt-5 xl:mt-48 align-bottom select-none z-0">
+                        <h4 className="lg:text-9xl text-8xl text-dusty relative ml-auto bottom-0 lg:mr-12 mr-10 mt-5 2xl:mt-48 align-bottom select-none z-0">
                             {props.pageNumber}
                         </h4>
                     </div>
