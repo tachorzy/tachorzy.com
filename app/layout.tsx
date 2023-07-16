@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Tariq Achor Zyad',
   description: 'Web Developer',
   icons: {
-    icon: '/T.png',
+    icon: '/favicon.png',
   },
 }
 
