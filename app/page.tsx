@@ -17,7 +17,6 @@ export default function Home() {
     ["projects", {sectionTitle: "Projects", sectionTitleMargin: "mb-7", coreComponent: <ProjectsTray/>, pageNumber: "٢", nextPageReference: "#travel", nextButtonMargins: "mt-[6rem]"}],
     ["travel", {sectionTitle: "Travel", sectionTitleMargin: "mb-7", coreComponent: <CountryCardTray/>, pageNumber: "٣", nextPageReference: "#contact", nextButtonMargins: "mt-[6rem]"}],
     ["contact", {margin: "mb-72", sectionTitle: "Get in touch!", sectionTitleMargin: "mb-7", coreComponent: <ContactSection/>, pageNumber: "٤"}
-  ]
   ]);
 
   return (
