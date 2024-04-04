@@ -1,5 +1,6 @@
 import './globals.css'
-import { ManropeExtraBold, ManropeRegular, ManropeMedium, AmiriBoldSlanted } from '../lib/localNextFonts'
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { ManropeRegular } from '../lib/localNextFonts'
 import HamburgerMenu from '../components/hamburgerMenu/HamburgerMenu'
 
 export const metadata = {
@@ -27,7 +28,10 @@ export default function RootLayout({
                 </div>
             </div>
         </body>
-        <body>{children}</body>
+        <body>
+          {children}
+          <SpeedInsights/>
+        </body>
       </html>
     )
   }
