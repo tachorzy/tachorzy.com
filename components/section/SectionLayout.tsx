@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import SectionTitle from '../../components/SectionTitle'
+import SectionTitle from './SectionTitle'
 import Logo from '../../components/Logo'
 import NextPageButton from '../../components/NextPageButton'
 import { AmiriBoldSlanted } from '../../lib/localNextFonts'

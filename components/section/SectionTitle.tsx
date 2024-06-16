@@ -1,4 +1,4 @@
-import { JakartaBold } from '../lib/localNextFonts'
+import { JakartaBold } from '../../lib/localNextFonts'
 
 interface sectionTitleProperties {
     title: string
