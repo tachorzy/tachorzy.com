@@ -1,6 +1,6 @@
 "use client"; 
 
-import { JakartaRegular, JakartaMedium, JakartaSemibold, JakartaExtraBold } from '../../lib/localNextFonts'
+import { JakartaMedium, JakartaSemibold, JakartaExtraBold } from '../../lib/localNextFonts'
 import { TypeAnimation } from 'react-type-animation';
 
 const LandingPageHeaders = () => {
