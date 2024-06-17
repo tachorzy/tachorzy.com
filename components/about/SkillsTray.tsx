@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { SKILLS } from '../../lib/skills'
+import { skills } from '../../lib/skills'
 import { ManropeRegular } from '../../lib/localNextFonts'
 
 // could add modularity by passing in a prop for the skills instead of importing them.
@@ -11,7 +11,7 @@ const SkillsTray = () => {
     return(
         <div className={ManropeRegular.className}>
               <div className="flex flex-row flex-wrap md:mt-1 gap-x-7 self-end pt-3 mb-[8.75rem]">
-                {Array.from(SKILLS.entries()).map(([programmingLanguage, documentation], index) => {
+                {Array.from(skills.entries()).map(([programmingLanguage, documentation], index) => {
                     return(
                         <div key={index} className="flex flex-col group items-center">
                             <Link href={documentation} target="_blank">
