@@ -22,6 +22,11 @@
   @apply bg-shark
 }
 
+project-tech-tray::-webkit-scrollbar {
+  disply: none;
+}
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
