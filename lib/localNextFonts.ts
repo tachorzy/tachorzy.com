@@ -15,11 +15,6 @@ export const ManropeRegular = localFont({
     weight: '500'
 })
 
-export const AmiriBoldSlanted = localFont({
-    src: '../public/fonts/Amiri/ArbFONTS-Amiri-Boldslanted.ttf',
-    weight: '500'
-})
-
 export const Quest = localFont({
     src: '../public/fonts/Questv1/Questv1-Regular.otf',
     weight: '500'
