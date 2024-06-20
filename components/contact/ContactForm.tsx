@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { ManropeMedium } from '../../lib/localNextFonts'
+import { JakartaRegular, JakartaMedium } from '../../lib/localNextFonts'
 
 const ContactForm = () => {
     const router = useRouter()
@@ -37,7 +37,7 @@ const ContactForm = () => {
     };
 
     return( 
-        <div className={ManropeMedium.className + " md:absolute right-0 md:w-[40%] lg:ml-24 bg-metal md:py-12 md:px-16 py-10 px-8 rounded-md md:mr-[17rem] h-full"}>
+        <div className={JakartaRegular.className + " md:absolute right-0 md:w-[40%] lg:ml-24 bg-metal md:py-12 md:px-16 py-10 px-8 rounded-md md:mr-[17rem] h-full"}>
             <form onSubmit={handleSubmit} className="flex flex-col gap-y-1">
                 {/*Honeypot field */}
                 <input name="_gotcha" type="hidden" className="hidden"/>
