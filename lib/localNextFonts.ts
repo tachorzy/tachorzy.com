@@ -59,3 +59,8 @@ export const JakartaSemibold = localFont({
     src: '../public/fonts/Jakarta/PlusJakartaSans-SemiBold.otf',
     weight: '500'
 })
+
+export const Rakkas = localFont({
+    src: '../public/fonts/Rakkas/Rakkas-Regular.ttf',
+    weight: '500'
+})
