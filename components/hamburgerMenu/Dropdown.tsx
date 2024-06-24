@@ -23,7 +23,7 @@ const Dropdown = (props: {isActive: boolean, setIsActive: React.Dispatch<React.S
             animate={{ x: 0 }}
             exit={{ x: '100vw' }}
             transition={{ type: 'spring', stiffness: 30 }}
-            className="w-64 h-48 self-end mr-12 bg-metal border-2 border-opacity-75 border-[#1C2B2D] rounded-md fixed right-0 mt-2 shadow-xl"
+            className="w-64 h-48 self-end mr-12 bg-metal border-2 border-opacity-75 border-[#1C2B2D] rounded-md fixed right-0 mt-2"
             ref={menuRef}
         >
             <div className="flex flex-col text-sandstone font-bold py-3">
