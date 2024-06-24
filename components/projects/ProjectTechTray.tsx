@@ -15,7 +15,7 @@ const ProjectTechTray = (props: projectTechStack) => {
                 <Image key={index} src={`/icons/skills/${tool}.svg`} width="0" height="0" alt="language/library/framework icon" className="md:w-6 md:h-6 w-6 h-6"/>
             ))}
             
-            <div className={JakartaSemibold.className + " relative md:gap-x-3.5"}>
+            <div className={JakartaBold.className + " relative md:gap-x-3.5"}>
                 <Link href={props.gitHubLink} className="group absolute align-middle justify-self-end text-dusty hover:text-mudbrick font-semibold md:text-sm text-sm pt-2 flex-none px-1.5" target="_blank">
                     GitHub
                     <span className="pl-0.5 group-hover:pl-1.5 duration-500">›</span>
