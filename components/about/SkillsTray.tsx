@@ -1,7 +1,10 @@
+"use client";
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { skills } from '../../lib/skills'
-import { JakartaRegular, JakartaMedium } from '../../lib/localNextFonts'
+import { JakartaRegular } from '../../lib/localNextFonts'
+import { motion } from 'framer-motion'
 
 // could add modularity by passing in a prop for the skills instead of importing them.
 // this would allow for the tray to be used in other places, and not just in the about section.
@@ -9,7 +12,12 @@ import { JakartaRegular, JakartaMedium } from '../../lib/localNextFonts'
 const SkillsTray = () => {
 
     return(
-        <div>
+        <motion.div 
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 100 }}
+        className={JakartaRegular.className}
+        >
             <h1 className="text-sandstone text-xl mt-5 font-semibold md:text-3xl">Tools</h1>
             <div className="flex flex-row flex-wrap md:mt-1 gap-x-7 self-end pt-3.5 mb-[8.75rem]">
                 {Array.from(skills.entries()).map(([programmingLanguage, documentation], index) => {
@@ -22,7 +30,7 @@ const SkillsTray = () => {
                         </div>
                 )})}
             </div>
-        </div>
+        </motion.div>
     );
 }
 
