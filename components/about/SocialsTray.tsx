@@ -23,7 +23,7 @@ const SocialsTray = () => {
     const onMouseLeaveCV = () => setIsHoveringCV(false)
     
     return(
-        <div className="lg:mt-5 mt-2.5 flex flex-row gap-x-5 xl:gap-x-6">
+        <div className="lg:mt-5 md:mt-2.5 mt-4 flex flex-row gap-x-5 xl:gap-x-6">
             <span
                 onMouseEnter = {onMouseEnterGitHub}
                 onMouseLeave = {onMouseLeaveGitHub}
