@@ -11,7 +11,7 @@ const SkillsTray = () => {
     return(
         <div className={JakartaRegular.className}>
             <h1 className="text-sandstone text-xl mt-5 font-semibold md:text-3xl">Tools</h1>
-            <div className="flex flex-row flex-wrap w-11/12 md:mt-1 gap-x-7 gap-y-8 self-end pt-3.5 mb-[8.75rem]">
+            <div className="flex flex-row flex-wrap w-11/12 md:mt-1 gap-x-7 gap-y-8 self-end pt-3.5 mb-[8.75rem] 2xl:mb-24">
                 {Array.from(skills.entries()).map(([programmingLanguage, documentation], index) => {
                     return(
                         <div key={index} className="flex flex-col group items-center">
