@@ -19,7 +19,7 @@ interface sectionProps{
 const SectionLayout = (props: sectionProps) => {
 
     return(
-        <section id={props.id} className={` relative lg:ml-24 ml-10 snap-start ${props.margin}`}>
+        <section id={props.id} className={` relative lg:ml-24 ml-10 ${props.margin}`}>
             {props.sectionTitle != undefined && 
                 <SectionTitle title={props.sectionTitle} sectionTitleMargin={props.sectionTitleMargin}/>
             }
