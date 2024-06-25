@@ -18,7 +18,7 @@ const SkillsTray = () => {
                             <Link href={documentation} target="_blank">
                                 <Image src ={`/icons/skills/${programmingLanguage}.svg`} width="0" height="0" alt="language/library/framework icon" className="select-none md:w-9 md:h-9 w-6 h-6 hover:scale-[101.5%] duration-700"></Image>
                             </Link>
-                            <h1 className="absolute mt-6 md:mt-10 opacity-0 group-hover:opacity-100 animation-fade duration-700 text-dusty leading-relaxed pt-2 font-semibold md:text-xs text-xxs">{programmingLanguage}</h1>
+                            <h1 className="absolute mt-6 md:mt-10 opacity-0 group-hover:opacity-100 animation-fade duration-700 text-dusty leading-relaxed pt-2 font-semibold 2xl:text-sm md:text-xs text-xxs">{programmingLanguage}</h1>
                         </div>
                 )})}
             </div>
