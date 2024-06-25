@@ -2,13 +2,9 @@
 
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { JakartaRegular } from '../../lib/localNextFonts'
-import { motion } from 'framer-motion';
+import { JakartaRegular, JakartaMedium } from '../../lib/localNextFonts'
 
-const ContactForm = (props: { isInView: boolean }) => {
-
-    const {isInView} = props
-
+const ContactForm = () => {
     const router = useRouter()
 
     const [contactInfo, setContactInfo] = useState({
@@ -22,7 +18,7 @@ const ContactForm = (props: { isInView: boolean }) => {
         ["What's your email?", { inputName: "email", inputHook: contactInfo.email }],
         ["Let's hear your message!", { inputName: "message", inputHook: contactInfo.message }],
     ])
-
+    
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault(); //prevent page refresh
         const formData = new FormData(event.target as HTMLFormElement);
@@ -41,12 +37,7 @@ const ContactForm = (props: { isInView: boolean }) => {
     };
 
     return( 
-        <motion.div
-            initial={{ y: '100vh' }}
-            animate={{ y: isInView ? 0 : '100vh' }}            
-            transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-            className={JakartaRegular.className + " md:absolute right-0 md:w-[40%] lg:ml-24 bg-metal md:py-12 md:px-16 py-10 px-8 rounded-md md:mr-[17rem] h-full"}
-        >            
+        <div className={JakartaRegular.className + " md:absolute right-0 md:w-[40%] lg:ml-24 bg-metal md:py-12 md:px-16 py-10 px-8 rounded-md md:mr-[17rem] h-full"}>
             <form onSubmit={handleSubmit} className="flex flex-col gap-y-1">
                 {/*Honeypot field */}
                 <input name="_gotcha" type="hidden" className="hidden"/>
@@ -66,7 +57,7 @@ const ContactForm = (props: { isInView: boolean }) => {
                     {"Submit!"}
                 </button>
             </form>
-        </motion.div>
+        </div>
     );
 }
 
