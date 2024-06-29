@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import ProjectTechTray from './ProjectTechTray'
-import { ManropeExtraBold, ManropeMedium } from '../../lib/localNextFonts'
+import { JakartaRegular, JakartaMedium, JakartaSemibold, JakartaExtraBold } from '../../lib/localNextFonts'
 
 interface project{
     name: string;
@@ -13,15 +13,16 @@ interface project{
 }
 
 const ProjectCard = (props: project) => {
-    const tempHostLink: string | null = props.hostLink
+    const tempHostLink: string | null = props.hostLink 
+    
     return(
-        <div className={ManropeExtraBold.className + " mt-0.5 w-[17rem] h-80 md:w-80 md:h-[19.25rem] bg-metal rounded-md shadow-2xl hover:scale-105 duration-500"}>
+        <div className="snap-start w-[17rem] lg:w-80 lg:h-[19.25rem] lg:scale-[80%] lg:hover:scale-[85%] xl:scale-100 bg-metal rounded-md hover:scale-105 xl:hover:scale-105 duration-500 border-2 border-opacity-75 border-[#1C2B2D]">
             <Link href={ tempHostLink != null ? tempHostLink : props.gitHubLink } target="_blank" className="w-full h-2/3">
-                <Image src={`/projects/${props.imageUrl}`} height="0" width={350} alt="aesthetic gif" className="rounded-t-md h-[56%]"></Image>
+                <Image src={`/projects/${props.imageUrl}`} height={350} width={350} alt="aesthetic gif" className="rounded-t-md h-[56%]"></Image>
             </Link>
-            <div className="justify-center content-center pt-4 px-6 pb-1">
-                <p className="text-dusty text-2xl">{props.name}</p>
-                <p className="text-mudbrick text-lg">{props.description}</p>
+            <div className={"justify-center content-center pt-4 px-6 pb-1"}>
+                <p className={JakartaExtraBold.className + `${props.name.length > 22 ? " text-base md:text-lg " : " text-lg md:text-xl "} text-dusty`}>{props.name}</p>
+                <p className={JakartaSemibold.className + ` ${props.description.length > 25 ? " text-xs md:text-sm " : " text-base "} text-mudbrick`}>{props.description}</p>
                 <ProjectTechTray techStack={props.techStack} gitHubLink={props.gitHubLink} hostLink={props.hostLink}/>
             </div>
         </div>
