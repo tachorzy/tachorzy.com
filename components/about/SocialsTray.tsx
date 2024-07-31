@@ -52,7 +52,7 @@ const SocialsTray = () => {
                 onMouseEnter = {onMouseEnterCV}
                 onMouseLeave=  {onMouseLeaveCV}
             >
-                <Link href="/resume/tachorzy_resume_april_2024.pdf" target="_blank">
+                <Link href="/resume/tachorzy_resume_july_2024.pdf" target="_blank">
                     {isHoveringCV ? (
                         <Image src="/icons/socials/Resume-Mudbrick.svg" width="0" height="0" alt="Resume logo active" className="cursor-pointer select-none xl:w-9 xl:h-9 lg:w-8 lg:h-8 md:h-12 w-6 h-6 scale-110 duration-500"></Image>
                     ) : ( 
