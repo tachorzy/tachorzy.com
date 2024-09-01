@@ -32,7 +32,7 @@ const SectionLayout = (props: sectionProps) => {
             {props.pageNumber != undefined 
                 ? <div className={Rakkas.className}>
                     <div className="grid grid-rows-1 justify-end h-full align-bottom">
-                        <h4 className="lg:text-[8.5rem] text-8xl text-dusty relative ml-auto bottom-0 lg:mr-12 mr-10 mt-5 lg:-mt-36 2xl:-mt-8 align-bottom select-none z-0">
+                        <h4 className="lg:text-[8.5rem] text-8xl text-dusty relative bottom-0 lg:mr-12 mr-10 mt-5 lg:-mt-36 2xl:-mt-8 align-bottom select-none z-0">
                             {props.pageNumber}
                         </h4>
                     </div>
