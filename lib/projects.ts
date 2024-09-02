@@ -2,5 +2,6 @@ export const projects: Map<string, {description: string, imageUrl: string, techS
     ["Gibraltr", {description: "Visa Search Engine", imageUrl: "aesthetic_station.gif", techStack: ["Next.js", "JavaScript", "TailwindCSS"], hostLink: "https://www.gibraltr.com/", gitHubLink: "https://github.com/tachorzy/Gibraltr"}],
     ["Battuta.ai", {description: "AI Itinerary Generator", imageUrl: "aesthetic_travel.gif", techStack: ["Next.js", "TypeScript", "TailwindCSS"], hostLink: null, gitHubLink: "https://github.com/tachorzy/battuta.ai"}],
     ["TensorIoT Factory Simulator", { description: "End-to-End Manufacturing Simulator", imageUrl: "aesthetic_ships.gif", techStack: ["Next.js", "TypeScript", "TailwindCSS", "Go", "AWS"], hostLink: null, gitHubLink: "https://github.com/tachorzy/Team-WDD-End-to-End-Manufacturing-Simulator"}],
+    ["WhichSideOfTheRoad?", { description: "Bidirectional traffic simulator", imageUrl: "aesthetic_traffic.webp", techStack: ["Vue", "TypeScript", "TailwindCSS"], hostLink: "https://what-side-of-the-road.vercel.app/", gitHubLink: "https://github.com/tachorzy/Which-Side-Of-The-Road"}],
     ["Tariq Achor Zyad", {description: "This Portfolio", imageUrl: "aesthetic_art.gif", techStack: ["Next.js", "TypeScript", "TailwindCSS"], hostLink: null, gitHubLink: "https://github.com/tachorzy/tachorzy.com"}]
 ]);
