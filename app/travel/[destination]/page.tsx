@@ -1,16 +1,27 @@
 import DestinationCardTray from 'components/travel/DestinationCardTray';
+import { PLACES_TRAVELLED } from 'lib/travel';
+import SectionTitle from 'components/section/SectionTitle';
 
 export default function Page({ params } : {
     params: { destination: string }
 }){ 
     const decodedDestination = decodeURIComponent(params.destination);
 
+    const countryDetails = PLACES_TRAVELLED.get(decodedDestination);
+
     return (
-        <main className="bg-shark flex flex-col h-screen overflow-hidden 2xl:gap-y-24">
-            <div className="flex flex-col items-center">
-                <h1 className="text-4xl text-bold text-dune">{decodedDestination}</h1>
-                <DestinationCardTray countryName={decodedDestination}/>
-            </div>
+        <main className="bg-shark flex flex-col h-screen overflow-hidden 2xl:gap-y-24 ">
+            <div className="lg:ml-24 ml-10">
+                {countryDetails ? (
+                        <div>
+                            <SectionTitle title={decodedDestination}/>
+                            <DestinationCardTray countryName={decodedDestination} countryDetails={countryDetails}/>
+                        </div>
+                        
+                    ) : (<h1 className="text-4xl text-bold text-dune">Whoops, looks like {decodedDestination} is still on my bucketlist...</h1>)
+                }    
+            </div>    
+ 
         </main>
     )
 
