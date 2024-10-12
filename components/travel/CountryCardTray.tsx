@@ -1,10 +1,6 @@
 import { JakartaMedium } from '../../lib/localNextFonts'
 import { PLACES_TRAVELLED } from 'lib/travel';
-import dynamic from 'next/dynamic';
-
-const CountryCard = dynamic(() => import('components/travel/CountryCard'), {
-  loading: () => <p>Loading...</p>,
-})
+import CountryCard from './CountryCard';
 
 const CountryCardTray = () => {
     return(
