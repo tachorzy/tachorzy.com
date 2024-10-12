@@ -4,7 +4,7 @@ import SectionTitle from 'components/section/SectionTitle';
 import dynamic from 'next/dynamic'
 
 const Gallery = dynamic(() => import('components/travel/Gallery'), {
-    loading: () => <p>Loading...</p>,
+    loading: () => <p className="text-white font-bold text-9xl">Loading...</p>,
 })
 
 export default function Page({ params } : {
