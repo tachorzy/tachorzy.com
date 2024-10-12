@@ -10,8 +10,8 @@ export default function Page({ params } : {
     const countryDetails = PLACES_TRAVELLED.get(decodedDestination);
 
     return (
-        <main className="bg-shark flex flex-col overflow-y-yscroll 2xl:gap-y-24 ">
-            <div className="lg:ml-24 ml-10  mb-24 ">
+        <main className="bg-shark flex flex-col min-h-screen overflow-y-yscroll 2xl:gap-y-24 ">
+            <div className="lg:ml-24 ml-10 mb-24 ">
                 {countryDetails ? (
                         <div>
                             <SectionTitle title={decodedDestination}/>
