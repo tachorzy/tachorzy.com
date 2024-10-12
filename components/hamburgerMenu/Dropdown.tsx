@@ -13,7 +13,7 @@ const Dropdown = (props: {isActive: boolean, setIsActive: React.Dispatch<React.S
         ["home", {text: "Home"}],
         ["about", {text: "About"}],
         ["projects", {text: "Projects"}],
-        // ["travel", {text: "Travel", width: "27", height: "27"}],
+        ["travel", {text: "Travel", width: "27", height: "27"}],
         ["contact", {text: "Contact"}],
     ])
 
@@ -23,7 +23,7 @@ const Dropdown = (props: {isActive: boolean, setIsActive: React.Dispatch<React.S
             animate={{ x: 0 }}
             exit={{ x: '100vw' }}
             transition={{ type: 'spring', stiffness: 30 }}
-            className="w-64 h-48 self-end mr-6 md:mr-12 bg-metal border-2 border-opacity-75 border-[#1C2B2D] rounded-md fixed right-0 mt-2"
+            className="w-64 h-56 self-end mr-6 md:mr-12 bg-metal border-2 border-opacity-75 border-[#1C2B2D] rounded-md fixed right-0 mt-2"
             ref={menuRef}
         >
             <div className="flex flex-col text-sandstone font-bold py-3">
