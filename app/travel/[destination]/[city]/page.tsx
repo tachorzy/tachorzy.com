@@ -1,7 +1,11 @@
 
 import { PLACES_TRAVELLED } from 'lib/travel';
 import SectionTitle from 'components/section/SectionTitle';
-import Gallery from 'components/travel/Gallery';
+import dynamic from 'next/dynamic'
+
+const Gallery = dynamic(() => import('components/travel/Gallery'), {
+    loading: () => <p>Loading...</p>,
+})
 
 export default function Page({ params } : {
     params: { destination: string, city: string }
@@ -25,7 +29,6 @@ export default function Page({ params } : {
                     ) : (<h1 className="text-4xl text-bold text-dune">Whoops, looks like {decodedCity} is still on my bucketlist...</h1>)
                 }    
             </div>    
- 
         </main>
     )
 
