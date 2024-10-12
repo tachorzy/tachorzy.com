@@ -1,8 +1,10 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import { JakartaMedium } from '../../lib/localNextFonts'
 import { PLACES_TRAVELLED } from 'lib/travel';
-import CountryCard from './CountryCard';
+import dynamic from 'next/dynamic';
+
+const CountryCard = dynamic(() => import('components/travel/CountryCard'), {
+  loading: () => <p>Loading...</p>,
+})
 
 const CountryCardTray = () => {
     return(

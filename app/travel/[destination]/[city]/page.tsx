@@ -23,7 +23,7 @@ export default function Page({ params } : {
                 {cityDetails ? (
                         <div>
                             <SectionTitle title={decodedCity}/>
-                                <Gallery countryName={decodedDestination} cityName={decodedCity} imagePaths={[]}/>
+                            <Gallery countryName={decodedDestination} cityName={decodedCity} imagePaths={[]}/>
                         </div>
                         
                     ) : (<h1 className="text-4xl text-bold text-dune">Whoops, looks like {decodedCity} is still on my bucketlist...</h1>)
