@@ -1,13 +1,17 @@
 import fs from 'fs';
 import path from 'path';
-import GalleryImage from './GalleryImage';
 import { JakartaMedium } from '../../lib/localNextFonts';
+import dynamic from 'next/dynamic'
 
 interface GalleryProps {
     countryName: string;
     cityName: string;
     imagePaths: string[];
 }
+
+const GalleryImage = dynamic(() => import('components/travel/GalleryImage'), {
+    loading: () => <p>Loading...</p>,
+})
 
 const Gallery: React.FC<GalleryProps> = ({ countryName, cityName, imagePaths = [] }) => {
 

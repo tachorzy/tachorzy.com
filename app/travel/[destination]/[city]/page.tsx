@@ -1,9 +1,7 @@
-import fs from 'fs';
-import path from 'path';
+
 import { PLACES_TRAVELLED } from 'lib/travel';
 import SectionTitle from 'components/section/SectionTitle';
 import Gallery from 'components/travel/Gallery';
-
 
 export default function Page({ params } : {
     params: { destination: string, city: string }
@@ -21,7 +19,7 @@ export default function Page({ params } : {
                 {cityDetails ? (
                         <div>
                             <SectionTitle title={decodedCity}/>
-                            {/* <Gallery countryName={decodedDestination} cityName={decodedCity} imagePaths={[]}/> */}
+                                <Gallery countryName={decodedDestination} cityName={decodedCity} imagePaths={[]}/>
                         </div>
                         
                     ) : (<h1 className="text-4xl text-bold text-dune">Whoops, looks like {decodedCity} is still on my bucketlist...</h1>)

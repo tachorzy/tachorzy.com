@@ -1,10 +1,9 @@
 "use client";
 
 import Image from 'next/image'
-import Link from 'next/link'
-import { JakartaBold } from '../../lib/localNextFonts'
 import { useState } from 'react'
-const DestinationCard = (props: {index: number, imageSrc: string}) => {
+
+const GalleryImage = (props: {index: number, imageSrc: string}) => {
     const [loadingStyle, setLoadingStyle] = useState("opacity-50 animate-pulse duration-700");
 
     return(
@@ -22,4 +21,4 @@ const DestinationCard = (props: {index: number, imageSrc: string}) => {
     );
 }
 
-export default DestinationCard;
+export default GalleryImage;
