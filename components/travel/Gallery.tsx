@@ -1,14 +1,17 @@
-"use client"
-
 import fs from 'fs';
 import path from 'path';
 import { JakartaMedium } from '../../lib/localNextFonts';
-import GalleryImage from './GalleryImage';
+import dynamic from 'next/dynamic'
+
 interface GalleryProps {
     countryName: string;
     cityName: string;
     imagePaths: string[];
 }
+
+const GalleryImage = dynamic(() => import('components/travel/GalleryImage'), {
+    loading: () => <p className="text-white font-bold text-9xl">Loading...</p>,
+})
 
 const Gallery: React.FC<GalleryProps> = ({ countryName, cityName, imagePaths = [] }) => {
 
