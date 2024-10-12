@@ -15,7 +15,8 @@ const GalleryImage = (props: {index: number, imageSrc: string}) => {
                     alt={`travel pic ${props.index}`} 
                     className={`rounded-md saturate-[120%] transition-all duration-700 contrast-[120%] ${loadingStyle}`}
                     onLoad={() => {setLoadingStyle("opacity-50 animate-pulse duration-700")}}
-                    onLoadingComplete={() => {setLoadingStyle("")}}    
+                    onLoadingComplete={() => {setLoadingStyle("")}}
+                    loading="lazy"  
                 />
             </div>
     );
