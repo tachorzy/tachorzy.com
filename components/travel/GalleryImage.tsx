@@ -1,6 +1,7 @@
 // "use client";
 
 import Image from 'next/image'
+import { use } from 'react'
 // import { useEffect, useState } from 'react'
 import { supabase } from '../../supabaseClient';
 
@@ -10,16 +11,15 @@ async function getPublicUrl(imageSrc: string){
 }
 
 
-const GalleryImage = async (props: {index: number, imageSrc: string}) => {
+const GalleryImage = (props: {index: number, imageSrc: string}) => {
     // const [loadingStyle, setLoadingStyle] = useState("opacity-50 animate-pulse duration-700");
 
     const { index, imageSrc } = props;
+    const data = use(getPublicUrl(imageSrc));
 
     console.log(`imageSrc: ${imageSrc}`);
-    const { data } = await supabase.storage.from("travel-photos").getPublicUrl(imageSrc);
 
     console.log(`publicUrl: ${data.publicUrl}`);
-
 
     return (
             <div key={index} className="relative mt-0.5 w-56 md:max-2xl:w-80 md:max-2xl:h-[19.25rem] bg-metal rounded-md shadow-2xl duration-500 border-[2.5px] border-opacity-75 border-[#1C2B2D] transition-all duration-500">
