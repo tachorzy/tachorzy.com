@@ -21,10 +21,10 @@ const GalleryImage = async (props: {index: number, imageSrc: string}) => {
     console.log(`publicUrl: ${data.publicUrl}`);
 
 
-    return(
+    return (
             <div key={index} className="relative mt-0.5 w-56 md:max-2xl:w-80 md:max-2xl:h-[19.25rem] bg-metal rounded-md shadow-2xl duration-500 border-[2.5px] border-opacity-75 border-[#1C2B2D] transition-all duration-500">
                 <Image 
-                    src={data.publicUrl} 
+                    src={`${data.publicUrl}`} 
                     height={150} 
                     width={350} 
                     alt={`travel pic ${index}`} 
