@@ -3,17 +3,14 @@ import path from 'path';
 import { JakartaMedium } from '../../lib/localNextFonts';
 import dynamic from 'next/dynamic'
 
-interface GalleryProps {
-    countryName: string;
-    cityName: string;
-    imagePaths: string[];
-}
-
 const GalleryImage = dynamic(() => import('components/travel/GalleryImage'), {
     loading: () => <p className="text-white font-bold text-9xl">Loading...</p>,
 })
 
-const Gallery: React.FC<GalleryProps> = ({ countryName, cityName, imagePaths = [] }) => {
+
+const Gallery = (props: { countryName: string, cityName: string, imagePaths: string[] }) => {
+    const { countryName, cityName } = props;
+    let imagePaths = props.imagePaths;
 
     const imagesDirectory = path.join(process.cwd(), `public/travel/${countryName}/${cityName}`);
 
@@ -23,7 +20,7 @@ const Gallery: React.FC<GalleryProps> = ({ countryName, cityName, imagePaths = [
             .filter((filename) => /\.(jpg|jpeg|png)$/.test(filename))
             .map((filename) => `/travel/${countryName}/${cityName}/${filename}`);
     }
-
+    
     return (
         <div className={JakartaMedium.className + " z-0 relative flex md:flex-row flex-wrap mt-1 lg:-ml-7 xl:ml-0 xl:mt-7 lg:gap-y-0 lg:gap-x-0 gap-y-8 xl:gap-y-4 xl:gap-x-4 lg:-mb-48 mb-14 2xl:mb-0 2xl:w-11/12"}>
             {imagePaths.map((src, index) => (
