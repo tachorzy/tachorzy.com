@@ -7,7 +7,7 @@ import GalleryImage from './GalleryImage';
 //     loading: () => <p className="text-white font-bold text-9xl">Loading...</p>,
 // })
 
-const Gallery = async (props: { files: FileObject[], country: string, city: string }) => {
+const Gallery = (props: { files: FileObject[], country: string, city: string }) => {
     const { files, country, city } = props;
 
     return (
