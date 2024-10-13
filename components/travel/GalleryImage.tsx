@@ -31,8 +31,7 @@ const GalleryImage = async (props: {index: number, imageSrc: string}) => {
                     className={`rounded-md saturate-[120%] transition-all duration-700 contrast-[120%]`}
                     // onLoad={() => {setLoadingStyle("opacity-50 animate-pulse duration-700")}}
                     // onLoadingComplete    ={() => {setLoadingStyle("")}}
-                    // loading="lazy"  
-                    unoptimized
+                    loading="lazy"  
                 />
             </div>
     );
