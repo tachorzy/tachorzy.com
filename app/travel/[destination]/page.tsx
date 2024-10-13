@@ -1,6 +1,7 @@
 import DestinationCardTray from 'components/travel/DestinationCardTray';
 import { PLACES_TRAVELLED } from 'lib/travel';
 import SectionTitle from 'components/section/SectionTitle';
+import Logo from 'components/Logo';
 
 export default function Page({ params } : {
     params: { destination: string }
@@ -21,7 +22,7 @@ export default function Page({ params } : {
                     ) : (<h1 className="text-4xl text-bold text-dune">Whoops, looks like {decodedDestination} is still on my bucketlist...</h1>)
                 }    
             </div>    
- 
+            <Logo/>
         </main>
     )
 
