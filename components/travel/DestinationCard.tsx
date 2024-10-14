@@ -5,7 +5,6 @@ import { JakartaBold } from '../../lib/localNextFonts'
 interface destination{
     name: string;
     country: string
-    coverImageURL: string;
 }
 
 const DestinationCard = (props: destination) => {

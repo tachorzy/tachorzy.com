@@ -10,7 +10,7 @@ export default async function Page({ params } : {
 }){ 
     const decodedDestination = decodeURIComponent(params.destination);
     const decodedCity = decodeURIComponent(params.city);
-
+    
     const countryDetails = PLACES_TRAVELLED.get(decodedDestination);
 
     const cityDetails = countryDetails?.destinations.find((place) => place === decodedCity);
