@@ -2,8 +2,6 @@ import { PLACES_TRAVELLED } from 'lib/travel';
 import SectionTitle from 'components/section/SectionTitle';
 import Logo from 'components/Logo';
 import Gallery from 'components/travel/Gallery';
-import { FileObject } from '@supabase/storage-js'
-
 import { supabase } from '../../../../supabaseClient';
 
 export default async function Page({ params } : {
