@@ -7,7 +7,7 @@ export const PLACES_TRAVELLED: Map<string, { endonym: string | null, coverImageU
         ["Jordan", { endonym: null, coverImageURL: "/travel/Jordan/country_cover.jpg", isoCode: "JO", yearVisited: "2023", destinations: ["Amman", "Wadi Musa"] }],
         ["Lebanon", { endonym: null, coverImageURL: "/travel/Lebanon/country_cover.jpg", isoCode: "LB", yearVisited: "2023", destinations: ["Beirut", "Tripoli", "Bcharre", "Chouf", "Aannaya", "Batroun", "Byblos"] }],
         ["Mexico", { endonym: null, coverImageURL: "/travel/Mexico/country_cover.jpg", isoCode: "MX", yearVisited: "2022", destinations: ["CDMX", "Teotihuacan", "Taxco"] }],
-        ["Turkey", { endonym: "Türkiye", coverImageURL: "/travel/Turkiye/country_cover.jpg", isoCode: "TR", yearVisited: "2022", destinations: ["Istanbul", "Diyarbakir", "Mardin"] }],
+        ["Turkey", { endonym: "Türkiye", coverImageURL: "/travel/Turkey/country_cover.jpg", isoCode: "TR", yearVisited: "2022", destinations: ["Istanbul", "Diyarbakir", "Mardin"] }],
         ["Iraq", { endonym: null, coverImageURL: "/travel/Iraq/country_cover.jpg", isoCode: "IQ", yearVisited: "2022", destinations: ["Baghdad", "Erbil"] }],
         ["Egypt", { endonym: null, coverImageURL: "/travel/Egypt/country_cover.jpg", isoCode: "EG", yearVisited: "2022", destinations: ["Cairo"] }]
 ]);
