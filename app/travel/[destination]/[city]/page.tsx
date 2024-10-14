@@ -1,11 +1,9 @@
-
 import { PLACES_TRAVELLED } from 'lib/travel';
 import SectionTitle from 'components/section/SectionTitle';
 import Logo from 'components/Logo';
 import Gallery from 'components/travel/Gallery';
 import { FileObject } from '@supabase/supabase-js'
 import { supabase } from '../../../../supabaseClient';
-import React, { useContext } from "react";
 
 export default async function Page({ params } : {
     params: { destination: string, city: string }
