@@ -1,6 +1,6 @@
 import { FileObject } from '@supabase/storage-js'
 import GalleryImage from './GalleryImage';
-import { supabase } from '../../supabaseClient';
+import { supabase } from '../../../supabaseClient';
 import { use } from 'react'
 
 async function getPublicUrl(imageSrc: string){

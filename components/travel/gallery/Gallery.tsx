@@ -1,4 +1,4 @@
-import { JakartaMedium } from '../../lib/localNextFonts';
+import { JakartaMedium } from '../../../lib/localNextFonts';
 import { FileObject } from '@supabase/storage-js'
 import GalleryTile from './GalleryTile';
 
