@@ -16,7 +16,7 @@ export default async function Page({ params } : {
 
     const cityDetails = countryDetails?.destinations.find((place) => place === decodedCity);
 
-    const {data, error} = await supabase.storage.from("travel-photos").list(`${decodedDestination}/${decodedCity}`) as FileObject;
+    const {data, error} = await supabase.storage.from("travel-photos").list(`${decodedDestination}/${decodedCity}`);
 
     return (
         <main className="bg-shark flex flex-col min-h-screen overflow-y-hidden 2xl:gap-y-24">
