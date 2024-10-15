@@ -1,5 +1,5 @@
 import DestinationCardTray from 'components/travel/DestinationCardTray';
-import { PLACES_TRAVELLED } from 'lib/travel';
+import { placesTravelled } from 'lib/travel';
 import SectionTitle from 'components/section/SectionTitle';
 import Logo from 'components/Logo';
 import TravelNav from 'components/travel/TravelNav';
@@ -9,8 +9,7 @@ export default function Page({ params } : {
 }){ 
     const decodedDestination = decodeURIComponent(params.destination);
 
-    const countryDetails = PLACES_TRAVELLED.get(decodedDestination);
-
+    const countryDetails = placesTravelled.get(decodedDestination);
 
     return (
         <main className="bg-shark flex flex-col min-h-screen overflow-y-yscroll 2xl:gap-y-24 ">

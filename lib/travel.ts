@@ -1,5 +1,5 @@
 
-export const PLACES_TRAVELLED: Map<string, { endonym: string | null, coverImageURL: string, yearVisited: string, isoCode: string, destinations: string[]}> = new Map([
+export const placesTravelled: Map<string, { endonym: string | null, coverImageURL: string, yearVisited: string, isoCode: string, destinations: string[]}> = new Map([
         ["El Salvador", { endonym: null, coverImageURL: "/travel/El%20Salvador/country_cover.jpg", yearVisited: "2024", isoCode: "SV", destinations: ["San Salvador", "Santa Ana", "Cerro Verde", "Ruta de las Flores", "Suchitoto", "Cinquera", "La Libertad"]}],
         ["The Netherlands", { endonym: null, coverImageURL: "/travel/The%20Netherlands/country_cover.jpg", yearVisited: "2023", isoCode: "NL", destinations: ["Amsterdam"]}],
         ["Greece", { endonym: null, coverImageURL: "/travel/Greece/country_cover.jpg", isoCode: "GR", yearVisited: "2023", destinations: ["Athens"] }],
