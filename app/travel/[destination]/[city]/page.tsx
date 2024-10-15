@@ -3,7 +3,7 @@ import SectionTitle from 'components/section/SectionTitle';
 import Logo from 'components/Logo';
 import Gallery from 'components/travel/gallery/Gallery';
 import { supabase } from '../../../../supabaseClient';
-import GalleryNav from 'components/travel/gallery/GalleryNav';
+import TravelNav from 'components/travel/TravelNav';
 
 export default async function Page({ params } : {
     params: { destination: string, city: string }
@@ -18,11 +18,11 @@ export default async function Page({ params } : {
     const {data, error} = await supabase.storage.from("travel-photos").list(`${decodedDestination}/${decodedCity}`);
 
     return (
-        <main className="bg-shark flex flex-col min-h-screen overflow-y-hidden 2xl:gap-y-24">
+        <main className="bg-shark flex flex-col min-h-screen overflow-y-scroll 2xl:gap-y-24">
             <div className="lg:ml-24 ml-10 mb-24">
                 {cityDetails ? (
                         <div className="flex flex-col">
-                            <GalleryNav country={decodedDestination} city={decodedCity}/>
+                            <TravelNav country={decodedDestination} city={decodedCity}/>
                             <SectionTitle title={decodedCity}/>
                             <Gallery files={data} country={decodedDestination} city={decodedCity}></Gallery>
                         </div>

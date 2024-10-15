@@ -2,7 +2,7 @@ import DestinationCardTray from 'components/travel/DestinationCardTray';
 import { PLACES_TRAVELLED } from 'lib/travel';
 import SectionTitle from 'components/section/SectionTitle';
 import Logo from 'components/Logo';
-import { decode } from 'punycode';
+import TravelNav from 'components/travel/TravelNav';
 
 export default function Page({ params } : {
     params: { destination: string }
@@ -16,7 +16,8 @@ export default function Page({ params } : {
         <main className="bg-shark flex flex-col min-h-screen overflow-y-yscroll 2xl:gap-y-24 ">
             <div className="lg:ml-24 ml-10 mb-24 ">
                 {countryDetails ? (
-                        <div>
+                        <div className="flex flex-col">
+                            <TravelNav country={decodedDestination} city={null}/>
                             <SectionTitle title={decodedDestination}/>
                             <DestinationCardTray countryName={decodedDestination} countryDetails={countryDetails}/>
                         </div>
