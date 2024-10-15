@@ -6,6 +6,16 @@ const nextConfig = {
   env: { 
     GETFORM_KEY: process.env.GETFORM_KEY,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: '**.supabase.co',
+        port: '',
+        pathname:"/storage/v1/object/public/travel-photos/**",
+      },
+    ],
+  }
 }
 
 module.exports = nextConfig
