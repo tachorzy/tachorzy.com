@@ -25,7 +25,7 @@ export default function Page({ params } : {
                     ) : (<h1 className="text-4xl text-bold text-dune">Whoops, looks like {decodedDestination} is still on my bucketlist...</h1>)
                 }    
             </div>
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
                 <Logo/>
             </div>
         </main>
