@@ -17,7 +17,7 @@ interface sectionProps{
 }
 
 const SectionWrapper = (props: sectionProps) => {
-
+    
     return(
         <section id={props.id} className={` relative lg:ml-24 ml-10 ${props.margin}`}>
             {props.sectionTitle && <SectionTitle title={props.sectionTitle} sectionTitleMargin={props.sectionTitleMargin}/>}

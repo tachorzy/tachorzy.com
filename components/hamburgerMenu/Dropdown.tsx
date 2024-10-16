@@ -4,18 +4,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { motion } from 'framer-motion';
+import { menuOptions } from '../../models/menuOptions';
 
 const Dropdown = (props: {isActive: boolean, setIsActive: React.Dispatch<React.SetStateAction<boolean>>, menuRef: React.RefObject<HTMLDivElement>}) => {
     
     const {isActive, setIsActive, menuRef} = props
-
-    const menuOptions: Map<string, {text: string}> = new Map([
-        ["home", {text: "Home"}],
-        ["about", {text: "About"}],
-        ["projects", {text: "Projects"}],
-        ["travel", {text: "Travel", width: "27", height: "27"}],
-        ["contact", {text: "Contact"}],
-    ])
 
     return (
         <motion.div
