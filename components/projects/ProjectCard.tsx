@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import ProjectTechTray from './ProjectTechTray'
-import { JakartaRegular, JakartaMedium, JakartaSemibold, JakartaExtraBold } from '../../lib/localNextFonts'
+import { JakartaSemibold, JakartaExtraBold } from '../../lib/localNextFonts'
 
 interface project{
     name: string;

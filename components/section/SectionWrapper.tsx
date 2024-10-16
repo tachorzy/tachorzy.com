@@ -11,7 +11,7 @@ interface sectionProps{
     sectionTitleMargin?: string;
     coreComponent: ReactElement;
     trayComponent?: ReactElement;
-    pageNumber?: string; //refactor later with a map for all Arabic numbers
+    pageNumber?: string;
     nextPageReference?: string;
     nextButtonMargins?: string;
 }
@@ -20,9 +20,7 @@ const SectionWrapper = (props: sectionProps) => {
 
     return(
         <section id={props.id} className={` relative lg:ml-24 ml-10 ${props.margin}`}>
-            {props.sectionTitle && 
-                <SectionTitle title={props.sectionTitle} sectionTitleMargin={props.sectionTitleMargin}/>
-            }
+            {props.sectionTitle && <SectionTitle title={props.sectionTitle} sectionTitleMargin={props.sectionTitleMargin}/>}
             
             {props.coreComponent}
             {props.trayComponent}
