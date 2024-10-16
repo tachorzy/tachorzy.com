@@ -20,7 +20,7 @@ const SectionWrapper = (props: sectionProps) => {
 
     return(
         <section id={props.id} className={` relative lg:ml-24 ml-10 ${props.margin}`}>
-            {props.sectionTitle != undefined && 
+            {props.sectionTitle && 
                 <SectionTitle title={props.sectionTitle} sectionTitleMargin={props.sectionTitleMargin}/>
             }
             
@@ -38,9 +38,7 @@ const SectionWrapper = (props: sectionProps) => {
                 : <Logo/> 
             } 
             
-            {props.nextPageReference != undefined &&
-                <NextPageButton nextPageReference={props.nextPageReference} margin={props.nextButtonMargins}/>
-            }
+            {props.nextPageReference && <NextPageButton nextPageReference={props.nextPageReference} margin={props.nextButtonMargins}/>}
         </section>
     );
 }
