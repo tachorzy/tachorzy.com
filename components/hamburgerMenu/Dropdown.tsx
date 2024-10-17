@@ -2,14 +2,16 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion';
 import { menuOptions } from '../../models/menuOptions';
+import { Context } from './MenuWrapper';
 
-const Dropdown = (props: {isActive: boolean, setIsActive: React.Dispatch<React.SetStateAction<boolean>>, menuRef: React.RefObject<HTMLDivElement>}) => {
+const Dropdown = () => {
+
+    const contextValue = useContext(Context);
+    const { isActive, setIsActive } = contextValue;
     
-    const {isActive, setIsActive, menuRef} = props
-
     return (
         <motion.div
             initial={{ x: '100vw' }}
@@ -17,7 +19,7 @@ const Dropdown = (props: {isActive: boolean, setIsActive: React.Dispatch<React.S
             exit={{ x: '100vw' }}
             transition={{ type: 'spring', stiffness: 30 }}
             className="w-64 h-56 self-end mr-6 md:mr-12 bg-metal border-2 border-opacity-75 border-[#1C2B2D] rounded-md fixed right-0 mt-2"
-            ref={menuRef}
+            ref={contextValue?.menuRef}
         >
             <div className="flex flex-col text-sandstone font-bold py-3">
                 {Array.from(menuOptions.entries()).map(([option, optionDetails], index) => (

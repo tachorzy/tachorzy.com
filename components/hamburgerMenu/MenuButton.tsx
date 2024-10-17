@@ -1,11 +1,19 @@
 "use client";
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from './MenuWrapper'
 
-const MenuButton = (props: {isActive: boolean, setIsActive: React.Dispatch<React.SetStateAction<boolean>>}) => {
+interface MenuContext {
+    isActive: boolean,
+    setIsActive: React.Dispatch<React.SetStateAction<boolean>>,
+    menuRef: React.RefObject<HTMLDivElement>
+}
+
+const MenuButton = () => {
     
-    const {isActive, setIsActive} = props
+    const contextValue = useContext(Context) as MenuContext;
+    const { isActive, setIsActive, menuRef } = contextValue;
 
     return (
         <button className="p-1.5 hover:bg-sandstone duration-700 transition-colors hover:bg-opacity-5 rounded-2xl cursor-pointer select-none border-transparent" onClick = {() => setIsActive(!isActive)}>
