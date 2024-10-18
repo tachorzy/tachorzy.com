@@ -7,8 +7,7 @@ import SkillsTray from '../components/about/SkillsTray'
 import ProjectsTray from '../components/projects/ProjectsTray'
 import CountryCardTray from 'components/travel/CountryCardTray'
 import ContactSection from 'components/contact/ContactSection'
-
-export interface Section {
+interface Section {
   margin?: string;
   sectionTitle?: string;
   sectionTitleMargin?: string;
@@ -19,7 +18,7 @@ export interface Section {
   nextButtonMargins?: string;
 }
 
-export const sections: Map<string, Section> = new Map([
+const sections: Map<string, Section> = new Map([
     ["home", {coreComponent: <LandingPageHeaders/>, trayComponent: <SocialsTray/>, nextPageReference: "#about", nextButtonMargins: "mt-[19rem] lg:mt-[15rem] xl:mt-[21.5rem] 2xl:mt-[21%]"}],
     ["about", { sectionTitle: "About Me", coreComponent: <AboutMe/>, trayComponent: <SkillsTray/>, pageNumber: "١", nextPageReference: "#projects", nextButtonMargins: "mt-2.5 2xl:mt-[11.5%] 2xl:mb-36"}],
     ["projects", {sectionTitle: "Projects", sectionTitleMargin: "mb-7", coreComponent: <ProjectsTray/>, pageNumber: "٢", nextPageReference: "#travel", nextButtonMargins: "mt-2.5 lg:mt-72 lg:mb-16 2xl:mt-[36%]"}],
