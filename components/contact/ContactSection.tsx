@@ -1,6 +1,6 @@
 import { JakartaRegular, JakartaMedium } from '../../lib/localNextFonts'
 import SocialsTray from 'components/about/SocialsTray';
-import ContactForm from './ContactForm';
+import ContactFormWrapper from './ContactFormWrapper';
 
 const ContactSection = () => {
     return(
@@ -15,7 +15,7 @@ const ContactSection = () => {
               </div>
             </div>
           </div>
-          <ContactForm/>
+          <ContactFormWrapper/>
       </div>
     );
 }
