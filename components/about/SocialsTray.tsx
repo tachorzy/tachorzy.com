@@ -1,5 +1,15 @@
-import SocialMediaButton from './SocialMediaButton';
+"use client"
 
+import SocialMediaButtonWrapper from './SocialMediaButtonWrapper'
+// SocialMediaContext.ts
+import { createContext } from 'react';
+
+interface SocialMediaContextType {
+  socialMedia: string;
+  socialMediaLink: string;
+}
+
+export const SocialMediaContext = createContext<SocialMediaContextType>({} as SocialMediaContextType);
 
 const SocialsTray = () => {
     
@@ -13,12 +23,10 @@ const SocialsTray = () => {
 
     return(
         <div className="lg:mt-5 md:mt-2.5 mt-4 flex flex-row gap-x-5 xl:gap-x-6">
-            {Array.from(socialLinks.entries()).map(([socialMedia, socialMediaLink]) => (    
-                <SocialMediaButton 
-                    key={socialMedia}
-                    socialMedia={socialMedia}
-                    socialMediaLink={socialMediaLink}
-                />            
+            {Array.from(socialLinks.entries()).map(([socialMedia, socialMediaLink], key) => (    
+                <SocialMediaContext.Provider value={{socialMedia, socialMediaLink}} key={key}>
+                    <SocialMediaButtonWrapper/>
+                </SocialMediaContext.Provider>
             ))}
         </div>
     )

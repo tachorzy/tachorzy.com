@@ -1,24 +1,20 @@
 "use client";
 
 import Image from 'next/image'
-import { useState } from 'react'
+import { useContext } from 'react'
+import { SocialMediaContext } from './SocialsTray';
 
 interface SocialMediaButtonProps {
-    socialMedia: string,
-    socialMediaLink: string,
-    // isHovering: boolean,
-    // onMouseEnter: () => void,
-    // onMouseLeave: () => void
+    isHovering: boolean;
+    onMouseEnter: () => void;
+    onMouseLeave: () => void;
 }
 
-
 const SocialMediaButton = (props: SocialMediaButtonProps) => {
+    const contextValue = useContext(SocialMediaContext);
 
-    const { socialMedia, socialMediaLink } = props;
-
-    const [isHovering, setIsHovering] = useState(false);
-    const onMouseEnter = () => setIsHovering(true);
-    const onMouseLeave = () => setIsHovering(false);
+    const { socialMedia, socialMediaLink } = contextValue;
+    const { isHovering, onMouseEnter, onMouseLeave } = props;
 
     return(
         <div className="lg:mt-5 md:mt-2.5 mt-4 flex flex-row gap-x-5 xl:gap-x-6">
