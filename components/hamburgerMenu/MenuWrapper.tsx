@@ -1,16 +1,16 @@
 "use client";
 
-import React, { useState, useMemo, useRef, createContext } from 'react'
+import React, { useState, useRef, createContext } from 'react'
 import { useOnClickOutside } from 'usehooks-ts'
 import Menu from './Menu'
 
-interface MenuContext {
+export interface MenuContext {
     isActive: boolean,
-    setIsActive: React.Dispatch<React.SetStateAction<boolean>>,
+    handleButtonClick: () => void,
     menuRef: React.RefObject<HTMLDivElement>
 }
 
-export const Context = React.createContext({} as MenuContext);
+export const Context = createContext({} as MenuContext);
 
 const MenuWrapper = () => {
     const [isActive, setIsActive] = useState(false)
@@ -22,7 +22,11 @@ const MenuWrapper = () => {
 
     useOnClickOutside(menuRef, handleClickOutside)
 
-    const contextValue = useMemo(() => ({ isActive, setIsActive, menuRef }), [isActive, setIsActive, menuRef]);
+    const handleButtonClick = () => {
+        setIsActive(!isActive)
+    }
+
+    const contextValue = { isActive, handleButtonClick, menuRef }
 
     return (
         <Context.Provider value={contextValue}>

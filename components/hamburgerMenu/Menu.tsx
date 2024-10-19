@@ -5,24 +5,14 @@ import MenuButton from './MenuButton'
 import Dropdown from './Dropdown'
 import { Context } from './MenuWrapper'
 
-
-interface MenuContext {
-    isActive: boolean,
-    setIsActive: React.Dispatch<React.SetStateAction<boolean>>,
-    menuRef: React.RefObject<HTMLDivElement>
-}
-
 const Menu = () => {
 
-    const contextValue = useContext(Context) as MenuContext;
-    const { isActive, setIsActive, menuRef } = contextValue;
+    const { isActive, handleButtonClick } = useContext(Context);
     
     return (
         <div>
             <MenuButton/>
-            {isActive &&
-                <Dropdown/>
-            }
+            {isActive && <Dropdown/>}
         </div>
     )
 }

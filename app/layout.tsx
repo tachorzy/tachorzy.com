@@ -1,7 +1,9 @@
 import './globals.css'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ManropeRegular } from '../lib/localNextFonts'
-import Menu from '../components/hamburgerMenu/Menu'
+// import Menu from '../components/hamburgerMenu/Menu'
+import MenuWrapper from '../components/hamburgerMenu/MenuWrapper'
+
 
 export const metadata = {
   title: 'Tariq Achor Zyad',
@@ -21,7 +23,7 @@ export default function RootLayout({
         <body> 
             <div className={ManropeRegular.className + " "}>
                 <div className="fixed top-0 right-0 mr-6 md:mt-12 md:mr-12 mt-6 z-50">
-                    <Menu/>
+                    <MenuWrapper/>
                 </div>
             </div>
         </body>

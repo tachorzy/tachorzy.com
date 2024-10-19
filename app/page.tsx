@@ -7,6 +7,7 @@ import SkillsTray from '../components/about/SkillsTray'
 import ProjectsTray from '../components/projects/ProjectsTray'
 import CountryCardTray from 'components/travel/CountryCardTray'
 import ContactSection from 'components/contact/ContactSection'
+
 interface Section {
   margin?: string;
   sectionTitle?: string;
@@ -28,7 +29,6 @@ const sections: Map<string, Section> = new Map([
   ]);
 
 export default function Home() {
-
   return (
     <> 
       <main className="bg-shark flex flex-col overflow-hidden gap-y-24 2xl:gap-y-24">
