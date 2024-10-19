@@ -1,5 +1,5 @@
 import { JakartaRegular, JakartaMedium } from '../../lib/localNextFonts'
-import SocialsTray from 'components/about/SocialsTray';
+import SocialsTray from 'components/about/SocialsTrayWrapper';
 
 const ContactMe = () => {
     return(

@@ -1,5 +1,3 @@
-import { JakartaRegular, JakartaMedium } from '../../lib/localNextFonts'
-import SocialsTray from 'components/about/SocialsTray';
 import ContactFormWrapper from './ContactFormWrapper';
 import ContactMe from './ContactMe';
 
