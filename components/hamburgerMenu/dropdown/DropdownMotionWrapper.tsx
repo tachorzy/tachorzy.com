@@ -3,7 +3,7 @@
 import React, { useContext } from 'react'
 import { motion } from 'framer-motion';
 import { Context } from '../MenuWrapper';
-import DropdownOptions from '../DropdownOptions';
+import DropdownOptions from './DropdownOptions';
 
 const DropdownMotionWrapper = () => {
 

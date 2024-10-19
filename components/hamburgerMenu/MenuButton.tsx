@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useContext } from 'react'
-import { Context, MenuContext } from './MenuWrapper'
+import { Context } from './MenuWrapper'
 
 const MenuButton = () => {
     

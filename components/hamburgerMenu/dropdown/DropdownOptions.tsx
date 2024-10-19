@@ -3,8 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useContext } from 'react'
-import { menuOptions } from '../../models/menuOptions';
-import { Context } from './MenuWrapper';
+import { menuOptions } from '../../../models/menuOptions';
+import { Context } from '../MenuWrapper';
 
 const DropdownOptions = () => {
 
