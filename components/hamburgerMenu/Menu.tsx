@@ -2,7 +2,7 @@
 
 import React, { useContext } from 'react'
 import MenuButton from './MenuButton'
-import DropdownMotionWrapper from './DropdownMotionWrapper'
+import DropdownMotionWrapper from './dropdown/DropdownMotionWrapper'
 import { Context } from './MenuWrapper'
 
 const Menu = () => {
