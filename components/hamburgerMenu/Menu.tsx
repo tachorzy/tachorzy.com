@@ -2,17 +2,17 @@
 
 import React, { useContext } from 'react'
 import MenuButton from './MenuButton'
-import Dropdown from './Dropdown'
+import DropdownMotionWrapper from './DropdownMotionWrapper'
 import { Context } from './MenuWrapper'
 
 const Menu = () => {
 
-    const { isActive, handleButtonClick } = useContext(Context);
+    const { isActive } = useContext(Context);
     
     return (
         <div>
             <MenuButton/>
-            {isActive && <Dropdown/>}
+            {isActive && <DropdownMotionWrapper/>}
         </div>
     )
 }
