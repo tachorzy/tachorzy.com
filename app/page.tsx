@@ -2,7 +2,7 @@ import SectionWrapper from '../components/section/SectionWrapper'
 import React, { ReactElement } from 'react';
 import LandingPageHeaders from '../components/landingPage/LandingPageHeaders'
 import AboutMe from '../components/about/AboutMe'
-import SocialsTray from '../components/about/SocialsTrayWrapper'
+import SocialsTray from '../components/about/SocialsTray'
 import SkillsTray from '../components/about/SkillsTray'
 import ProjectsTray from '../components/projects/ProjectsTray'
 import CountryCardTray from 'components/travel/CountryCardTray'

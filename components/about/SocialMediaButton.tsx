@@ -1,18 +1,24 @@
+"use client";
+
 import Image from 'next/image'
-import Link from 'next/link'
+import { useState } from 'react'
 
 interface SocialMediaButtonProps {
     socialMedia: string,
     socialMediaLink: string,
-    isHovering: boolean,
-    onMouseEnter: () => void,
-    onMouseLeave: () => void
+    // isHovering: boolean,
+    // onMouseEnter: () => void,
+    // onMouseLeave: () => void
 }
 
 
 const SocialMediaButton = (props: SocialMediaButtonProps) => {
 
-    const { socialMedia, socialMediaLink, isHovering, onMouseEnter, onMouseLeave } = props;
+    const { socialMedia, socialMediaLink } = props;
+
+    const [isHovering, setIsHovering] = useState(false);
+    const onMouseEnter = () => setIsHovering(true);
+    const onMouseLeave = () => setIsHovering(false);
 
     return(
         <div className="lg:mt-5 md:mt-2.5 mt-4 flex flex-row gap-x-5 xl:gap-x-6">
