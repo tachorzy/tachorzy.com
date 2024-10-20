@@ -9,7 +9,7 @@ const MapExperience = new Map<string, {date: string, title: string, description:
 
 const ExperienceTray = () => {
     return(
-        <div className={JakartaRegular.className + " text-sandstone font-medium rounded-md w-3/4 md:w-1/2 flex flex-col lg:mt-2 mt-1.5 pt-3.5 scale-[95%]"}>
+        <div className={JakartaRegular.className + " text-sandstone font-medium rounded-md w-5/6 md:w-1/2 flex flex-col lg:mt-2 mt-1.5 pt-3.5 scale-[95%]"}>
             {Array.from(MapExperience.entries()).map(([experienceKey, experienceDetails]) => {
                 return(
                     <Experience key={experienceKey} date={experienceDetails.date} title={experienceDetails.title} description={experienceDetails.description}/>
