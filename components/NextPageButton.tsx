@@ -8,10 +8,10 @@ interface buttonProps{
 
 const NextPageButton = (props: buttonProps) => {
     return(
-        <div className={`${props.margin} hidden md:block relative bottom-0 w-full h-1/6 animation-fade duration-700`}>
-            <button className="absolute bottom-0 inset-x-[47%] mb-12 p-3 bg-metal rounded-full w-16 items-center flex flex-row cursor-pointer select-none">
+        <div className={`${props.margin} hidden md:block relative bottom-0 opacity-0 hover:opacity-100 w-full h-2 animation-fade duration-700`}>
+            <button className="flex flex-row items-center justify-center absolute bottom-0 inset-x-[42%] mb-12 p-2 bg-metal rounded-full w-[6%] border-2 border-opacity-75 border-[#1C2B2D] cursor-pointer select-none">
               <Link href={props.nextPageReference}>
-                <Image src="/icons/chevron.svg" width={28} height={28} alt="chevron icon" className="cursor-pointer"/>
+                <Image src="/icons/chevron.svg" width={24} height={24} alt="chevron icon" className="cursor-pointer"/>
               </Link>
             </button>
         </div>
