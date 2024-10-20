@@ -23,7 +23,7 @@ const sections: Map<string, Section> = new Map([
     ["home", {coreComponent: <LandingPageHeaders/>, trayComponent: <SocialsTray/>, nextPageReference: "#about", nextButtonMargins: "lg:mt-[15rem] xl:mt-[21.5rem] 2xl:mt-[18.55%]"}],
     ["about", { sectionTitle: "About Me", coreComponent: <AboutMe/>, pageNumber: "١", nextPageReference: "#projects", nextButtonMargins: "mt-2.5 2xl:mt-[6.5%] "}],
     ["projects", {sectionTitle: "Projects", sectionTitleMargin: "mb-7", coreComponent: <ProjectsTray/>, pageNumber: "٢", nextPageReference: "#travel", nextButtonMargins: "mt-2.5 lg:mt-72 2xl:mt-[36%]"}],
-    ["travel", {margin: "mb-72 mt-[40rem]", sectionTitle: "Travel", sectionTitleMargin: "mb-7", coreComponent: <CountryCardTray/>, pageNumber: "٣", nextButtonMargins: "" ,nextPageReference: "#contact"}],
+    ["travel", {margin: "mb-72 mt-[40rem]", sectionTitle: "Travel", sectionTitleMargin: "mb-7", coreComponent: <CountryCardTray/>, pageNumber: "٣", nextButtonMargins: "2xl:mt-3.5" ,nextPageReference: "#contact"}],
     ["contact", {margin: "mb-72 ", sectionTitle: "Get in touch!", sectionTitleMargin: "mb-7", coreComponent: <ContactSection/>, pageNumber: "٤"}
   ]
   ]);
