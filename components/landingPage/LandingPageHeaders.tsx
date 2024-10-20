@@ -1,6 +1,4 @@
-"use client"; 
-
-import { JakartaMedium, JakartaSemibold, JakartaExtraBold } from '../../lib/localNextFonts'
+import { JakartaMedium, JakartaExtraBold } from '../../lib/localNextFonts'
 
 const LandingPageHeaders = () => {
     return(

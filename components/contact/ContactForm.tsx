@@ -1,7 +1,4 @@
-"use client"
-
-import React, { useState } from 'react'
-import { ContactInfo, ContactFormProps } from './ContactFormWrapper'
+import { ContactFormProps } from './ContactFormWrapper'
 
 
 const ContactForm = (props: ContactFormProps) => {
