@@ -1,66 +1,34 @@
-"use client"; //client component
+"use client"
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { useState } from 'react'
+import SocialMediaButtonWrapper from './SocialMediaButtonWrapper'
+// SocialMediaContext.ts
+import { createContext } from 'react';
 
-//Look for a way to make this component more modular. Should be able to send in a prop for the socials instead of hardcoding them.
-// However, since we're dealing with both state and Image components here, it might be a bit more difficult.
+interface SocialMediaContextType {
+  socialMedia: string;
+  socialMediaLink: string;
+}
+
+export const SocialMediaContext = createContext<SocialMediaContextType>({} as SocialMediaContextType);
 
 const SocialsTray = () => {
     
-    // Try to make this DRY. There's a lot of repetition here.
-    const [isHoveringGitHub, setIsHoveringGitHub] = useState(false)
-    const onMouseEnterGitHub = () => setIsHoveringGitHub(true)
-    const onMouseLeaveGitHub = () => setIsHoveringGitHub(false)
+    const latestResume = "/resume/tachorzy_resume_sept_2024.pdf";
 
-    const [isHoveringLinkedIn, setIsHoveringLinkedIn] = useState(false)
-    const onMouseEnterLinkedIn = () => setIsHoveringLinkedIn(true)
-    const onMouseLeaveLinkedIn = () => setIsHoveringLinkedIn(false)
+    const socialLinks = new Map<string, string>([
+        ["GitHub", "https://github.com/tachorzy"],
+        ["LinkedIn", "https://www.linkedin.com/in/tachorzy/"],
+        ["Resume", latestResume],
+    ]);
 
-    const [isHoveringCV, setIsHoveringCV] = useState(false)
-    const onMouseEnterCV = () => setIsHoveringCV(true)
-    const onMouseLeaveCV = () => setIsHoveringCV(false)
-    
     return(
         <div className="lg:mt-5 md:mt-2.5 mt-4 flex flex-row gap-x-5 xl:gap-x-6">
-            <span
-                onMouseEnter = {onMouseEnterGitHub}
-                onMouseLeave = {onMouseLeaveGitHub}
-            >
-                <Link href="https://github.com/tachorzy" target="_blank">
-                    {isHoveringGitHub ? (
-                        <Image src="/icons/socials/GitHub-Mudbrick.svg" width="0" height="0" alt="GitHub logo active" className="cursor-pointer select-none xl:w-9 xl:h-9 lg:w-8 lg:h-8 md:w-12 md:h-12 w-6 h-6 scale-110 duration-500"></Image>
-                    ) : (
-                        <Image src="/icons/socials/GitHub-Sandstone.svg" width="0" height="0" alt="GitHub logo inactive" className="cursor-pointer select-none xl:w-9 xl:h-9 lg:w-8 lg:h-8 md:w-12 md:h-12 w-6 h-6"></Image>
-                    )}
-                </Link>
-            </span>
-            <span
-                onMouseEnter = {onMouseEnterLinkedIn}
-                onMouseLeave = {onMouseLeaveLinkedIn}
-            >
-                <Link href="https://www.linkedin.com/in/tachorzy/" target="_blank">
-                    {isHoveringLinkedIn ? (
-                        <Image src="/icons/socials/LinkedIn-Mudbrick.svg" width="0" height="0" alt="LinkedIn logo active" className="cursor-pointer select-none xl:w-9 xl:h-9 lg:w-8 lg:h-8 md:w-12 md:h-12 w-6 h-6 scale-110 duration-500"></Image>
-                    ) : (
-                        <Image src="/icons/socials/LinkedIn-Sandstone.svg" width="0" height="0" alt="LinkedIn logo inactive" className="cursor-pointer select-none xl:w-9 xl:h-9 lg:w-8 lg:h-8 md:w-12 md:h-12 w-6 h-6"></Image>                    
-                    )}
-                </Link>
-            </span>
-            <span
-                onMouseEnter = {onMouseEnterCV}
-                onMouseLeave=  {onMouseLeaveCV}
-            >
-                <Link href="/resume/tachorzy_resume_sept_2024.pdf" target="_blank">
-                    {isHoveringCV ? (
-                        <Image src="/icons/socials/Resume-Mudbrick.svg" width="0" height="0" alt="Resume logo active" className="cursor-pointer select-none xl:w-9 xl:h-9 lg:w-8 lg:h-8 md:h-12 w-6 h-6 scale-110 duration-500"></Image>
-                    ) : ( 
-                        <Image src="/icons/socials/Resume-Sandstone.svg" width="0" height="0" alt="Resume logo inactive" className="cursor-pointer select-none xl:w-9 xl:h-9 lg:w-8 lg:h-8 md:h-12 w-6 h-6"></Image>
-                    )}
-                </Link>
-            </span>
-      </div>
+            {Array.from(socialLinks.entries()).map(([socialMedia, socialMediaLink], key) => (    
+                <SocialMediaContext.Provider value={{socialMedia, socialMediaLink}} key={key}>
+                    <SocialMediaButtonWrapper/>
+                </SocialMediaContext.Provider>
+            ))}
+        </div>
     )
 }
 
