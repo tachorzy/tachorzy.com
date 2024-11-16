@@ -12,9 +12,9 @@ interface country{
 const CountryCard = (props: country) => {
 
     return(
-        <div className={JakartaBold.className + ` relative mt-0.5 w-56 md:max-2xl:w-80 md:max-2xl:h-[19.25rem] bg-metal rounded-md shadow-2xl hover:scale-105 duration-500 border-[2.5px] border-opacity-75 border-[#1C2B2D] transition-all duration-500 overflow-hidden`}>
+        <div className={JakartaBold.className + ` relative mt-0.5 w-56 md:max-xl:w-80 md:max-xl:h-[19.25rem] xl:w-56 xl:h-[14.54] bg-metal rounded-md shadow-2xl 2xl:scale-100 hover:scale-105 duration-500 border-[2.5px] border-opacity-75 border-[#1C2B2D] transition-all duration-500`}>
             <Link href={`\\travel\\${props.name}`} className="relative flex flex-row items-end justify-center text-[invert(0)] overflow-hidden">
-                <div className="absolute flex flex-col pb-2.5 md:pb-7 xl:pb-2 w-2/3">
+                <div className="absolute flex flex-col pb-2.5 w-2/3">
                     <h1 className={"text-xs text-dune font-bold uppercase tracking-wider text-center z-50"}>{props.name}</h1>
                     <h2 className={"text-xs text-dune font-bold uppercase tracking-wider text-center z-50"}>{props.yearVisited}</h2>
                 </div>
