@@ -44,7 +44,7 @@ const ContactFormWrapper = () => {
     };
 
     return( 
-        <div className={JakartaRegular.className + " md:absolute right-0 md:w-[40%] lg:ml-24 bg-metal md:py-12 md:px-16 py-10 px-8 rounded-md md:mr-[17rem] h-full"}>
+        <div className={JakartaRegular.className + " scale-[80%] md:scale-100 md:absolute right-0 md:w-[40%] -ml-[12%] md:ml-24 bg-metal md:py-12 md:px-16 py-10 px-8 rounded-md md:mr-[17rem] h-full"}>
             <ContactForm contactInfo={contactInfo} handleSubmit={handleSubmit} handleChange={handleChange}/>
         </div>
     );
