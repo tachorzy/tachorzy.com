@@ -1,5 +1,4 @@
 import { JakartaRegular, JakartaMedium } from '../../lib/localNextFonts'
-import ExperienceTray from './experience/ExperienceTray';
 
 const AboutMeBio = () => {
     return(

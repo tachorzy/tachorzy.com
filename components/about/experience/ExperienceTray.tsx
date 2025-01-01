@@ -1,4 +1,4 @@
-import { JakartaRegular, JakartaMedium } from '../../../lib/localNextFonts'
+import { JakartaRegular } from '../../../lib/localNextFonts'
 import Experience from './Experience'
 
 const MapExperience = new Map<string, {date: string, title: string, description: string}>([

@@ -1,4 +1,3 @@
-import { JakartaRegular, JakartaMedium } from '../../lib/localNextFonts'
 import ExperienceTray from './experience/ExperienceTray';
 import AboutMeBio from './AboutMeBio';
 import SkillsTray from './SkillsTray';
