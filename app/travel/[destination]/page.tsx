@@ -12,7 +12,7 @@ export default function Page({ params } : {
     const countryDetails = placesTravelled.get(decodedDestination);
 
     return (
-        <main className="bg-shark flex flex-col min-h-screen overflow-y-yscroll 2xl:gap-y-24 ">
+        <main className="bg-shark flex flex-col min-h-screen overflow-y-scroll 2xl:gap-y-24 ">
             <div className="lg:ml-24 ml-10 mb-24 ">
                 {countryDetails ? (
                         <div className="flex flex-col">
