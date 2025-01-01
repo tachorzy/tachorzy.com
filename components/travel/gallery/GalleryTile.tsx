@@ -1,4 +1,3 @@
-import { FileObject } from '@supabase/storage-js'
 import GalleryImage from './GalleryImage';
 import { supabase } from '../../../supabaseClient';
 import { use } from 'react'
