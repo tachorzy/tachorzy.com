@@ -10,7 +10,6 @@ interface country{
 }
 
 const CountryCard = (props: country) => {
-
     return(
         <div className={JakartaBold.className + ` relative mt-0.5 w-56 md:max-xl:w-80 md:max-xl:h-[19.25rem] xl:w-56 xl:h-[14.54] bg-metal rounded-md shadow-2xl 2xl:scale-100 hover:scale-105 duration-500 border-[2.5px] border-opacity-75 border-[#1C2B2D] transition-all duration-500`}>
             <Link href={`\\travel\\${props.name}`} className="relative flex flex-row items-end justify-center text-[invert(0)] overflow-hidden">
