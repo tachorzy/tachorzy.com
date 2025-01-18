@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { skills } from '../../lib/skills'
-import { JakartaRegular, JakartaMedium } from '../../lib/localNextFonts'
+import { JakartaRegular } from '../../lib/localNextFonts'
 
 // could add modularity by passing in a prop for the skills instead of importing them.
 // this would allow for the tray to be used in other places, and not just in the about section.
