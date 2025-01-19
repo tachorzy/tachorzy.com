@@ -1,0 +1,27 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import { JakartaBold } from '../../lib/localNextFonts'
+
+interface region{
+    name: string;
+    yearVisited: string;
+    isoCode: string;
+    coverImageURL: string;
+}
+
+const WorldRegionCard = (props: region) => {
+    return(
+        <div className={JakartaBold.className + ` relative mt-0.5 w-56 md:max-xl:w-80 md:max-xl:h-[19.25rem] xl:w-56 xl:h-[14.54] bg-metal rounded-md shadow-2xl 2xl:scale-100 hover:scale-105 duration-500 border-[2.5px] border-opacity-75 border-[#1C2B2D] transition-all duration-500`}>
+            <Link href={`\\travel\\${props.name}`} className="relative flex flex-row items-end justify-center text-[invert(0)] overflow-hidden">
+                <div className="absolute flex flex-col pb-2.5 w-2/3">
+                    <h1 className={"text-xs text-dune font-bold uppercase tracking-wider text-center z-50"}>{props.name}</h1>
+                    <h2 className={"text-xs text-dune font-bold uppercase tracking-wider text-center z-50"}>{props.yearVisited}</h2>
+                </div>
+                <Image src={"/travel/vignette.svg"} height={1300} width={1300} alt="vignette" className="w-full z-30 absolute bottom-0"/>
+                <Image src={props.coverImageURL} height={150} width={350} alt={`travel pic from ${props.name}`} className="rounded-md saturate-[120%] hover:sepia-0 transition-all duration-700 contrast-[120%]"></Image>
+            </Link>
+        </div>
+    );
+}
+
+export default WorldRegionCard;
