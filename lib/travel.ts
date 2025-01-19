@@ -1,3 +1,8 @@
+export const regionsTravelled: Map<string, { coverImageURL: string }> = new Map([
+        ["Middle East & North Africa", { coverImageURL: "/travel/regions/Middle%20East%20&%20North%20Africa/region_cover.jpg"}],
+        ["Europe", { coverImageURL: "/travel/regions/Europe/region_cover.jpg" }],
+        ["The Americas", { coverImageURL: "/travel/regions/The%20Americas/region_cover.jpg"}],
+]);
 
 export const placesTravelled: Map<string, { endonym: string | null, coverImageURL: string, yearVisited: string, isoCode: string, destinations: string[]}> = new Map([
         ["El Salvador", { endonym: null, coverImageURL: "/travel/El%20Salvador/country_cover.jpg", yearVisited: "2024", isoCode: "SV", destinations: ["San Salvador", "Santa Ana", "Cerro Verde", "Ruta de las Flores", "Suchitoto", "Cinquera", "La Libertad"]}],
