@@ -4,8 +4,6 @@ import { JakartaBold } from '../../lib/localNextFonts'
 
 interface region{
     name: string;
-    yearVisited: string;
-    isoCode: string;
     coverImageURL: string;
 }
 
@@ -15,7 +13,6 @@ const WorldRegionCard = (props: region) => {
             <Link href={`\\travel\\${props.name}`} className="relative flex flex-row items-end justify-center text-[invert(0)] overflow-hidden">
                 <div className="absolute flex flex-col pb-2.5 w-2/3">
                     <h1 className={"text-xs text-dune font-bold uppercase tracking-wider text-center z-50"}>{props.name}</h1>
-                    <h2 className={"text-xs text-dune font-bold uppercase tracking-wider text-center z-50"}>{props.yearVisited}</h2>
                 </div>
                 <Image src={"/travel/vignette.svg"} height={1300} width={1300} alt="vignette" className="w-full z-30 absolute bottom-0"/>
                 <Image src={props.coverImageURL} height={150} width={350} alt={`travel pic from ${props.name}`} className="rounded-md saturate-[120%] hover:sepia-0 transition-all duration-700 contrast-[120%]"></Image>
